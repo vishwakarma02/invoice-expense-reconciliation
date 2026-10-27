@@ -5,9 +5,3 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 logs/
-data/input/*
-data/processed/*
-data/output/*
-!data/input/.gitkeep
-!data/processed/.gitkeep
-!data/output/.gitkeep

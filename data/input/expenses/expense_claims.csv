@@ -1,0 +1,3 @@
+claim_id,employee_id,claim_date,category,merchant,amount_claimed,receipt_file
+EXP-301,EMP-1042,2026-10-16,Meals,Hotel Panchavati,1180.00,RCPT-01_HotelPanchavati_meal.png
+EXP-302,EMP-1042,2026-10-16,Fuel,Om Sai Fuel Station,4250.00,RCPT-02_OmSaiFuels_fuel.png

@@ -1,0 +1,300 @@
+{
+  "generated": "2026-10-27",
+  "currency": "INR",
+  "tolerances": {
+    "unit_price_pct": 1.0,
+    "total_rounding_inr": 1.0,
+    "qty": "billed qty must not exceed received qty"
+  },
+  "invoices": [
+    {
+      "id": "INV-01",
+      "file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+      "vendor_id": "V001",
+      "invoice_no": "SGP/26-27/0418",
+      "invoice_date": "2026-09-18",
+      "po_number": "PO-2026-1001",
+      "taxable_value": 44250.0,
+      "tax": {
+        "CGST @ 9%": 3982.5,
+        "SGST @ 9%": 3982.5
+      },
+      "printed_total": 52215.0,
+      "correct_total": 52215.0,
+      "expected_status": "CLEAR",
+      "exceptions": [],
+      "explanation": "Clean three-way match."
+    },
+    {
+      "id": "INV-02",
+      "file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+      "vendor_id": "V003",
+      "invoice_no": "NCS/KA/2026/0912",
+      "invoice_date": "2026-10-01",
+      "po_number": "PO-2026-1003",
+      "taxable_value": 54500.0,
+      "tax": {
+        "CGST @ 9%": 4905.0,
+        "SGST @ 9%": 4905.0
+      },
+      "printed_total": 64310.0,
+      "correct_total": 64310.0,
+      "expected_status": "CLEAR",
+      "exceptions": [],
+      "explanation": "Inter-state services: IGST correct. Service entry sheet SES-26-0031 stands in for a GRN."
+    },
+    {
+      "id": "INV-03",
+      "file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+      "vendor_id": "V002",
+      "invoice_no": "KST/26-27/233",
+      "invoice_date": "2026-09-24",
+      "po_number": "PO-2026-1002",
+      "taxable_value": 93600.0,
+      "tax": {
+        "CGST @ 9%": 8424.0,
+        "SGST @ 9%": 8424.0
+      },
+      "printed_total": 110448.0,
+      "correct_total": 110448.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "PRICE_VARIANCE"
+      ],
+      "explanation": "Billed ₹78.00/kg vs PO ₹72.00/kg (+8.33%), exceeds 1% tolerance. Over-billing ₹7,200 + GST."
+    },
+    {
+      "id": "INV-04",
+      "file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+      "vendor_id": "V004",
+      "invoice_no": "DOS/2026/0417",
+      "invoice_date": "2026-09-20",
+      "po_number": "PO-2026-1004",
+      "taxable_value": 47720.0,
+      "tax": {
+        "CGST @ 6%": 1477.2,
+        "SGST @ 6%": 1477.2,
+        "CGST @ 9%": 2079.0,
+        "SGST @ 9%": 2079.0
+      },
+      "printed_total": 54832.4,
+      "correct_total": 54832.4,
+      "expected_status": "CLEAR",
+      "exceptions": [],
+      "explanation": "Paper billed at ₹246.20 vs ₹245.00 (+0.49%) — WITHIN 1% tolerance. Must NOT be flagged (false-positive test). Mixed GST rates 12% + 18%."
+    },
+    {
+      "id": "INV-05",
+      "file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+      "vendor_id": "V001",
+      "invoice_no": "SGP/26-27/0452",
+      "invoice_date": "2026-10-06",
+      "po_number": "PO-2026-1005",
+      "taxable_value": 92500.0,
+      "tax": {
+        "CGST @ 9%": 8325.0,
+        "SGST @ 9%": 8325.0
+      },
+      "printed_total": 109150.0,
+      "correct_total": 109150.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "QTY_MISMATCH"
+      ],
+      "explanation": "Billed 500 rolls; GRN-26-5105 shows only 450 received. 50 rolls billed but not received."
+    },
+    {
+      "id": "INV-06",
+      "file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "vendor_id": "V004",
+      "invoice_no": "DOS-2026-417",
+      "invoice_date": "2026-09-20",
+      "po_number": "PO-2026-1004",
+      "taxable_value": 47720.0,
+      "tax": {
+        "CGST @ 6%": 1477.2,
+        "SGST @ 6%": 1477.2,
+        "CGST @ 9%": 2079.0,
+        "SGST @ 9%": 2079.0
+      },
+      "printed_total": 54832.4,
+      "correct_total": 54832.4,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "DUPLICATE_INVOICE"
+      ],
+      "duplicate_of": "INV-04",
+      "explanation": "Resubmission of INV-04: same vendor, date, PO and amount; invoice number reformatted (DOS/2026/0417 vs DOS-2026-417). INV-04 already paid on 2026-10-12."
+    },
+    {
+      "id": "INV-07",
+      "file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+      "vendor_id": "V005",
+      "invoice_no": "CFL/MUM/7781",
+      "invoice_date": "2026-10-14",
+      "po_number": null,
+      "taxable_value": 42000.0,
+      "tax": {
+        "CGST @ 6%": 2520.0,
+        "SGST @ 6%": 2520.0
+      },
+      "printed_total": 47040.0,
+      "correct_total": 47040.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "MISSING_PO"
+      ],
+      "explanation": "No PO reference; no matching PO or receipt in the system."
+    },
+    {
+      "id": "INV-08",
+      "file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+      "vendor_id": "V002",
+      "invoice_no": "KST/26-27/251",
+      "invoice_date": "2026-10-08",
+      "po_number": "PO-2026-1006",
+      "taxable_value": 54400.0,
+      "tax": {
+        "IGST @ 18%": 9792.0
+      },
+      "printed_total": 64192.0,
+      "correct_total": 64192.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "TAX_ERROR"
+      ],
+      "explanation": "Supplier (GSTIN 27…) and buyer (GSTIN 27…) are both in Maharashtra — intra-state supply must be CGST+SGST, but invoice charges IGST 18%. Total is arithmetically correct; the tax TYPE is wrong."
+    },
+    {
+      "id": "INV-09",
+      "file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+      "vendor_id": "V002",
+      "invoice_no": "KST/26-27/262",
+      "invoice_date": "2026-10-11",
+      "po_number": "PO-2026-1009",
+      "taxable_value": 44400.0,
+      "tax": {
+        "CGST @ 9%": 3996.0,
+        "SGST @ 9%": 3996.0
+      },
+      "printed_total": 52392.0,
+      "correct_total": 52392.0,
+      "expected_status": "CLEAR",
+      "exceptions": [],
+      "explanation": "Vendor name printed as 'KAVERI STEEL TRDRS.' — must resolve to V002 via GSTIN / fuzzy match. Otherwise clean."
+    },
+    {
+      "id": "INV-10",
+      "file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+      "vendor_id": "V005",
+      "invoice_no": "CFL/MUM/7742",
+      "invoice_date": "2026-10-09",
+      "po_number": "PO-2026-1007",
+      "taxable_value": 38000.0,
+      "tax": {
+        "CGST @ 6%": 2280.0,
+        "SGST @ 6%": 2280.0
+      },
+      "printed_total": 42560.0,
+      "correct_total": 42560.0,
+      "expected_status": "CLEAR",
+      "exceptions": [],
+      "explanation": "Scanned image (skewed, noisy) — needs OCR/vision extraction. Clean match against PO-2026-1007 / SES-26-0034."
+    },
+    {
+      "id": "INV-11",
+      "file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+      "vendor_id": "V004",
+      "invoice_no": "DOS/2026/0466",
+      "invoice_date": "2026-10-07",
+      "po_number": "PO-2026-1008",
+      "taxable_value": 8400.0,
+      "tax": {
+        "CGST @ 9%": 756.0,
+        "SGST @ 9%": 756.0
+      },
+      "printed_total": 10512.0,
+      "correct_total": 9912.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "TOTALS_ERROR"
+      ],
+      "explanation": "Printed grand total ₹10,512.00 but taxable ₹8,400 + GST ₹1,512 = ₹9,912.00. Line items match PO and GRN; the footing is wrong (₹600 overstatement)."
+    }
+  ],
+  "bank_transactions": [
+    {
+      "date": "2026-10-08",
+      "amount": 52215.0,
+      "matches": "INV-01",
+      "expected_status": "MATCHED"
+    },
+    {
+      "date": "2026-10-12",
+      "amount": 54832.4,
+      "matches": "INV-04",
+      "expected_status": "MATCHED",
+      "explanation": "Paying INV-06 as well would double-pay this amount."
+    },
+    {
+      "date": "2026-10-15",
+      "amount": 42560.0,
+      "matches": "INV-10",
+      "expected_status": "MATCHED",
+      "explanation": "Narration abbreviates vendor and invoice number."
+    },
+    {
+      "date": "2026-10-20",
+      "amount": 63310.0,
+      "matches": "INV-02",
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "PAYMENT_VARIANCE"
+      ],
+      "explanation": "Paid ₹63,310.00 against invoice total ₹64,310.00; ₹1,000.00 short with no remittance note."
+    },
+    {
+      "date": "2026-10-22",
+      "amount": 18500.0,
+      "matches": null,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "UNMATCHED_PAYMENT"
+      ],
+      "explanation": "Debit to 'Raj Enterprises' — not in vendor master, no invoice or PO."
+    },
+    {
+      "date": "2026-10-23",
+      "amount": 52392.0,
+      "matches": "INV-09",
+      "expected_status": "MATCHED"
+    },
+    {
+      "date": "2026-10-03",
+      "note": "Customer receipt (credit) — out of AP scope, ignore."
+    },
+    {
+      "date": "2026-10-25",
+      "note": "Bank charges — out of AP scope, ignore."
+    }
+  ],
+  "expense_claims": [
+    {
+      "claim_id": "EXP-301",
+      "receipt_total": 1180.0,
+      "amount_claimed": 1180.0,
+      "expected_status": "CLEAR"
+    },
+    {
+      "claim_id": "EXP-302",
+      "receipt_total": 2450.0,
+      "amount_claimed": 4250.0,
+      "expected_status": "EXCEPTION",
+      "exceptions": [
+        "EXPENSE_MISMATCH"
+      ],
+      "explanation": "Claimed ₹4,250 vs receipt ₹2,450 — likely digit transposition; over-claim ₹1,800."
+    }
+  ],
+  "unpaid_open_invoices_note": "INV-03, 05, 06, 07, 08, 11 are unpaid; none should be cleared for payment as-is."
+}
