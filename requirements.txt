@@ -1,0 +1,9 @@
+openai
+pydantic
+pydantic-settings
+python-dotenv
+PyMuPDF
+pandas
+Pillow
+pytesseract
+pytest
