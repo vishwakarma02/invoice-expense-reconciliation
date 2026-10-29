@@ -1,0 +1,32 @@
+{
+  "analyzed_invoice_count": 11,
+  "findings": [
+    {
+      "invoice_id": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+      "anomaly_type": "ABOVE_POLICY_LIMIT",
+      "severity": "HIGH",
+      "description": "Invoice amount 110448 INR exceeds the policy limit of 100000 INR.",
+      "observed_amount": "110448",
+      "currency": "INR",
+      "duplicate_of": null
+    },
+    {
+      "invoice_id": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+      "anomaly_type": "ABOVE_POLICY_LIMIT",
+      "severity": "HIGH",
+      "description": "Invoice amount 109150 INR exceeds the policy limit of 100000 INR.",
+      "observed_amount": "109150",
+      "currency": "INR",
+      "duplicate_of": null
+    },
+    {
+      "invoice_id": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "anomaly_type": "DUPLICATE_INVOICE",
+      "severity": "HIGH",
+      "description": "Invoice matches invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf by vendor, date, currency, total, and matching item codes and quantities.",
+      "observed_amount": "54832.4",
+      "currency": "INR",
+      "duplicate_of": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf"
+    }
+  ]
+}

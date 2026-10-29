@@ -45,6 +45,7 @@ class ExtractedField(BaseModel, Generic[T]):
 class InvoiceLineItem(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
+    item_code: ExtractedField[str]
     description: ExtractedField[str]
     quantity: ExtractedField[Decimal]
     unit_price: ExtractedField[Decimal]

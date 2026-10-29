@@ -52,8 +52,12 @@ Additional rules:
    but only when they are explicitly present in the source.
 4. Do not treat unrelated numbers as invoice amounts.
 5. Do not calculate a missing business value merely to fill it.
-6. Preserve invoice line-item boundaries.
-7. Payment terms such as "30 days from invoice date" do not
+6. Extract each line item's SKU, item code, product ID, or
+   product code into item_code when explicitly printed. Leave
+   item_code missing when no code is shown; never infer it from
+   a description or another invoice.
+7. Preserve invoice line-item boundaries.
+8. Payment terms such as "30 days from invoice date" do not
    provide an explicit due date. In that case, leave due date
    missing unless the document explicitly shows the due date.
 """
