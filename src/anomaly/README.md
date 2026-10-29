@@ -1,8 +1,8 @@
 # Invoice Anomaly Agent
 
-The deterministic anomaly agent consumes the Extraction Agent JSON array and
-returns a report with `analyzed_invoice_count` and structured `findings`. It
-flags:
+The deterministic anomaly agent consumes the Extraction Agent batch JSON (or
+legacy results array) and returns a report with `analyzed_invoice_count` and
+structured `findings`. It flags:
 
 - **Duplicate invoices** (`DUPLICATE_INVOICE`, high severity): vendor, currency,
   and normalized invoice number match; or, when invoice numbers differ, vendor,
@@ -47,12 +47,21 @@ the extraction schema has changed so the output includes available item codes:
 ```powershell
 python -m src.extraction_agent.batch_cli
 python -m src.anomaly.batch_cli `
-  --input data/output/extraction_results.json `
+  --input data/output/extraction_output.json `
   --output data/output/anomaly_results.json `
   --vendor-history data/input/vendor_history.json `
   --max-invoice-amount 100000 `
   --log-level INFO
 ```
+
+For the default input and policy limit, run the root-level convenience script:
+
+```powershell
+python run_anomaly.py
+```
+
+It reads `data/output/extraction_output.json` and writes
+`data/output/anomaly_results.json`.
 
 The report defaults to `data/output/anomaly_results.json`. Omit
 `--vendor-history` when history is unavailable; duplicate and policy checks

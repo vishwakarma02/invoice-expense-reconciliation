@@ -163,17 +163,57 @@ def _line_signature(
     return tuple(sorted(signature))
 
 
-def _read_invoices(records: Sequence[Mapping[str, Any]]) -> list[_Invoice]:
-    if isinstance(records, (str, bytes, Mapping)):
+def _read_invoices(
+    records: Sequence[Mapping[str, Any]] | Mapping[str, Any],
+) -> list[_Invoice]:
+    if isinstance(records, Mapping):
+        documents = records.get("documents")
+        if not isinstance(documents, list):
+            raise ValueError("Extraction results must be an array of objects.")
+        normalized_records: list[Mapping[str, Any]] = []
+        for document_index, document in enumerate(documents, start=1):
+            if not isinstance(document, Mapping):
+                raise ValueError(
+                    f"Extraction document {document_index} must be an object."
+                )
+            if document.get("status") != "success":
+                continue
+            document_records = document.get("records")
+            if not isinstance(document_records, list):
+                raise ValueError(
+                    f"Extraction document {document_index} records must be an array."
+                )
+            for record_index, record in enumerate(document_records, start=1):
+                if not isinstance(record, Mapping):
+                    raise ValueError(
+                        f"Extraction document {document_index} record "
+                        f"{record_index} must be an object."
+                    )
+                normalized_records.append(
+                    {
+                        "status": document["status"],
+                        "document_id": document.get("document_id"),
+                        "source_file": document.get("source_file"),
+                        "record": record,
+                    }
+                )
+        records_to_read = normalized_records
+    elif isinstance(records, Sequence) and not isinstance(records, (str, bytes)):
+        records_to_read = records
+    else:
         raise ValueError("Extraction results must be an array of objects.")
+
     invoices: list[_Invoice] = []
-    for index, result in enumerate(records, start=1):
+    for index, result in enumerate(records_to_read, start=1):
         if not isinstance(result, Mapping):
             raise ValueError(f"Extraction result {index} must be an object.")
         if result.get("status") not in {None, "success"}:
             continue
         record = result.get("record", result)
-        if not isinstance(record, Mapping) or record.get("document_type") != "invoice":
+        if not isinstance(record, Mapping) or (
+            record.get("document_type") != "invoice"
+            and record.get("record_type") != "invoice"
+        ):
             continue
 
         invoice_number = _field_value(record, "invoice_number")
@@ -294,7 +334,7 @@ class AnomalyAgent:
 
     def analyze(
         self,
-        extraction_results: Sequence[Mapping[str, Any]],
+        extraction_results: Sequence[Mapping[str, Any]] | Mapping[str, Any],
         vendor_history: Mapping[
             str,
             Sequence[Decimal | int | float | str]
@@ -308,10 +348,16 @@ class AnomalyAgent:
         sequences, or to a legacy amount sequence assumed to match the
         candidate invoice currency. Validation errors are logged and re-raised.
         """
+        extraction_count = (
+            len(extraction_results["documents"])
+            if isinstance(extraction_results, Mapping)
+            and isinstance(extraction_results.get("documents"), list)
+            else len(extraction_results)
+        )
         logger.info(
             "Starting invoice anomaly analysis: extraction_results=%d "
             "vendor_history_vendors=%d",
-            len(extraction_results),
+            extraction_count,
             len(vendor_history or {}),
         )
         try:
@@ -488,12 +534,12 @@ def main() -> None:
     )
     parser.add_argument(
         "--input",
-        default="data/output/extraction_results.json",
-        help="Extraction Agent results JSON.",
+        default="data/output/extraction_output.json",
+        help="Extraction Agent batch JSON.",
     )
     parser.add_argument(
         "--output",
-        default="data/output/anomaly_results.json",
+        default="data/output/anomaly_output.json",
         help="Path for the anomaly report JSON.",
     )
     parser.add_argument(
@@ -527,9 +573,9 @@ def main() -> None:
         raise FileNotFoundError(f"Extraction results not found: {input_path}")
 
     extraction_results = json.loads(input_path.read_text(encoding="utf-8"))
-    if not isinstance(extraction_results, list):
-        logger.error("Extraction results must be a JSON array.")
-        raise ValueError("Extraction results must be a JSON array.")
+    if not isinstance(extraction_results, (list, dict)):
+        logger.error("Extraction results must be an array or batch object.")
+        raise ValueError("Extraction results must be an array or batch object.")
 
     history: Mapping[str, Sequence[Decimal | int | float | str]] = {}
     if args.vendor_history:

@@ -539,6 +539,38 @@ def test_failed_extractions_are_skipped():
     assert report.findings == []
 
 
+def test_analyzes_invoice_records_in_extraction_batch():
+    first = extracted_invoice("INV-1", "Acme", "A-1", "120000")
+    second = extracted_invoice("INV-2", "Acme", "A-2", "120000")
+    second["record"]["invoice_date"] = {"value": "2026-10-02"}
+    batch = {
+        "extraction_id": "batch-1",
+        "ingestion_batch_id": "ingestion-1",
+        "documents": [
+            {
+                "document_id": "doc-1",
+                "source_file": "invoices/invoice-1.pdf",
+                "status": "success",
+                "records": [first["record"]],
+            },
+            {
+                "document_id": "doc-2",
+                "source_file": "invoices/invoice-2.pdf",
+                "status": "success",
+                "records": [second["record"]],
+            },
+        ],
+    }
+
+    report = AnomalyAgent().analyze(batch)
+
+    assert report.analyzed_invoice_count == 2
+    assert [finding.anomaly_type for finding in report.findings] == [
+        "ABOVE_POLICY_LIMIT",
+        "ABOVE_POLICY_LIMIT",
+    ]
+
+
 def test_malformed_extraction_input_is_rejected():
     with pytest.raises(ValueError, match="must be an object"):
         AnomalyAgent().analyze([None])
