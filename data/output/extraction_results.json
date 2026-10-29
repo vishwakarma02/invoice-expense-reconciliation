@@ -1,0 +1,1773 @@
+[
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "64a28e8f-cd11-4693-9e80-2d6f273621a6",
+    "source_file": "bank/bank_statement_2026-10.csv",
+    "content_hash": "2b19f2ab60ddb4f8e60157a4a4977e69c93135161090b732da7268e9d3cddd0a",
+    "input_category": "bank",
+    "input_document_type": "csv",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "generic_table",
+      "table_id": "bank_table",
+      "columns": [
+        "txn_date",
+        "narration",
+        "debit",
+        "credit",
+        "balance"
+      ],
+      "rows": [
+        {
+          "txn_date": "2026-10-01",
+          "narration": "OPENING BALANCE",
+          "debit": "",
+          "credit": "",
+          "balance": "1850000.00"
+        },
+        {
+          "txn_date": "2026-10-03",
+          "narration": "NEFT CR-ACME AUTO PARTS LTD-INV SC-2209",
+          "debit": "",
+          "credit": "412500.00",
+          "balance": "2262500.00"
+        },
+        {
+          "txn_date": "2026-10-08",
+          "narration": "NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418",
+          "debit": "52215.00",
+          "credit": "",
+          "balance": "2210285.00"
+        },
+        {
+          "txn_date": "2026-10-12",
+          "narration": "NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417",
+          "debit": "54832.40",
+          "credit": "",
+          "balance": "2155452.60"
+        },
+        {
+          "txn_date": "2026-10-15",
+          "narration": "IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742",
+          "debit": "42560.00",
+          "credit": "",
+          "balance": "2112892.60"
+        },
+        {
+          "txn_date": "2026-10-20",
+          "narration": "NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912",
+          "debit": "63310.00",
+          "credit": "",
+          "balance": "2049582.60"
+        },
+        {
+          "txn_date": "2026-10-22",
+          "narration": "UPI DR-RAJ ENTERPRISES-PAYMENT",
+          "debit": "18500.00",
+          "credit": "",
+          "balance": "2031082.60"
+        },
+        {
+          "txn_date": "2026-10-23",
+          "narration": "NEFT DR-KAVERI STEEL TRADERS-KST262",
+          "debit": "52392.00",
+          "credit": "",
+          "balance": "1978690.60"
+        },
+        {
+          "txn_date": "2026-10-25",
+          "narration": "BANK CHARGES INCL GST",
+          "debit": "236.00",
+          "credit": "",
+          "balance": "1978454.60"
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "fa4a1a11-f3dc-4ac2-9057-7a112dfe43d0",
+    "source_file": "expenses/expense_claims.csv",
+    "content_hash": "af6fc05f2680b06a08193030bcb1604543af04e643a38b78f32216bb0492e62a",
+    "input_category": "expense",
+    "input_document_type": "csv",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "generic_table",
+      "table_id": "expense_table",
+      "columns": [
+        "claim_id",
+        "employee_id",
+        "claim_date",
+        "category",
+        "merchant",
+        "amount_claimed",
+        "receipt_file"
+      ],
+      "rows": [
+        {
+          "claim_id": "EXP-301",
+          "employee_id": "EMP-1042",
+          "claim_date": "2026-10-16",
+          "category": "Meals",
+          "merchant": "Hotel Panchavati",
+          "amount_claimed": "1180.00",
+          "receipt_file": "RCPT-01_HotelPanchavati_meal.png"
+        },
+        {
+          "claim_id": "EXP-302",
+          "employee_id": "EMP-1042",
+          "claim_date": "2026-10-16",
+          "category": "Fuel",
+          "merchant": "Om Sai Fuel Station",
+          "amount_claimed": "4250.00",
+          "receipt_file": "RCPT-02_OmSaiFuels_fuel.png"
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "849e2fbe-92f4-4725-8083-5528c6da8f65",
+    "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+    "content_hash": "4087a12661849b2e3f4b15a2510ae845a9b4b7f145de823b6ef4589d59919bb2",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "SGP/26-27/0418",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: SGP/26-27/0418",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-09-18",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 18-09-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Shree Ganesh Packaging Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Shree Ganesh Packaging Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "44250",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n44,250.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "7965",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n3,982.50\nSGST @ 9%\n3,982.50",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "52215",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n52,215.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "Corrugated box 600x400x400 mm, 5-ply",
+            "confidence": 1.0,
+            "raw_text": "Corrugated box 600x400x400 mm, 5-ply",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "500",
+            "confidence": 1.0,
+            "raw_text": "Qty\n500",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "42.5",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n42.50",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "21250",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n21,250.00",
+            "missing_reason": null
+          }
+        },
+        {
+          "description": {
+            "value": "Bubble wrap roll 1 m x 100 m",
+            "confidence": 1.0,
+            "raw_text": "Bubble wrap roll 1 m x 100 m",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "20",
+            "confidence": 1.0,
+            "raw_text": "Qty\n20",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "1150",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n1,150.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "23000",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n23,000.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "d82bb38b-3384-4dc3-aa18-abc75a68c443",
+    "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+    "content_hash": "4648a14273e96e343056bf1cef63df628ceacca5ab9310c150213ff7eb9e4e4a",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "NCS/KA/2026/0912",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: NCS/KA/2026/0912",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-01",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 01-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Nimbus Cloud Services LLP",
+        "confidence": 1.0,
+        "raw_text": "Nimbus Cloud Services LLP",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "54500",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n54,500.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "9810",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n4,905.00\nSGST @ 9%\n4,905.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "64310",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n64,310.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "Managed cloud hosting - Sep 2026",
+            "confidence": 1.0,
+            "raw_text": "Managed cloud hosting - Sep 2026",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "1",
+            "confidence": 1.0,
+            "raw_text": "Qty\n1",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "48000",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n48,000.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "48000",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n48,000.00",
+            "missing_reason": null
+          }
+        },
+        {
+          "description": {
+            "value": "Managed backup service - Sep 2026",
+            "confidence": 1.0,
+            "raw_text": "Managed backup service - Sep 2026",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "1",
+            "confidence": 1.0,
+            "raw_text": "Qty\n1",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "6500",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n6,500.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "6500",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n6,500.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "8f69cc89-3aa4-4229-bbaa-61d0c7b7855f",
+    "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+    "content_hash": "6399d1968b159ae1bc5eb3520b1d1c7f144eaaceea945e4ab66ac42a1e4b5f4e",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "KST/26-27/233",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: KST/26-27/233",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-09-24",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 24-09-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Kaveri Steel Traders",
+        "confidence": 1.0,
+        "raw_text": "Kaveri Steel Traders",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Bill To\nSahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "93600",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n93,600.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "16848",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n8,424.00\nSGST @ 9%\n8,424.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "110448",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n1,10,448.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "MS round bar 20 mm",
+            "confidence": 1.0,
+            "raw_text": "MS round bar 20 mm",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "1200",
+            "confidence": 1.0,
+            "raw_text": "1,200\nKg",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "78",
+            "confidence": 1.0,
+            "raw_text": "78.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "93600",
+            "confidence": 1.0,
+            "raw_text": "93,600.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "ca12fcc6-ec0a-4cdc-a64b-e719f9c12de9",
+    "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+    "content_hash": "2532c23e2876dd4e35661cb57275a3231735780727d466814493aa6a22fea77b",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "DOS/2026/0417",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: DOS/2026/0417",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-09-20",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 20-09-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Deccan Office Supplies",
+        "confidence": 1.0,
+        "raw_text": "Deccan Office Supplies",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Bill To\nSahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "47720",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n47,720.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Tax values are provided separately and not summed up."
+      },
+      "grand_total": {
+        "value": "54832.4",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n54,832.40",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "A4 copier paper 75 gsm (ream of 500)",
+            "confidence": 1.0,
+            "raw_text": "A4 copier paper 75 gsm (ream of 500)",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "100",
+            "confidence": 1.0,
+            "raw_text": "Qty\n100",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "246.2",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n246.20",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "24620",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n24,620.00",
+            "missing_reason": null
+          }
+        },
+        {
+          "description": {
+            "value": "Laser toner cartridge 85A compatible",
+            "confidence": 1.0,
+            "raw_text": "Laser toner cartridge 85A compatible",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "6",
+            "confidence": 1.0,
+            "raw_text": "Qty\n6",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "3850",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n3,850.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "23100",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n23,100.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "44b12b91-721c-47f0-91fb-b38bd59b9f83",
+    "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+    "content_hash": "0ad281f0d177fac95ab1f147de671235a3ee632aca903f035f322f6aa089c969",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "SGP/26-27/0452",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: SGP/26-27/0452",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-06",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 06-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Shree Ganesh Packaging Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Shree Ganesh Packaging Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "92500",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n92,500.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "16650",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n8,325.00\nSGST @ 9%\n8,325.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "109150",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n1,09,150.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "Stretch film 23 micron, 500 mm",
+            "confidence": 1.0,
+            "raw_text": "Stretch film 23 micron, 500 mm",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "500",
+            "confidence": 1.0,
+            "raw_text": "Qty\n500",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "185",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n185.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "92500",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n92,500.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "70008cf0-9e8c-4d37-8bbe-44e5587b1fa2",
+    "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+    "content_hash": "978e9a7433064879fb75fa1777373ed8af50a47e93cc65e722bb6eb5cdd7ff36",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "DOS-2026-417",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: DOS-2026-417",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-09-20",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 20-09-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Deccan Office Supplies",
+        "confidence": 1.0,
+        "raw_text": "Deccan Office Supplies",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "47720",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n47,720.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Total tax is not explicitly calculated as a single value."
+      },
+      "grand_total": {
+        "value": "54832.4",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n54,832.40",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "A4 copier paper 75 gsm (ream of 500)",
+            "confidence": 1.0,
+            "raw_text": "A4 copier paper 75 gsm (ream of 500)",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "100",
+            "confidence": 1.0,
+            "raw_text": "Qty\n100",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "246.2",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n246.20",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "24620",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n24,620.00",
+            "missing_reason": null
+          }
+        },
+        {
+          "description": {
+            "value": "Laser toner cartridge 85A compatible",
+            "confidence": 1.0,
+            "raw_text": "Laser toner cartridge 85A compatible",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "6",
+            "confidence": 1.0,
+            "raw_text": "Qty\n6",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "3850",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n3,850.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "23100",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n23,100.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "6f1f89a6-5d70-4dd1-b079-e60e947e43ba",
+    "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+    "content_hash": "8e7d7abf379a41aa49a6601066ce6f6ce3ee9d4444104bc331d47674d1f10230",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "CFL/MUM/7781",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: CFL/MUM/7781",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-14",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 14-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Coastal Freight & Logistics Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Coastal Freight & Logistics Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "42000",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n42,000.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "5040",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 6%\n2,520.00\nSGST @ 6%\n2,520.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "47040",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n47,040.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "FTL freight Pune to Hyderabad, 32 ft container",
+            "confidence": 1.0,
+            "raw_text": "FTL freight Pune to Hyderabad, 32 ft\ncontainer",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "1",
+            "confidence": 1.0,
+            "raw_text": "Qty\n1",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "42000",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n42,000.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "42000",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n42,000.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "e0119fc2-5d39-4214-af44-ae04f0083952",
+    "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+    "content_hash": "d3fb0372a4e2714e731d30ff5f87a7cf90187bd806fc11ed6ed07d6fd8bf3a9b",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "KST/26-27/251",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: KST/26-27/251",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-08",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 08-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Kaveri Steel Traders",
+        "confidence": 1.0,
+        "raw_text": "Kaveri Steel Traders",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "54400",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n54,400.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "9792",
+        "confidence": 1.0,
+        "raw_text": "IGST @ 18%\n9,792.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "64192",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n64,192.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "MS flat 50 x 6 mm",
+            "confidence": 1.0,
+            "raw_text": "MS flat 50 x 6 mm",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "800",
+            "confidence": 1.0,
+            "raw_text": "Qty\n800",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "68",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n68.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "54400",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n54,400.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "7e16719e-5214-4ddd-abf0-64cd76b46926",
+    "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+    "content_hash": "8277f674b924a0cc0a92fbaadb44ff57ad3c3dc602a95442083193ecb20197b9",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "KST/26-27/262",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: KST/26-27/262",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-11",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 11-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "KAVERI STEEL TRDRS.",
+        "confidence": 1.0,
+        "raw_text": "KAVERI STEEL TRDRS.",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "44400",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n44,400.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "7992",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n3,996.00\nSGST @ 9%\n3,996.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "52392",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n52,392.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "MS angle 40 x 40 x 5 mm",
+            "confidence": 1.0,
+            "raw_text": "MS angle 40 x 40 x 5 mm",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "600",
+            "confidence": 1.0,
+            "raw_text": "Qty\n600",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "74",
+            "confidence": 1.0,
+            "raw_text": "Rate (₹)\n74.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "44400",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n44,400.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "9e03e2c4-453a-491e-b403-bec483392871",
+    "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+    "content_hash": "93618c7f2d86546f5ccd723ccb5b35b73bf427aa95883e25db5ddab572caa883",
+    "input_category": "invoice",
+    "input_document_type": "image",
+    "ocr_confidence": 0.9015000000000001,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "CFL/MUM/7742",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: CFL/MUM/7742",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-09",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 09-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Coastal Freight & Logistics Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Coastal Freight & Logistics Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Sahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "INR",
+        "confidence": 1.0,
+        "raw_text": "Amount in words: Rupees Forty-Two Thousand Five Hundred Sixty Only",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "38000",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value 38,000.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "4560",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 6% 2,280.00\nSGST @ 6% 2,280.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "42560",
+        "confidence": 1.0,
+        "raw_text": "Grand Total () 42,560.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "FTL freight Pune to Chennai, 32 ft container",
+            "confidence": 1.0,
+            "raw_text": "1 FTL freight Pune to Chennai, 32 ft container",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "1",
+            "confidence": 1.0,
+            "raw_text": "1 Trip",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "38000",
+            "confidence": 1.0,
+            "raw_text": "Unit Rate (%) Amount (%) 38,000.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "38000",
+            "confidence": 1.0,
+            "raw_text": "Amount (% 38,000.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "97baa976-c4fb-4669-a6f2-7254b3ec003c",
+    "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+    "content_hash": "6f34ed50497e57784e85738ca853d430f0f129c98f7d0cc5a03ee7eba2db0ca6",
+    "input_category": "invoice",
+    "input_document_type": "pdf",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "invoice",
+      "invoice_number": {
+        "value": "DOS/2026/0466",
+        "confidence": 1.0,
+        "raw_text": "Invoice No: DOS/2026/0466",
+        "missing_reason": null
+      },
+      "invoice_date": {
+        "value": "2026-10-07",
+        "confidence": 1.0,
+        "raw_text": "Invoice Date: 07-10-2026",
+        "missing_reason": null
+      },
+      "due_date": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Due date is not explicitly mentioned in the document."
+      },
+      "vendor_name": {
+        "value": "Deccan Office Supplies",
+        "confidence": 1.0,
+        "raw_text": "Deccan Office Supplies",
+        "missing_reason": null
+      },
+      "customer_name": {
+        "value": "Sahyadri Components Pvt. Ltd.",
+        "confidence": 1.0,
+        "raw_text": "Bill To\nSahyadri Components Pvt. Ltd.",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "₹",
+        "confidence": 1.0,
+        "raw_text": "Rate (₹)",
+        "missing_reason": null
+      },
+      "subtotal": {
+        "value": "8400",
+        "confidence": 1.0,
+        "raw_text": "Taxable Value\n8,400.00",
+        "missing_reason": null
+      },
+      "tax": {
+        "value": "1512",
+        "confidence": 1.0,
+        "raw_text": "CGST @ 9%\n756.00\nSGST @ 9%\n756.00",
+        "missing_reason": null
+      },
+      "grand_total": {
+        "value": "10512",
+        "confidence": 1.0,
+        "raw_text": "Grand Total (₹)\n10,512.00",
+        "missing_reason": null
+      },
+      "line_items": [
+        {
+          "description": {
+            "value": "Whiteboard markers, box of 10",
+            "confidence": 1.0,
+            "raw_text": "Whiteboard markers, box of 10",
+            "missing_reason": null
+          },
+          "quantity": {
+            "value": "20",
+            "confidence": 1.0,
+            "raw_text": "Qty\n20",
+            "missing_reason": null
+          },
+          "unit_price": {
+            "value": "420",
+            "confidence": 1.0,
+            "raw_text": "Unit\nRate (₹)\n420.00",
+            "missing_reason": null
+          },
+          "total": {
+            "value": "8400",
+            "confidence": 1.0,
+            "raw_text": "Amount (₹)\n8,400.00",
+            "missing_reason": null
+          }
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "86671495-014d-4af0-9021-d4736af7e014",
+    "source_file": "master/goods_receipts.csv",
+    "content_hash": "06e54f85ee43b7f675be3c2a14cdc001742935fcae1ce128b8d85f396d4b9d18",
+    "input_category": "receipt",
+    "input_document_type": "csv",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "generic_table",
+      "table_id": "goods_receipt_table",
+      "columns": [
+        "receipt_no",
+        "receipt_type",
+        "po_number",
+        "receipt_date",
+        "item_code",
+        "qty_received"
+      ],
+      "rows": [
+        {
+          "receipt_no": "GRN-26-5101",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1001",
+          "receipt_date": "2026-09-16",
+          "item_code": "PKG-CB-5P",
+          "qty_received": "500"
+        },
+        {
+          "receipt_no": "GRN-26-5101",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1001",
+          "receipt_date": "2026-09-16",
+          "item_code": "PKG-BW-100",
+          "qty_received": "20"
+        },
+        {
+          "receipt_no": "GRN-26-5102",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1002",
+          "receipt_date": "2026-09-23",
+          "item_code": "STL-RB-20",
+          "qty_received": "1200"
+        },
+        {
+          "receipt_no": "SES-26-0031",
+          "receipt_type": "SERVICE_ENTRY",
+          "po_number": "PO-2026-1003",
+          "receipt_date": "2026-09-30",
+          "item_code": "SVC-HOST-M",
+          "qty_received": "1"
+        },
+        {
+          "receipt_no": "SES-26-0031",
+          "receipt_type": "SERVICE_ENTRY",
+          "po_number": "PO-2026-1003",
+          "receipt_date": "2026-09-30",
+          "item_code": "SVC-BKP-M",
+          "qty_received": "1"
+        },
+        {
+          "receipt_no": "GRN-26-5104",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1004",
+          "receipt_date": "2026-09-18",
+          "item_code": "OFF-A4-75",
+          "qty_received": "100"
+        },
+        {
+          "receipt_no": "GRN-26-5104",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1004",
+          "receipt_date": "2026-09-18",
+          "item_code": "OFF-TNR-85",
+          "qty_received": "6"
+        },
+        {
+          "receipt_no": "GRN-26-5105",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1005",
+          "receipt_date": "2026-10-04",
+          "item_code": "PKG-SF-23",
+          "qty_received": "450"
+        },
+        {
+          "receipt_no": "GRN-26-5106",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1006",
+          "receipt_date": "2026-10-07",
+          "item_code": "STL-FL-506",
+          "qty_received": "800"
+        },
+        {
+          "receipt_no": "SES-26-0034",
+          "receipt_type": "SERVICE_ENTRY",
+          "po_number": "PO-2026-1007",
+          "receipt_date": "2026-10-09",
+          "item_code": "FRT-PNQ-MAA",
+          "qty_received": "1"
+        },
+        {
+          "receipt_no": "GRN-26-5108",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1008",
+          "receipt_date": "2026-10-06",
+          "item_code": "OFF-WBM-10",
+          "qty_received": "20"
+        },
+        {
+          "receipt_no": "GRN-26-5109",
+          "receipt_type": "GOODS_RECEIPT",
+          "po_number": "PO-2026-1009",
+          "receipt_date": "2026-10-10",
+          "item_code": "STL-AN-405",
+          "qty_received": "600"
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "261e6aa1-5a30-4b94-bcdb-de89158f92bc",
+    "source_file": "master/purchase_orders.csv",
+    "content_hash": "bbd16f6eb71b61bddaf43dd7003c01efe7d3db8e796e056d495dbf519d9b12fb",
+    "input_category": "purchase_order",
+    "input_document_type": "csv",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "generic_table",
+      "table_id": "purchase_order_table",
+      "columns": [
+        "po_number",
+        "vendor_id",
+        "po_date",
+        "line_no",
+        "item_code",
+        "description",
+        "hsn_sac",
+        "qty",
+        "unit",
+        "unit_price",
+        "gst_rate"
+      ],
+      "rows": [
+        {
+          "po_number": "PO-2026-1001",
+          "vendor_id": "V001",
+          "po_date": "2026-09-05",
+          "line_no": "1",
+          "item_code": "PKG-CB-5P",
+          "description": "Corrugated box 600x400x400 mm, 5-ply",
+          "hsn_sac": "4819",
+          "qty": "500",
+          "unit": "Nos",
+          "unit_price": "42.50",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1001",
+          "vendor_id": "V001",
+          "po_date": "2026-09-05",
+          "line_no": "2",
+          "item_code": "PKG-BW-100",
+          "description": "Bubble wrap roll 1 m x 100 m",
+          "hsn_sac": "3923",
+          "qty": "20",
+          "unit": "Roll",
+          "unit_price": "1150.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1002",
+          "vendor_id": "V002",
+          "po_date": "2026-09-08",
+          "line_no": "1",
+          "item_code": "STL-RB-20",
+          "description": "MS round bar 20 mm",
+          "hsn_sac": "7214",
+          "qty": "1200",
+          "unit": "Kg",
+          "unit_price": "72.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1003",
+          "vendor_id": "V003",
+          "po_date": "2026-09-01",
+          "line_no": "1",
+          "item_code": "SVC-HOST-M",
+          "description": "Managed cloud hosting - Sep 2026",
+          "hsn_sac": "998315",
+          "qty": "1",
+          "unit": "Month",
+          "unit_price": "48000.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1003",
+          "vendor_id": "V003",
+          "po_date": "2026-09-01",
+          "line_no": "2",
+          "item_code": "SVC-BKP-M",
+          "description": "Managed backup service - Sep 2026",
+          "hsn_sac": "998315",
+          "qty": "1",
+          "unit": "Month",
+          "unit_price": "6500.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1004",
+          "vendor_id": "V004",
+          "po_date": "2026-09-10",
+          "line_no": "1",
+          "item_code": "OFF-A4-75",
+          "description": "A4 copier paper 75 gsm (ream of 500)",
+          "hsn_sac": "4802",
+          "qty": "100",
+          "unit": "Ream",
+          "unit_price": "245.00",
+          "gst_rate": "12"
+        },
+        {
+          "po_number": "PO-2026-1004",
+          "vendor_id": "V004",
+          "po_date": "2026-09-10",
+          "line_no": "2",
+          "item_code": "OFF-TNR-85",
+          "description": "Laser toner cartridge 85A compatible",
+          "hsn_sac": "8443",
+          "qty": "6",
+          "unit": "Nos",
+          "unit_price": "3850.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1005",
+          "vendor_id": "V001",
+          "po_date": "2026-09-22",
+          "line_no": "1",
+          "item_code": "PKG-SF-23",
+          "description": "Stretch film 23 micron, 500 mm",
+          "hsn_sac": "3920",
+          "qty": "500",
+          "unit": "Roll",
+          "unit_price": "185.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1006",
+          "vendor_id": "V002",
+          "po_date": "2026-09-25",
+          "line_no": "1",
+          "item_code": "STL-FL-506",
+          "description": "MS flat 50 x 6 mm",
+          "hsn_sac": "7211",
+          "qty": "800",
+          "unit": "Kg",
+          "unit_price": "68.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1007",
+          "vendor_id": "V005",
+          "po_date": "2026-09-28",
+          "line_no": "1",
+          "item_code": "FRT-PNQ-MAA",
+          "description": "FTL freight Pune to Chennai, 32 ft container",
+          "hsn_sac": "996511",
+          "qty": "1",
+          "unit": "Trip",
+          "unit_price": "38000.00",
+          "gst_rate": "12"
+        },
+        {
+          "po_number": "PO-2026-1008",
+          "vendor_id": "V004",
+          "po_date": "2026-10-01",
+          "line_no": "1",
+          "item_code": "OFF-WBM-10",
+          "description": "Whiteboard markers, box of 10",
+          "hsn_sac": "9608",
+          "qty": "20",
+          "unit": "Box",
+          "unit_price": "420.00",
+          "gst_rate": "18"
+        },
+        {
+          "po_number": "PO-2026-1009",
+          "vendor_id": "V002",
+          "po_date": "2026-10-03",
+          "line_no": "1",
+          "item_code": "STL-AN-405",
+          "description": "MS angle 40 x 40 x 5 mm",
+          "hsn_sac": "7216",
+          "qty": "600",
+          "unit": "Kg",
+          "unit_price": "74.00",
+          "gst_rate": "18"
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "f3f11eec-5135-4392-9452-733aebd07cb6",
+    "source_file": "master/vendors.csv",
+    "content_hash": "40e91418879e880e70246f68eee82b0856eeafe94c015ccdc63d8ae1b2502e4f",
+    "input_category": "other",
+    "input_document_type": "csv",
+    "ocr_confidence": null,
+    "status": "success",
+    "record": {
+      "document_type": "generic_table",
+      "table_id": "generic_table",
+      "columns": [
+        "vendor_id",
+        "vendor_name",
+        "gstin",
+        "state_code",
+        "city",
+        "payment_terms_days"
+      ],
+      "rows": [
+        {
+          "vendor_id": "V001",
+          "vendor_name": "Shree Ganesh Packaging Pvt. Ltd.",
+          "gstin": "27AAFCS7712P1Z9",
+          "state_code": "27",
+          "city": "Pune",
+          "payment_terms_days": "30"
+        },
+        {
+          "vendor_id": "V002",
+          "vendor_name": "Kaveri Steel Traders",
+          "gstin": "27ABKPK3390L1Z2",
+          "state_code": "27",
+          "city": "Nashik",
+          "payment_terms_days": "30"
+        },
+        {
+          "vendor_id": "V003",
+          "vendor_name": "Nimbus Cloud Services LLP",
+          "gstin": "29AAQFN5521D1ZK",
+          "state_code": "29",
+          "city": "Bengaluru",
+          "payment_terms_days": "30"
+        },
+        {
+          "vendor_id": "V004",
+          "vendor_name": "Deccan Office Supplies",
+          "gstin": "27AGHPD1187R1Z6",
+          "state_code": "27",
+          "city": "Pune",
+          "payment_terms_days": "30"
+        },
+        {
+          "vendor_id": "V005",
+          "vendor_name": "Coastal Freight & Logistics Pvt. Ltd.",
+          "gstin": "27AADCC9054H1Z1",
+          "state_code": "27",
+          "city": "Navi Mumbai",
+          "payment_terms_days": "30"
+        }
+      ],
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "a1d94598-5234-4e31-8690-6c0629fe9c0b",
+    "source_file": "receipts/RCPT-01_HotelPanchavati_meal.png",
+    "content_hash": "175fb48b1fea401eb3691a8c1c6deb6ebab91429de6fe876852229afe12748f7",
+    "input_category": "receipt",
+    "input_document_type": "image",
+    "ocr_confidence": 0.9285,
+    "status": "success",
+    "record": {
+      "document_type": "receipt",
+      "receipt_number": {
+        "value": "4471",
+        "confidence": 1.0,
+        "raw_text": "Bill No: 4471",
+        "missing_reason": null
+      },
+      "receipt_date": {
+        "value": "2026-10-14",
+        "confidence": 1.0,
+        "raw_text": "Dt: 14-10-2026",
+        "missing_reason": null
+      },
+      "vendor_name": {
+        "value": "HOTEL PANCHAVATI",
+        "confidence": 1.0,
+        "raw_text": "HOTEL PANCHAVATI",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "INR",
+        "confidence": 1.0,
+        "raw_text": "TOTAL (INR)",
+        "missing_reason": null
+      },
+      "total_paid": {
+        "value": "1180",
+        "confidence": 1.0,
+        "raw_text": "TOTAL (INR) 1,180.00",
+        "missing_reason": null
+      },
+      "warnings": [],
+      "requires_human_review": false
+    }
+  },
+  {
+    "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+    "document_id": "13552fda-4622-461f-97f8-de21e83c2f8d",
+    "source_file": "receipts/RCPT-02_OmSaiFuels_fuel.png",
+    "content_hash": "c1300c2725a275227303e4bbef6f2344261c36773150f82fbf4b897f30f05fae",
+    "input_category": "receipt",
+    "input_document_type": "image",
+    "ocr_confidence": 0.8931999999999999,
+    "status": "success",
+    "record": {
+      "document_type": "receipt",
+      "receipt_number": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Receipt number is not provided in the text."
+      },
+      "receipt_date": {
+        "value": "2026-10-15",
+        "confidence": 1.0,
+        "raw_text": "Dt: 15-10-2026",
+        "missing_reason": null
+      },
+      "vendor_name": {
+        "value": "OM SAI FUEL STATION",
+        "confidence": 1.0,
+        "raw_text": "OM SAI FUEL STATION",
+        "missing_reason": null
+      },
+      "currency": {
+        "value": "Rs",
+        "confidence": 1.0,
+        "raw_text": "Rate (Rs/L)",
+        "missing_reason": null
+      },
+      "total_paid": {
+        "value": null,
+        "confidence": 0.0,
+        "raw_text": null,
+        "missing_reason": "Total paid amount is not provided in the text."
+      },
+      "warnings": [
+        "Critical receipt fields need review: receipt_number, total_paid"
+      ],
+      "requires_human_review": true
+    }
+  }
+]
