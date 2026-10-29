@@ -26,6 +26,64 @@ Run this command from the project directory:
 python test_openai_connection.py
 ```
 
+## Extraction Agent
+
+The Extraction Agent reads `data/output/ingestion_output.json` and writes
+validated financial records to `data/output/extraction_output.json`. It
+processes structured CSV tables deterministically and uses the configured
+OpenAI model for invoice and image-receipt interpretation. Field values retain
+their raw source text, confidence, evidence location, and validation warnings.
+Field confidence uses a separate 0-to-1 scale from OCR confidence. Missing or
+ambiguous values remain unknown.
+
+Run all three agents sequentially with one command from the project directory:
+
+```powershell
+python run_pipeline.py
+```
+
+The pipeline runs ingestion first, writes
+`data/output/ingestion_output.json`, then reads that JSON as the extraction
+input and writes `data/output/extraction_output.json`. Each stage keeps its own
+serialized output, so later agents can consume the extraction JSON in the same
+way. It then reads the extraction JSON to perform deterministic purchase
+order/invoice/receipt checks and bank payment matching, writing
+`data/output/matching_output.json`. Matching reports outcomes and exceptions;
+it does not approve or pay invoices. To run a stage independently, use
+`python run_ingestion.py`, `python run_extraction.py`, or
+`python run_matching.py`.
+
+The configured `OPENAI_API_KEY` and `OPENAI_MODEL` are required for
+unstructured invoice and receipt extraction. CSV-backed bank transactions,
+expense claims, purchase orders, goods receipts, and vendor masters are parsed
+without an LLM. A document that needs an unavailable LLM is reported as a
+failed extraction rather than silently skipped.
+
+Run pipeline orchestration tests with:
+
+```powershell
+python -m pytest tests/test_pipeline.py
+```
+
+Run extraction tests with:
+
+```powershell
+python -m pytest tests/test_extraction_agent.py
+```
+
+Matching uses deterministic Python rules and `Decimal` arithmetic. The default
+unit-price tolerance is 1%, the invoice/tax/payment rounding tolerance is INR
+1.00, and the minimum field confidence for critical extracted values is 0.6.
+These settings can be overridden with `MatchingConfig` by callers. Match
+results preserve issues and evidence for audit; a `matched` result is not a
+payment approval.
+
+Run matching tests with:
+
+```powershell
+python -m pytest tests/test_matching_agent.py
+```
+
 ## Vendor Dispute Correspondence Agent
 
 The correspondence API validates dispute evidence and creates a vendor email
