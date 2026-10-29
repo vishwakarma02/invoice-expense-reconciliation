@@ -1,0 +1,818 @@
+{
+  "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+  "documents": [
+    {
+      "document_id": "64a28e8f-cd11-4693-9e80-2d6f273621a6",
+      "source_file": "bank/bank_statement_2026-10.csv",
+      "document_type": "csv",
+      "category": "bank",
+      "content_hash": "2b19f2ab60ddb4f8e60157a4a4977e69c93135161090b732da7268e9d3cddd0a",
+      "status": "success",
+      "extracted_text": "txn_date,narration,debit,credit,balance\r\n2026-10-01,OPENING BALANCE,,,1850000.00\r\n2026-10-03,NEFT CR-ACME AUTO PARTS LTD-INV SC-2209,,412500.00,2262500.00\r\n2026-10-08,NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418,52215.00,,2210285.00\r\n2026-10-12,NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417,54832.40,,2155452.60\r\n2026-10-15,IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742,42560.00,,2112892.60\r\n2026-10-20,NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912,63310.00,,2049582.60\r\n2026-10-22,UPI DR-RAJ ENTERPRISES-PAYMENT,18500.00,,2031082.60\r\n2026-10-23,NEFT DR-KAVERI STEEL TRADERS-KST262,52392.00,,1978690.60\r\n2026-10-25,BANK CHARGES INCL GST,236.00,,1978454.60\r\n",
+      "tables": [
+        {
+          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\bank\\bank_statement_2026-10.csv",
+          "page_number": null,
+          "headers": [
+            "txn_date",
+            "narration",
+            "debit",
+            "credit",
+            "balance"
+          ],
+          "rows": [
+            [
+              "2026-10-01",
+              "OPENING BALANCE",
+              "",
+              "",
+              "1850000.00"
+            ],
+            [
+              "2026-10-03",
+              "NEFT CR-ACME AUTO PARTS LTD-INV SC-2209",
+              "",
+              "412500.00",
+              "2262500.00"
+            ],
+            [
+              "2026-10-08",
+              "NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418",
+              "52215.00",
+              "",
+              "2210285.00"
+            ],
+            [
+              "2026-10-12",
+              "NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417",
+              "54832.40",
+              "",
+              "2155452.60"
+            ],
+            [
+              "2026-10-15",
+              "IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742",
+              "42560.00",
+              "",
+              "2112892.60"
+            ],
+            [
+              "2026-10-20",
+              "NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912",
+              "63310.00",
+              "",
+              "2049582.60"
+            ],
+            [
+              "2026-10-22",
+              "UPI DR-RAJ ENTERPRISES-PAYMENT",
+              "18500.00",
+              "",
+              "2031082.60"
+            ],
+            [
+              "2026-10-23",
+              "NEFT DR-KAVERI STEEL TRADERS-KST262",
+              "52392.00",
+              "",
+              "1978690.60"
+            ],
+            [
+              "2026-10-25",
+              "BANK CHARGES INCL GST",
+              "236.00",
+              "",
+              "1978454.60"
+            ]
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "csv",
+          "character_count": 649,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "fa4a1a11-f3dc-4ac2-9057-7a112dfe43d0",
+      "source_file": "expenses/expense_claims.csv",
+      "document_type": "csv",
+      "category": "expense",
+      "content_hash": "af6fc05f2680b06a08193030bcb1604543af04e643a38b78f32216bb0492e62a",
+      "status": "success",
+      "extracted_text": "claim_id,employee_id,claim_date,category,merchant,amount_claimed,receipt_file\r\nEXP-301,EMP-1042,2026-10-16,Meals,Hotel Panchavati,1180.00,RCPT-01_HotelPanchavati_meal.png\r\nEXP-302,EMP-1042,2026-10-16,Fuel,Om Sai Fuel Station,4250.00,RCPT-02_OmSaiFuels_fuel.png\r\n",
+      "tables": [
+        {
+          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\expenses\\expense_claims.csv",
+          "page_number": null,
+          "headers": [
+            "claim_id",
+            "employee_id",
+            "claim_date",
+            "category",
+            "merchant",
+            "amount_claimed",
+            "receipt_file"
+          ],
+          "rows": [
+            [
+              "EXP-301",
+              "EMP-1042",
+              "2026-10-16",
+              "Meals",
+              "Hotel Panchavati",
+              "1180.00",
+              "RCPT-01_HotelPanchavati_meal.png"
+            ],
+            [
+              "EXP-302",
+              "EMP-1042",
+              "2026-10-16",
+              "Fuel",
+              "Om Sai Fuel Station",
+              "4250.00",
+              "RCPT-02_OmSaiFuels_fuel.png"
+            ]
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "csv",
+          "character_count": 262,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "849e2fbe-92f4-4725-8083-5528c6da8f65",
+      "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "4087a12661849b2e3f4b15a2510ae845a9b4b7f145de823b6ef4589d59919bb2",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nShree Ganesh Packaging Pvt. Ltd.\nGat No. 112, Chakan MIDC Phase II\nPune, Maharashtra 410501\nTAX INVOICE\nGSTIN: 27AAFCS7712P1Z9\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: SGP/26-27/0418\nPlot 14, MIDC Bhosari\nInvoice Date: 18-09-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1001\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nCorrugated box 600x400x400 mm, 5-ply\n4819\n500\nNos\n42.50\n21,250.00\n2\nBubble wrap roll 1 m x 100 m\n3923\n20\nRoll\n1,150.00\n23,000.00\nTaxable Value\n44,250.00\nCGST @ 9%\n3,982.50\nSGST @ 9%\n3,982.50\nGrand Total (₹)\n52,215.00\nAmount in words: Rupees Fifty-Two Thousand Two Hundred Fifteen Only\nBank Details\nSample Bank · A/c ending 4521 · IFSC SMPL0000123\nPayment terms: 30 days from invoice date.\nFor Shree Ganesh Packaging Pvt. Ltd.\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 929,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "d82bb38b-3384-4dc3-aa18-abc75a68c443",
+      "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "4648a14273e96e343056bf1cef63df628ceacca5ab9310c150213ff7eb9e4e4a",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nNimbus Cloud Services LLP\n4th Floor, 80 Feet Road, Koramangala\nBengaluru, Karnataka 560034\nTAX INVOICE\nGSTIN: 29AAQFN5521D1ZK\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: NCS/KA/2026/0912\nPlot 14, MIDC Bhosari\nInvoice Date: 01-10-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1003\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nManaged cloud hosting - Sep 2026\n998315\n1\nMonth\n48,000.00\n48,000.00\n2\nManaged backup service - Sep 2026\n998315\n1\nMonth\n6,500.00\n6,500.00\nTaxable Value\n54,500.00\nCGST @ 9%\n4,905.00\nSGST @ 9%\n4,905.00\nGrand Total (₹)\n64,310.00\nAmount in words: Rupees Sixty-Four Thousand Three Hundred Ten Only\nBank Details\nSample Bank · A/c ending 3390 · IFSC SMPL0000789\nPayment terms: 30 days from invoice date.\nFor Nimbus Cloud Services LLP\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 930,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "8f69cc89-3aa4-4229-bbaa-61d0c7b7855f",
+      "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "6399d1968b159ae1bc5eb3520b1d1c7f144eaaceea945e4ab66ac42a1e4b5f4e",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nKaveri Steel Traders\nW-58, Ambad MIDC\nNashik, Maharashtra 422010\nGSTIN: 27ABKPK3390L1Z2\nTAX INVOICE\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: KST/26-27/233\nPlot 14, MIDC Bhosari\nInvoice Date: 24-09-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1002\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nMS round bar 20 mm\n7214\n1,200\nKg\n78.00\n93,600.00\nTaxable Value\n93,600.00\nCGST @ 9%\n8,424.00\nSGST @ 9%\n8,424.00\nGrand Total (₹)\n1,10,448.00\nAmount in words: Rupees One Lakh Ten Thousand Four Hundred Forty-Eight Only\nBank Details\nSample Bank · A/c ending 8807 · IFSC SMPL0000456\nPayment terms: 30 days from invoice date.\nFor Kaveri Steel Traders\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 819,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "ca12fcc6-ec0a-4cdc-a64b-e719f9c12de9",
+      "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "2532c23e2876dd4e35661cb57275a3231735780727d466814493aa6a22fea77b",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nDeccan Office Supplies\n1203 Fergusson College Road, Shivajinagar\nPune, Maharashtra 411005\nGSTIN: 27AGHPD1187R1Z6\nTAX INVOICE\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: DOS/2026/0417\nPlot 14, MIDC Bhosari\nInvoice Date: 20-09-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1004\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nA4 copier paper 75 gsm (ream of 500)\n4802\n100\nReam\n246.20\n24,620.00\n2\nLaser toner cartridge 85A compatible\n8443\n6\nNos\n3,850.00\n23,100.00\nTaxable Value\n47,720.00\nCGST @ 6%\n1,477.20\nSGST @ 6%\n1,477.20\nCGST @ 9%\n2,079.00\nSGST @ 9%\n2,079.00\nGrand Total (₹)\n54,832.40\nAmount in words: Rupees Fifty-Four Thousand Eight Hundred Thirty-Two and Forty Paise Only\nBank Details\nSample Bank · A/c ending 1174 · IFSC SMPL0000246\nPayment terms: 30 days from invoice date.\nFor Deccan Office Supplies\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 984,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "44b12b91-721c-47f0-91fb-b38bd59b9f83",
+      "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "0ad281f0d177fac95ab1f147de671235a3ee632aca903f035f322f6aa089c969",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nShree Ganesh Packaging Pvt. Ltd.\nGat No. 112, Chakan MIDC Phase II\nPune, Maharashtra 410501\nTAX INVOICE\nGSTIN: 27AAFCS7712P1Z9\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: SGP/26-27/0452\nPlot 14, MIDC Bhosari\nInvoice Date: 06-10-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1005\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nStretch film 23 micron, 500 mm\n3920\n500\nRoll\n185.00\n92,500.00\nTaxable Value\n92,500.00\nCGST @ 9%\n8,325.00\nSGST @ 9%\n8,325.00\nGrand Total (₹)\n1,09,150.00\nAmount in words: Rupees One Lakh Nine Thousand One Hundred Fifty Only\nBank Details\nSample Bank · A/c ending 4521 · IFSC SMPL0000123\nPayment terms: 30 days from invoice date.\nFor Shree Ganesh Packaging Pvt. Ltd.\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 866,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "70008cf0-9e8c-4d37-8bbe-44e5587b1fa2",
+      "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "978e9a7433064879fb75fa1777373ed8af50a47e93cc65e722bb6eb5cdd7ff36",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nDeccan Office Supplies\n1203 Fergusson College Road, Shivajinagar\nPune, Maharashtra 411005\nTAX INVOICE\nGSTIN: 27AGHPD1187R1Z6\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: DOS-2026-417\nPlot 14, MIDC Bhosari\nInvoice Date: 20-09-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1004\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nA4 copier paper 75 gsm (ream of 500)\n4802\n100\nReam\n246.20\n24,620.00\n2\nLaser toner cartridge 85A compatible\n8443\n6\nNos\n3,850.00\n23,100.00\nTaxable Value\n47,720.00\nCGST @ 6%\n1,477.20\nSGST @ 6%\n1,477.20\nCGST @ 9%\n2,079.00\nSGST @ 9%\n2,079.00\nGrand Total (₹)\n54,832.40\nAmount in words: Rupees Fifty-Four Thousand Eight Hundred Thirty-Two and Forty Paise Only\nBank Details\nSample Bank · A/c ending 1174 · IFSC SMPL0000246\nPayment terms: 30 days from invoice date.\nFor Deccan Office Supplies\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 983,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "6f1f89a6-5d70-4dd1-b079-e60e947e43ba",
+      "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "8e7d7abf379a41aa49a6601066ce6f6ce3ee9d4444104bc331d47674d1f10230",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nCoastal Freight & Logistics Pvt. Ltd.\nPlot D-7, TTC Industrial Area, Turbhe\nNavi Mumbai, Maharashtra 400705\nTAX INVOICE\nGSTIN: 27AADCC9054H1Z1\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: CFL/MUM/7781\nPlot 14, MIDC Bhosari\nInvoice Date: 14-10-2026\nPune, Maharashtra 411026\nPO Ref: As per telephonic instruction\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nFTL freight Pune to Hyderabad, 32 ft\ncontainer\n996511\n1\nTrip\n42,000.00\n42,000.00\nTaxable Value\n42,000.00\nCGST @ 6%\n2,520.00\nSGST @ 6%\n2,520.00\nGrand Total (₹)\n47,040.00\nAmount in words: Rupees Forty-Seven Thousand Forty Only\nBank Details\nSample Bank · A/c ending 6612 · IFSC SMPL0000357\nPayment terms: 30 days from invoice date.\nFor Coastal Freight & Logistics Pvt. Ltd.\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 905,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "e0119fc2-5d39-4214-af44-ae04f0083952",
+      "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "d3fb0372a4e2714e731d30ff5f87a7cf90187bd806fc11ed6ed07d6fd8bf3a9b",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nKaveri Steel Traders\nW-58, Ambad MIDC\nNashik, Maharashtra 422010\nGSTIN: 27ABKPK3390L1Z2\nTAX INVOICE\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: KST/26-27/251\nPlot 14, MIDC Bhosari\nInvoice Date: 08-10-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1006\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nMS flat 50 x 6 mm\n7211\n800\nKg\n68.00\n54,400.00\nTaxable Value\n54,400.00\nIGST @ 18%\n9,792.00\nGrand Total (₹)\n64,192.00\nAmount in words: Rupees Sixty-Four Thousand One Hundred Ninety-Two Only\nBank Details\nSample Bank · A/c ending 8807 · IFSC SMPL0000456\nPayment terms: 30 days from invoice date.\nFor Kaveri Steel Traders\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 792,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "7e16719e-5214-4ddd-abf0-64cd76b46926",
+      "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "8277f674b924a0cc0a92fbaadb44ff57ad3c3dc602a95442083193ecb20197b9",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nKAVERI STEEL TRDRS.\nW-58, Ambad MIDC\nNashik, Maharashtra 422010\nGSTIN: 27ABKPK3390L1Z2\nTAX INVOICE\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: KST/26-27/262\nPlot 14, MIDC Bhosari\nInvoice Date: 11-10-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1009\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nMS angle 40 x 40 x 5 mm\n7216\n600\nKg\n74.00\n44,400.00\nTaxable Value\n44,400.00\nCGST @ 9%\n3,996.00\nSGST @ 9%\n3,996.00\nGrand Total (₹)\n52,392.00\nAmount in words: Rupees Fifty-Two Thousand Three Hundred Ninety-Two Only\nBank Details\nSample Bank · A/c ending 8807 · IFSC SMPL0000456\nPayment terms: 30 days from invoice date.\nFor Kaveri Steel Traders\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 816,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "9e03e2c4-453a-491e-b403-bec483392871",
+      "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+      "document_type": "image",
+      "category": "invoice",
+      "content_hash": "93618c7f2d86546f5ccd723ccb5b35b73bf427aa95883e25db5ddab572caa883",
+      "status": "success",
+      "extracted_text": "Coastal Freight & Logistics Pvt. Ltd. TAX INVOICE\n\nPlot D-7, TTC Industrial Area, Turbhe\n\nGSTIN: 27AADCC9054H1Z1\nNavi Mumbai, Maharashtra 400705\n\nBill To Invoice Details\n\nSahyadri Components Pvt. Ltd. Invoice No: CFL/MUM/7742\n\nPlot'14, MIDC Bhosari Invoice Date: 09-10-2026\n\nPune, Maharashtra 411026 PO Ref: PO-2026-1007\n\nGSTIN: 27AAKCS4821M1zZ3 Place of Supply: Maharashtra (27)\n\n# Description HSN/SAC Qty Unit Rate (%) Amount (%)\n\n1 FTL freight Pune to Chennai, 32 ft 996511 1 Trip 38,000.00 38,000.00\ncontainer\n\nTaxable Value 38,000.00\nCGST @ 6% 2,280.00\nSGST @ 6% 2,280.00\n\nGrand Total () 42,560.00\nAmount in words: Rupees Forty-Two Thousand Five Hundred Sixty Only\n\nBank Details\nSample Bank : A/c ending 6612 - IFSC SMPLO000357\nPayment terms: 30 days from invoice date.\n\nFor Coastal Freight & Logistics Pvt. Ltd.\n\nAuthorised Signatory\n\nSYNTHETIC SAMPLE — fictitious entities,\n\nor trainin",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "ocr",
+          "character_count": 892,
+          "ocr_confidence": 90.15
+        }
+      ],
+      "ocr_confidence": 90.15,
+      "errors": []
+    },
+    {
+      "document_id": "97baa976-c4fb-4669-a6f2-7254b3ec003c",
+      "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+      "document_type": "pdf",
+      "category": "invoice",
+      "content_hash": "6f34ed50497e57784e85738ca853d430f0f129c98f7d0cc5a03ee7eba2db0ca6",
+      "status": "success",
+      "extracted_text": "--- Page 1 ---\nDeccan Office Supplies\n1203 Fergusson College Road, Shivajinagar\nPune, Maharashtra 411005\nGSTIN: 27AGHPD1187R1Z6\nTAX INVOICE\nBill To\nInvoice Details\nSahyadri Components Pvt. Ltd.\nInvoice No: DOS/2026/0466\nPlot 14, MIDC Bhosari\nInvoice Date: 07-10-2026\nPune, Maharashtra 411026\nPO Ref: PO-2026-1008\nGSTIN: 27AAKCS4821M1Z3\nPlace of Supply: Maharashtra (27)\n#\nDescription\nHSN/SAC\nQty\nUnit\nRate (₹)\nAmount (₹)\n1\nWhiteboard markers, box of 10\n9608\n20\nBox\n420.00\n8,400.00\nTaxable Value\n8,400.00\nCGST @ 9%\n756.00\nSGST @ 9%\n756.00\nGrand Total (₹)\n10,512.00\nAmount in words: Rupees Ten Thousand Five Hundred Twelve Only\nBank Details\nSample Bank · A/c ending 1174 · IFSC SMPL0000246\nPayment terms: 30 days from invoice date.\nFor Deccan Office Supplies\nAuthorised Signatory\nSYNTHETIC SAMPLE — fictitious entities, generated for training use only",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "text_layer",
+          "character_count": 834,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "86671495-014d-4af0-9021-d4736af7e014",
+      "source_file": "master/goods_receipts.csv",
+      "document_type": "csv",
+      "category": "receipt",
+      "content_hash": "06e54f85ee43b7f675be3c2a14cdc001742935fcae1ce128b8d85f396d4b9d18",
+      "status": "success",
+      "extracted_text": "receipt_no,receipt_type,po_number,receipt_date,item_code,qty_received\r\nGRN-26-5101,GOODS_RECEIPT,PO-2026-1001,2026-09-16,PKG-CB-5P,500\r\nGRN-26-5101,GOODS_RECEIPT,PO-2026-1001,2026-09-16,PKG-BW-100,20\r\nGRN-26-5102,GOODS_RECEIPT,PO-2026-1002,2026-09-23,STL-RB-20,1200\r\nSES-26-0031,SERVICE_ENTRY,PO-2026-1003,2026-09-30,SVC-HOST-M,1\r\nSES-26-0031,SERVICE_ENTRY,PO-2026-1003,2026-09-30,SVC-BKP-M,1\r\nGRN-26-5104,GOODS_RECEIPT,PO-2026-1004,2026-09-18,OFF-A4-75,100\r\nGRN-26-5104,GOODS_RECEIPT,PO-2026-1004,2026-09-18,OFF-TNR-85,6\r\nGRN-26-5105,GOODS_RECEIPT,PO-2026-1005,2026-10-04,PKG-SF-23,450\r\nGRN-26-5106,GOODS_RECEIPT,PO-2026-1006,2026-10-07,STL-FL-506,800\r\nSES-26-0034,SERVICE_ENTRY,PO-2026-1007,2026-10-09,FRT-PNQ-MAA,1\r\nGRN-26-5108,GOODS_RECEIPT,PO-2026-1008,2026-10-06,OFF-WBM-10,20\r\nGRN-26-5109,GOODS_RECEIPT,PO-2026-1009,2026-10-10,STL-AN-405,600\r\n",
+      "tables": [
+        {
+          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\goods_receipts.csv",
+          "page_number": null,
+          "headers": [
+            "receipt_no",
+            "receipt_type",
+            "po_number",
+            "receipt_date",
+            "item_code",
+            "qty_received"
+          ],
+          "rows": [
+            [
+              "GRN-26-5101",
+              "GOODS_RECEIPT",
+              "PO-2026-1001",
+              "2026-09-16",
+              "PKG-CB-5P",
+              "500"
+            ],
+            [
+              "GRN-26-5101",
+              "GOODS_RECEIPT",
+              "PO-2026-1001",
+              "2026-09-16",
+              "PKG-BW-100",
+              "20"
+            ],
+            [
+              "GRN-26-5102",
+              "GOODS_RECEIPT",
+              "PO-2026-1002",
+              "2026-09-23",
+              "STL-RB-20",
+              "1200"
+            ],
+            [
+              "SES-26-0031",
+              "SERVICE_ENTRY",
+              "PO-2026-1003",
+              "2026-09-30",
+              "SVC-HOST-M",
+              "1"
+            ],
+            [
+              "SES-26-0031",
+              "SERVICE_ENTRY",
+              "PO-2026-1003",
+              "2026-09-30",
+              "SVC-BKP-M",
+              "1"
+            ],
+            [
+              "GRN-26-5104",
+              "GOODS_RECEIPT",
+              "PO-2026-1004",
+              "2026-09-18",
+              "OFF-A4-75",
+              "100"
+            ],
+            [
+              "GRN-26-5104",
+              "GOODS_RECEIPT",
+              "PO-2026-1004",
+              "2026-09-18",
+              "OFF-TNR-85",
+              "6"
+            ],
+            [
+              "GRN-26-5105",
+              "GOODS_RECEIPT",
+              "PO-2026-1005",
+              "2026-10-04",
+              "PKG-SF-23",
+              "450"
+            ],
+            [
+              "GRN-26-5106",
+              "GOODS_RECEIPT",
+              "PO-2026-1006",
+              "2026-10-07",
+              "STL-FL-506",
+              "800"
+            ],
+            [
+              "SES-26-0034",
+              "SERVICE_ENTRY",
+              "PO-2026-1007",
+              "2026-10-09",
+              "FRT-PNQ-MAA",
+              "1"
+            ],
+            [
+              "GRN-26-5108",
+              "GOODS_RECEIPT",
+              "PO-2026-1008",
+              "2026-10-06",
+              "OFF-WBM-10",
+              "20"
+            ],
+            [
+              "GRN-26-5109",
+              "GOODS_RECEIPT",
+              "PO-2026-1009",
+              "2026-10-10",
+              "STL-AN-405",
+              "600"
+            ]
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "csv",
+          "character_count": 850,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "261e6aa1-5a30-4b94-bcdb-de89158f92bc",
+      "source_file": "master/purchase_orders.csv",
+      "document_type": "csv",
+      "category": "purchase_order",
+      "content_hash": "bbd16f6eb71b61bddaf43dd7003c01efe7d3db8e796e056d495dbf519d9b12fb",
+      "status": "success",
+      "extracted_text": "po_number,vendor_id,po_date,line_no,item_code,description,hsn_sac,qty,unit,unit_price,gst_rate\r\nPO-2026-1001,V001,2026-09-05,1,PKG-CB-5P,\"Corrugated box 600x400x400 mm, 5-ply\",4819,500,Nos,42.50,18\r\nPO-2026-1001,V001,2026-09-05,2,PKG-BW-100,Bubble wrap roll 1 m x 100 m,3923,20,Roll,1150.00,18\r\nPO-2026-1002,V002,2026-09-08,1,STL-RB-20,MS round bar 20 mm,7214,1200,Kg,72.00,18\r\nPO-2026-1003,V003,2026-09-01,1,SVC-HOST-M,Managed cloud hosting - Sep 2026,998315,1,Month,48000.00,18\r\nPO-2026-1003,V003,2026-09-01,2,SVC-BKP-M,Managed backup service - Sep 2026,998315,1,Month,6500.00,18\r\nPO-2026-1004,V004,2026-09-10,1,OFF-A4-75,A4 copier paper 75 gsm (ream of 500),4802,100,Ream,245.00,12\r\nPO-2026-1004,V004,2026-09-10,2,OFF-TNR-85,Laser toner cartridge 85A compatible,8443,6,Nos,3850.00,18\r\nPO-2026-1005,V001,2026-09-22,1,PKG-SF-23,\"Stretch film 23 micron, 500 mm\",3920,500,Roll,185.00,18\r\nPO-2026-1006,V002,2026-09-25,1,STL-FL-506,MS flat 50 x 6 mm,7211,800,Kg,68.00,18\r\nPO-2026-1007,V005,2026-09-28,1,FRT-PNQ-MAA,\"FTL freight Pune to Chennai, 32 ft container\",996511,1,Trip,38000.00,12\r\nPO-2026-1008,V004,2026-10-01,1,OFF-WBM-10,\"Whiteboard markers, box of 10\",9608,20,Box,420.00,18\r\nPO-2026-1009,V002,2026-10-03,1,STL-AN-405,MS angle 40 x 40 x 5 mm,7216,600,Kg,74.00,18\r\n",
+      "tables": [
+        {
+          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\purchase_orders.csv",
+          "page_number": null,
+          "headers": [
+            "po_number",
+            "vendor_id",
+            "po_date",
+            "line_no",
+            "item_code",
+            "description",
+            "hsn_sac",
+            "qty",
+            "unit",
+            "unit_price",
+            "gst_rate"
+          ],
+          "rows": [
+            [
+              "PO-2026-1001",
+              "V001",
+              "2026-09-05",
+              "1",
+              "PKG-CB-5P",
+              "Corrugated box 600x400x400 mm, 5-ply",
+              "4819",
+              "500",
+              "Nos",
+              "42.50",
+              "18"
+            ],
+            [
+              "PO-2026-1001",
+              "V001",
+              "2026-09-05",
+              "2",
+              "PKG-BW-100",
+              "Bubble wrap roll 1 m x 100 m",
+              "3923",
+              "20",
+              "Roll",
+              "1150.00",
+              "18"
+            ],
+            [
+              "PO-2026-1002",
+              "V002",
+              "2026-09-08",
+              "1",
+              "STL-RB-20",
+              "MS round bar 20 mm",
+              "7214",
+              "1200",
+              "Kg",
+              "72.00",
+              "18"
+            ],
+            [
+              "PO-2026-1003",
+              "V003",
+              "2026-09-01",
+              "1",
+              "SVC-HOST-M",
+              "Managed cloud hosting - Sep 2026",
+              "998315",
+              "1",
+              "Month",
+              "48000.00",
+              "18"
+            ],
+            [
+              "PO-2026-1003",
+              "V003",
+              "2026-09-01",
+              "2",
+              "SVC-BKP-M",
+              "Managed backup service - Sep 2026",
+              "998315",
+              "1",
+              "Month",
+              "6500.00",
+              "18"
+            ],
+            [
+              "PO-2026-1004",
+              "V004",
+              "2026-09-10",
+              "1",
+              "OFF-A4-75",
+              "A4 copier paper 75 gsm (ream of 500)",
+              "4802",
+              "100",
+              "Ream",
+              "245.00",
+              "12"
+            ],
+            [
+              "PO-2026-1004",
+              "V004",
+              "2026-09-10",
+              "2",
+              "OFF-TNR-85",
+              "Laser toner cartridge 85A compatible",
+              "8443",
+              "6",
+              "Nos",
+              "3850.00",
+              "18"
+            ],
+            [
+              "PO-2026-1005",
+              "V001",
+              "2026-09-22",
+              "1",
+              "PKG-SF-23",
+              "Stretch film 23 micron, 500 mm",
+              "3920",
+              "500",
+              "Roll",
+              "185.00",
+              "18"
+            ],
+            [
+              "PO-2026-1006",
+              "V002",
+              "2026-09-25",
+              "1",
+              "STL-FL-506",
+              "MS flat 50 x 6 mm",
+              "7211",
+              "800",
+              "Kg",
+              "68.00",
+              "18"
+            ],
+            [
+              "PO-2026-1007",
+              "V005",
+              "2026-09-28",
+              "1",
+              "FRT-PNQ-MAA",
+              "FTL freight Pune to Chennai, 32 ft container",
+              "996511",
+              "1",
+              "Trip",
+              "38000.00",
+              "12"
+            ],
+            [
+              "PO-2026-1008",
+              "V004",
+              "2026-10-01",
+              "1",
+              "OFF-WBM-10",
+              "Whiteboard markers, box of 10",
+              "9608",
+              "20",
+              "Box",
+              "420.00",
+              "18"
+            ],
+            [
+              "PO-2026-1009",
+              "V002",
+              "2026-10-03",
+              "1",
+              "STL-AN-405",
+              "MS angle 40 x 40 x 5 mm",
+              "7216",
+              "600",
+              "Kg",
+              "74.00",
+              "18"
+            ]
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "csv",
+          "character_count": 1271,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "f3f11eec-5135-4392-9452-733aebd07cb6",
+      "source_file": "master/vendors.csv",
+      "document_type": "csv",
+      "category": "other",
+      "content_hash": "40e91418879e880e70246f68eee82b0856eeafe94c015ccdc63d8ae1b2502e4f",
+      "status": "success",
+      "extracted_text": "vendor_id,vendor_name,gstin,state_code,city,payment_terms_days\r\nV001,Shree Ganesh Packaging Pvt. Ltd.,27AAFCS7712P1Z9,27,Pune,30\r\nV002,Kaveri Steel Traders,27ABKPK3390L1Z2,27,Nashik,30\r\nV003,Nimbus Cloud Services LLP,29AAQFN5521D1ZK,29,Bengaluru,30\r\nV004,Deccan Office Supplies,27AGHPD1187R1Z6,27,Pune,30\r\nV005,Coastal Freight & Logistics Pvt. Ltd.,27AADCC9054H1Z1,27,Navi Mumbai,30\r\n",
+      "tables": [
+        {
+          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\vendors.csv",
+          "page_number": null,
+          "headers": [
+            "vendor_id",
+            "vendor_name",
+            "gstin",
+            "state_code",
+            "city",
+            "payment_terms_days"
+          ],
+          "rows": [
+            [
+              "V001",
+              "Shree Ganesh Packaging Pvt. Ltd.",
+              "27AAFCS7712P1Z9",
+              "27",
+              "Pune",
+              "30"
+            ],
+            [
+              "V002",
+              "Kaveri Steel Traders",
+              "27ABKPK3390L1Z2",
+              "27",
+              "Nashik",
+              "30"
+            ],
+            [
+              "V003",
+              "Nimbus Cloud Services LLP",
+              "29AAQFN5521D1ZK",
+              "29",
+              "Bengaluru",
+              "30"
+            ],
+            [
+              "V004",
+              "Deccan Office Supplies",
+              "27AGHPD1187R1Z6",
+              "27",
+              "Pune",
+              "30"
+            ],
+            [
+              "V005",
+              "Coastal Freight & Logistics Pvt. Ltd.",
+              "27AADCC9054H1Z1",
+              "27",
+              "Navi Mumbai",
+              "30"
+            ]
+          ]
+        }
+      ],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "csv",
+          "character_count": 384,
+          "ocr_confidence": null
+        }
+      ],
+      "ocr_confidence": null,
+      "errors": []
+    },
+    {
+      "document_id": "a1d94598-5234-4e31-8690-6c0629fe9c0b",
+      "source_file": "receipts/RCPT-01_HotelPanchavati_meal.png",
+      "document_type": "image",
+      "category": "receipt",
+      "content_hash": "175fb48b1fea401eb3691a8c1c6deb6ebab91429de6fe876852229afe12748f7",
+      "status": "success",
+      "extracted_text": "HOTEL PANCHAVATI\n\nOld Agra Road, Nashik 422002\nGSTIN: 27AACFH2290K1Z4\n\nBill No: 4471 Dt: 14-10-2026\n\nTable: 7 Covers: 2\n\nVeg Thali x2 640.00\nPaneer Tikka xl 320.00\nFresh Lime Soda x2 164.00\nSub Total 1,124.00\nCGST 2.5% 28.10\nSGST 2.5% 28.10\nRound Off -0.20\nTOTAL (INR) 1,180.00\nPaid: UPI\n\nThank you! Visit again",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "ocr",
+          "character_count": 311,
+          "ocr_confidence": 92.85
+        }
+      ],
+      "ocr_confidence": 92.85,
+      "errors": []
+    },
+    {
+      "document_id": "13552fda-4622-461f-97f8-de21e83c2f8d",
+      "source_file": "receipts/RCPT-02_OmSaiFuels_fuel.png",
+      "document_type": "image",
+      "category": "receipt",
+      "content_hash": "c1300c2725a275227303e4bbef6f2344261c36773150f82fbf4b897f30f05fae",
+      "status": "success",
+      "extracted_text": "OM SAI FUEL STATION\n\nNH-60, Sinnar Phata, Nashik\nDealer Code: 0042177\n\nDt: 15-10-2026\nNozzle: 3\n\nRate (Rs/L)\nVolume (L)\nAmount (Rs)\n\nVehicle: MH-14-xx-e000\nMode: Card **** 9900\nThank you. Drive safe.",
+      "tables": [],
+      "pages": [
+        {
+          "page_number": 1,
+          "extraction_method": "ocr",
+          "character_count": 199,
+          "ocr_confidence": 89.32
+        }
+      ],
+      "ocr_confidence": 89.32,
+      "errors": []
+    }
+  ]
+}

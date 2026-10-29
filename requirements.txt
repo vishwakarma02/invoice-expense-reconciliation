@@ -2,7 +2,7 @@ openai
 pydantic
 pydantic-settings
 python-dotenv
-PyMuPDF
+PyMuPDF<2
 pandas
 Pillow
 pytesseract
