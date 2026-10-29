@@ -1,0 +1,3095 @@
+{
+  "matching_id": "6371c125-d4a1-4fc1-89e3-03bbb1c13ca4",
+  "extraction_id": "82643757-29f9-49a8-ba97-d64fd27ed788",
+  "config": {
+    "currency": "INR",
+    "unit_price_tolerance_percent": "1.0",
+    "amount_tolerance": "1.00",
+    "minimum_field_confidence": 0.6
+  },
+  "invoices": [
+    {
+      "invoice_document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+      "invoice_source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+      "invoice_number": "SGP/26-27/0418",
+      "normalized_invoice_number": "SGP2627418",
+      "purchase_order_number": "PO-2026-1001",
+      "vendor_id": "V001",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "Corrugated box 600x400x400 mm, 5-ply",
+          "item_code": "PKG-CB-5P",
+          "invoiced_quantity": "500",
+          "ordered_quantity": "500",
+          "received_quantity": "500",
+          "invoiced_unit_price": "42.50",
+          "ordered_unit_price": "42.50",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "1\nCorrugated box 600x400x400 mm, 5-ply",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Corrugated box 600x400x400 mm, 5-ply",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "4819\n500\nNos",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Nos\n42.50\n21,250.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "PKG-CB-5P",
+              "page_number": null,
+              "table_row": 1,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Corrugated box 600x400x400 mm, 5-ply",
+              "page_number": null,
+              "table_row": 1,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 1,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "42.50",
+              "page_number": null,
+              "table_row": 1,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 1,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 1,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "PKG-CB-5P",
+              "page_number": null,
+              "table_row": 1,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Bubble wrap roll 1 m x 100 m",
+          "item_code": "PKG-BW-100",
+          "invoiced_quantity": "20",
+          "ordered_quantity": "20",
+          "received_quantity": "20",
+          "invoiced_unit_price": "1150.00",
+          "ordered_unit_price": "1150.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "2\nBubble wrap roll 1 m x 100 m",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Bubble wrap roll 1 m x 100 m",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "3923\n20\nRoll",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+              "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Roll\n1,150.00\n23,000.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "PKG-BW-100",
+              "page_number": null,
+              "table_row": 2,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Bubble wrap roll 1 m x 100 m",
+              "page_number": null,
+              "table_row": 2,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 2,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1150.00",
+              "page_number": null,
+              "table_row": 2,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 2,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 2,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "PKG-BW-100",
+              "page_number": null,
+              "table_row": 2,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+      "invoice_source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+      "invoice_number": "NCS/KA/2026/0912",
+      "normalized_invoice_number": "NCSKA2026912",
+      "purchase_order_number": "PO-2026-1003",
+      "vendor_id": "V003",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "Managed cloud hosting - Sep 2026",
+          "item_code": "SVC-HOST-M",
+          "invoiced_quantity": "1",
+          "ordered_quantity": "1",
+          "received_quantity": "1",
+          "invoiced_unit_price": "48000.00",
+          "ordered_unit_price": "48000.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "1\nManaged cloud hosting - Sep 2026",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "Managed cloud hosting - Sep 2026",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "998315\n1\nMonth",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "Month\n48,000.00\n48,000.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "SVC-HOST-M",
+              "page_number": null,
+              "table_row": 4,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Managed cloud hosting - Sep 2026",
+              "page_number": null,
+              "table_row": 4,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 4,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "48000.00",
+              "page_number": null,
+              "table_row": 4,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 4,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 4,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "SVC-HOST-M",
+              "page_number": null,
+              "table_row": 4,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Managed backup service - Sep 2026",
+          "item_code": "SVC-BKP-M",
+          "invoiced_quantity": "1",
+          "ordered_quantity": "1",
+          "received_quantity": "1",
+          "invoiced_unit_price": "6500.00",
+          "ordered_unit_price": "6500.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "2\nManaged backup service - Sep 2026",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "Managed backup service - Sep 2026",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "998315\n1\nMonth",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "Month\n6,500.00\n6,500.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "SVC-BKP-M",
+              "page_number": null,
+              "table_row": 5,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Managed backup service - Sep 2026",
+              "page_number": null,
+              "table_row": 5,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 5,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "6500.00",
+              "page_number": null,
+              "table_row": 5,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 5,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 5,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "SVC-BKP-M",
+              "page_number": null,
+              "table_row": 5,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "TAX_TYPE_MISMATCH",
+          "severity": "exception",
+          "message": "Supplier state 29 and buyer state 27 require IGST, but invoice has CGST, SGST.",
+          "evidence": [
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "GSTIN: 29AAQFN5521D1ZK",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "GSTIN: 27AAKCS4821M1Z3",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        },
+        {
+          "code": "TAX_RATE_MISMATCH",
+          "severity": "exception",
+          "message": "Invoice tax components CGST 9%, SGST 9% do not match PO components IGST 18%.",
+          "evidence": [
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 4,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 5,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "IGST at 18% totals 0; PO rates and invoice taxable bases produce 9810.00.",
+          "evidence": [
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%\n4,905.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 4,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 5,
+              "column": "gst_rate"
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+      "invoice_source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+      "invoice_number": "KST/26-27/233",
+      "normalized_invoice_number": "KST2627233",
+      "purchase_order_number": "PO-2026-1002",
+      "vendor_id": "V002",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "MS round bar 20 mm",
+          "item_code": "STL-RB-20",
+          "invoiced_quantity": "1200",
+          "ordered_quantity": "1200",
+          "received_quantity": "1200",
+          "invoiced_unit_price": "78.00",
+          "ordered_unit_price": "72.00",
+          "unit_price_variance_percent": "8.333333333333333333333333333",
+          "issues": [
+            {
+              "code": "PRICE_VARIANCE",
+              "severity": "exception",
+              "message": "Invoice unit price 78.00 differs from PO price 72.00 by 8.33%, exceeding the 1.0% tolerance.",
+              "evidence": [
+                {
+                  "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+                  "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+                  "quote": "1\nMS round bar 20 mm",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+                  "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+                  "quote": null,
+                  "page_number": null,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+                  "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+                  "quote": "1\nMS round bar 20 mm\n7214",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+                  "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+                  "quote": "7214\n1,200\nKg",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+                  "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+                  "quote": "Kg\n78.00\n93,600.00",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "STL-RB-20",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "item_code"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "MS round bar 20 mm",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "description"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "1200",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "qty"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "72.00",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "unit_price"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "18",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "gst_rate"
+                },
+                {
+                  "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+                  "source_file": "master/goods_receipts.csv",
+                  "quote": "1200",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "qty_received"
+                },
+                {
+                  "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+                  "source_file": "master/goods_receipts.csv",
+                  "quote": "STL-RB-20",
+                  "page_number": null,
+                  "table_row": 3,
+                  "column": "item_code"
+                }
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "1\nMS round bar 20 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "1\nMS round bar 20 mm\n7214",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "7214\n1,200\nKg",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "Kg\n78.00\n93,600.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "STL-RB-20",
+              "page_number": null,
+              "table_row": 3,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "MS round bar 20 mm",
+              "page_number": null,
+              "table_row": 3,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1200",
+              "page_number": null,
+              "table_row": 3,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "72.00",
+              "page_number": null,
+              "table_row": 3,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 3,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "1200",
+              "page_number": null,
+              "table_row": 3,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "STL-RB-20",
+              "page_number": null,
+              "table_row": 3,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "PRICE_VARIANCE",
+          "severity": "exception",
+          "message": "Invoice unit price 78.00 differs from PO price 72.00 by 8.33%, exceeding the 1.0% tolerance.",
+          "evidence": [
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "1\nMS round bar 20 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "1\nMS round bar 20 mm\n7214",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "7214\n1,200\nKg",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+              "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
+              "quote": "Kg\n78.00\n93,600.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "STL-RB-20",
+              "page_number": null,
+              "table_row": 3,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "MS round bar 20 mm",
+              "page_number": null,
+              "table_row": 3,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1200",
+              "page_number": null,
+              "table_row": 3,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "72.00",
+              "page_number": null,
+              "table_row": 3,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 3,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "1200",
+              "page_number": null,
+              "table_row": 3,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "STL-RB-20",
+              "page_number": null,
+              "table_row": 3,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+      "invoice_source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+      "invoice_number": "DOS/2026/0417",
+      "normalized_invoice_number": "DOS2026417",
+      "purchase_order_number": "PO-2026-1004",
+      "vendor_id": "V004",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "A4 copier paper 75 gsm (ream of 500)",
+          "item_code": "OFF-A4-75",
+          "invoiced_quantity": "100",
+          "ordered_quantity": "100",
+          "received_quantity": "100",
+          "invoiced_unit_price": "246.20",
+          "ordered_unit_price": "245.00",
+          "unit_price_variance_percent": "0.4897959183673469387755102041",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "1\nA4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "4802\n100\nReam",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "Ream\n246.20\n24,620.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": null,
+              "table_row": 6,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "245.00",
+              "page_number": null,
+              "table_row": 6,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Laser toner cartridge 85A compatible",
+          "item_code": "OFF-TNR-85",
+          "invoiced_quantity": "6",
+          "ordered_quantity": "6",
+          "received_quantity": "6",
+          "invoiced_unit_price": "3850.00",
+          "ordered_unit_price": "3850.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "2\nLaser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "8443\n6\nNos",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+              "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "Nos\n3,850.00\n23,100.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": null,
+              "table_row": 7,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "3850.00",
+              "page_number": null,
+              "table_row": 7,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+      "invoice_source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+      "invoice_number": "SGP/26-27/0452",
+      "normalized_invoice_number": "SGP2627452",
+      "purchase_order_number": "PO-2026-1005",
+      "vendor_id": "V001",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "Stretch film 23 micron, 500 mm",
+          "item_code": "PKG-SF-23",
+          "invoiced_quantity": "500",
+          "ordered_quantity": "500",
+          "received_quantity": "450",
+          "invoiced_unit_price": "185.00",
+          "ordered_unit_price": "185.00",
+          "unit_price_variance_percent": "0",
+          "issues": [
+            {
+              "code": "QUANTITY_EXCEEDS_RECEIVED",
+              "severity": "exception",
+              "message": "Invoiced quantity 500 exceeds received quantity 450.",
+              "evidence": [
+                {
+                  "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+                  "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+                  "quote": "1\nStretch film 23 micron, 500 mm",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+                  "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+                  "quote": null,
+                  "page_number": null,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+                  "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+                  "quote": "Stretch film 23 micron, 500 mm",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+                  "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+                  "quote": "3920\n500\nRoll",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+                  "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+                  "quote": "Roll\n185.00\n92,500.00",
+                  "page_number": 1,
+                  "table_row": null,
+                  "column": null
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "PKG-SF-23",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "item_code"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "Stretch film 23 micron, 500 mm",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "description"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "500",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "qty"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "185.00",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "unit_price"
+                },
+                {
+                  "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+                  "source_file": "master/purchase_orders.csv",
+                  "quote": "18",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "gst_rate"
+                },
+                {
+                  "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+                  "source_file": "master/goods_receipts.csv",
+                  "quote": "450",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "qty_received"
+                },
+                {
+                  "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+                  "source_file": "master/goods_receipts.csv",
+                  "quote": "PKG-SF-23",
+                  "page_number": null,
+                  "table_row": 8,
+                  "column": "item_code"
+                }
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "1\nStretch film 23 micron, 500 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "Stretch film 23 micron, 500 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "3920\n500\nRoll",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "Roll\n185.00\n92,500.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "PKG-SF-23",
+              "page_number": null,
+              "table_row": 8,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Stretch film 23 micron, 500 mm",
+              "page_number": null,
+              "table_row": 8,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 8,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "185.00",
+              "page_number": null,
+              "table_row": 8,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 8,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "450",
+              "page_number": null,
+              "table_row": 8,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "PKG-SF-23",
+              "page_number": null,
+              "table_row": 8,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "QUANTITY_EXCEEDS_RECEIVED",
+          "severity": "exception",
+          "message": "Invoiced quantity 500 exceeds received quantity 450.",
+          "evidence": [
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "1\nStretch film 23 micron, 500 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "Stretch film 23 micron, 500 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "3920\n500\nRoll",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+              "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
+              "quote": "Roll\n185.00\n92,500.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "PKG-SF-23",
+              "page_number": null,
+              "table_row": 8,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Stretch film 23 micron, 500 mm",
+              "page_number": null,
+              "table_row": 8,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 8,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "185.00",
+              "page_number": null,
+              "table_row": 8,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 8,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "450",
+              "page_number": null,
+              "table_row": 8,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "PKG-SF-23",
+              "page_number": null,
+              "table_row": 8,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+      "invoice_source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "normalized_invoice_number": "DOS2026417",
+      "purchase_order_number": "PO-2026-1004",
+      "vendor_id": "V004",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "A4 copier paper 75 gsm (ream of 500)",
+          "item_code": "OFF-A4-75",
+          "invoiced_quantity": "100",
+          "ordered_quantity": "100",
+          "received_quantity": "100",
+          "invoiced_unit_price": "246.20",
+          "ordered_unit_price": "245.00",
+          "unit_price_variance_percent": "0.4897959183673469387755102041",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1\nA4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "4802\n100\nReam",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Ream\n246.20\n24,620.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": null,
+              "table_row": 6,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "245.00",
+              "page_number": null,
+              "table_row": 6,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Laser toner cartridge 85A compatible",
+          "item_code": "OFF-TNR-85",
+          "invoiced_quantity": "6",
+          "ordered_quantity": "6",
+          "received_quantity": "6",
+          "invoiced_unit_price": "3850.00",
+          "ordered_unit_price": "3850.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2\nLaser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "8443\n6\nNos",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Nos\n3,850.00\n23,100.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": null,
+              "table_row": 7,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "3850.00",
+              "page_number": null,
+              "table_row": 7,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "DUPLICATE_INVOICE",
+          "severity": "exception",
+          "message": "This invoice has the same vendor and normalized invoice number as document 7193c0bd-c9f8-499b-8dea-fc9a2161f484.",
+          "evidence": [
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Invoice No: DOS-2026-417",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+              "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "GSTIN: 27AGHPD1187R1Z6",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+      "invoice_source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+      "invoice_number": "CFL/MUM/7781",
+      "normalized_invoice_number": "CFLMUM7781",
+      "purchase_order_number": null,
+      "vendor_id": "V005",
+      "purchase_order_document_id": null,
+      "receipt_document_ids": [],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": null,
+          "item_description": "FTL freight Pune to Hyderabad, 32 ft container",
+          "item_code": null,
+          "invoiced_quantity": "1",
+          "ordered_quantity": null,
+          "received_quantity": null,
+          "invoiced_unit_price": "42000.00",
+          "ordered_unit_price": null,
+          "unit_price_variance_percent": null,
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+              "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+              "quote": "1\nFTL freight Pune to Hyderabad, 32 ft\ncontainer",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+              "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+              "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+              "quote": "FTL freight Pune to Hyderabad, 32 ft\ncontainer",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+              "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+              "quote": "996511\n1\nTrip\n42,000.00\n42,000.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "MISSING_PO",
+          "severity": "exception",
+          "message": "Invoice does not contain a purchase-order reference.",
+          "evidence": [
+            {
+              "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+              "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
+              "quote": "PO Ref: As per telephonic instruction",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Tax rate comparison against PO lines was unavailable because no invoice lines were matched."
+      ],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+      "invoice_source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+      "invoice_number": "KST/26-27/251",
+      "normalized_invoice_number": "KST2627251",
+      "purchase_order_number": "PO-2026-1006",
+      "vendor_id": "V002",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "MS flat 50 x 6 mm",
+          "item_code": "STL-FL-506",
+          "invoiced_quantity": "800",
+          "ordered_quantity": "800",
+          "received_quantity": "800",
+          "invoiced_unit_price": "68.00",
+          "ordered_unit_price": "68.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "1\nMS flat 50 x 6 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "1\nMS flat 50 x 6 mm\n7211",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "7211\n800\nKg",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "800\nKg\n68.00\n54,400.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "Kg\n68.00\n54,400.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "STL-FL-506",
+              "page_number": null,
+              "table_row": 9,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "MS flat 50 x 6 mm",
+              "page_number": null,
+              "table_row": 9,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "800",
+              "page_number": null,
+              "table_row": 9,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "68.00",
+              "page_number": null,
+              "table_row": 9,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 9,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "800",
+              "page_number": null,
+              "table_row": 9,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "STL-FL-506",
+              "page_number": null,
+              "table_row": 9,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "TAX_TYPE_MISMATCH",
+          "severity": "exception",
+          "message": "Supplier state 27 and buyer state 27 require CGST, SGST, but invoice has IGST.",
+          "evidence": [
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "GSTIN: 27ABKPK3390L1Z2",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "GSTIN: 27AAKCS4821M1Z3",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%\n9,792.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        },
+        {
+          "code": "TAX_RATE_MISMATCH",
+          "severity": "exception",
+          "message": "Invoice tax components IGST 18% do not match PO components CGST 9%, SGST 9%.",
+          "evidence": [
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%\n9,792.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 9,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "CGST at 9% totals 0; PO rates and invoice taxable bases produce 4896.00.",
+          "evidence": [
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%\n9,792.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 9,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "SGST at 9% totals 0; PO rates and invoice taxable bases produce 4896.00.",
+          "evidence": [
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%\n9,792.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+              "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
+              "quote": "IGST @ 18%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 9,
+              "column": "gst_rate"
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+      "invoice_source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+      "invoice_number": "KST/26-27/262",
+      "normalized_invoice_number": "KST2627262",
+      "purchase_order_number": "PO-2026-1009",
+      "vendor_id": "V002",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "MS angle 40 x 40 x 5 mm",
+          "item_code": "STL-AN-405",
+          "invoiced_quantity": "600",
+          "ordered_quantity": "600",
+          "received_quantity": "600",
+          "invoiced_unit_price": "74.00",
+          "ordered_unit_price": "74.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+              "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+              "quote": "1\nMS angle 40 x 40 x 5 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+              "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+              "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+              "quote": "MS angle 40 x 40 x 5 mm",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+              "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+              "quote": "7216\n600\nKg",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+              "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+              "quote": "600\nKg\n74.00\n44,400.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "STL-AN-405",
+              "page_number": null,
+              "table_row": 12,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "MS angle 40 x 40 x 5 mm",
+              "page_number": null,
+              "table_row": 12,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "600",
+              "page_number": null,
+              "table_row": 12,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "74.00",
+              "page_number": null,
+              "table_row": 12,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 12,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "600",
+              "page_number": null,
+              "table_row": 12,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "STL-AN-405",
+              "page_number": null,
+              "table_row": 12,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
+      "invoice_source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+      "invoice_number": "CFL/MUM/7742",
+      "normalized_invoice_number": "CFLMUM7742",
+      "purchase_order_number": "PO-2026-1007",
+      "vendor_id": "V005",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "FTL freight Pune to Chennai, 32 ft container",
+          "item_code": "FRT-PNQ-MAA",
+          "invoiced_quantity": "1",
+          "ordered_quantity": "1",
+          "received_quantity": "1",
+          "invoiced_unit_price": "38000.00",
+          "ordered_unit_price": "38000.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
+              "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "FRT-PNQ-MAA",
+              "page_number": null,
+              "table_row": 10,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "FTL freight Pune to Chennai, 32 ft container",
+              "page_number": null,
+              "table_row": 10,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 10,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "38000.00",
+              "page_number": null,
+              "table_row": 10,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 10,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "1",
+              "page_number": null,
+              "table_row": 10,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "FRT-PNQ-MAA",
+              "page_number": null,
+              "table_row": 10,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+      "invoice_source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+      "invoice_number": "DOS/2026/0466",
+      "normalized_invoice_number": "DOS2026466",
+      "purchase_order_number": "PO-2026-1008",
+      "vendor_id": "V004",
+      "purchase_order_document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "receipt_document_ids": [
+        "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "Whiteboard markers, box of 10",
+          "item_code": "OFF-WBM-10",
+          "invoiced_quantity": "20",
+          "ordered_quantity": "20",
+          "received_quantity": "20",
+          "invoiced_unit_price": "420.00",
+          "ordered_unit_price": "420.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "1\nWhiteboard markers, box of 10",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": null,
+              "page_number": null,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "Whiteboard markers, box of 10",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "9608\n20\nBox",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "Box\n420.00\n8,400.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "OFF-WBM-10",
+              "page_number": null,
+              "table_row": 11,
+              "column": "item_code"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "Whiteboard markers, box of 10",
+              "page_number": null,
+              "table_row": 11,
+              "column": "description"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 11,
+              "column": "qty"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "420.00",
+              "page_number": null,
+              "table_row": 11,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+              "source_file": "master/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 11,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 11,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+              "source_file": "master/goods_receipts.csv",
+              "quote": "OFF-WBM-10",
+              "page_number": null,
+              "table_row": 11,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "INVOICE_TOTAL_MISMATCH",
+          "severity": "exception",
+          "message": "Taxable value 8400.00 plus tax 1512.00 equals 9912.00, but invoice grand total is 10512.00.",
+          "evidence": [
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "Taxable Value\n8,400.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "Grand Total (₹)\n10,512.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "CGST @ 9%\n756.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "SGST @ 9%\n756.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+              "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Taxable value plus tax lines is 9912.00, which differs from grand total 10512.00."
+      ],
+      "source_warnings": [
+        "Taxable value plus tax lines is 9912.00, which differs from grand total 10512.00."
+      ]
+    }
+  ],
+  "bank_payments": [
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-01",
+      "narration": "OPENING BALANCE",
+      "debit_amount": null,
+      "matched_invoice_document_id": null,
+      "matched_invoice_number": null,
+      "expected_invoice_amount": null,
+      "amount_variance": null,
+      "status": "ignored",
+      "issues": [],
+      "warnings": [
+        "Transaction has no positive debit amount and is outside accounts-payable payment matching."
+      ],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-01",
+          "page_number": null,
+          "table_row": 1,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "OPENING BALANCE",
+          "page_number": null,
+          "table_row": 1,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": null,
+          "page_number": null,
+          "table_row": 1,
+          "column": "debit"
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-03",
+      "narration": "NEFT CR-ACME AUTO PARTS LTD-INV SC-2209",
+      "debit_amount": null,
+      "matched_invoice_document_id": null,
+      "matched_invoice_number": null,
+      "expected_invoice_amount": null,
+      "amount_variance": null,
+      "status": "ignored",
+      "issues": [],
+      "warnings": [
+        "Transaction has no positive debit amount and is outside accounts-payable payment matching."
+      ],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-03",
+          "page_number": null,
+          "table_row": 2,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "NEFT CR-ACME AUTO PARTS LTD-INV SC-2209",
+          "page_number": null,
+          "table_row": 2,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": null,
+          "page_number": null,
+          "table_row": 2,
+          "column": "debit"
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-08",
+      "narration": "NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418",
+      "debit_amount": "52215.00",
+      "matched_invoice_document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+      "matched_invoice_number": "SGP/26-27/0418",
+      "expected_invoice_amount": "52215.00",
+      "amount_variance": "0.00",
+      "status": "matched",
+      "issues": [],
+      "warnings": [],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-08",
+          "page_number": null,
+          "table_row": 3,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418",
+          "page_number": null,
+          "table_row": 3,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "52215.00",
+          "page_number": null,
+          "table_row": 3,
+          "column": "debit"
+        },
+        {
+          "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+          "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+          "quote": "Invoice No: SGP/26-27/0418",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-12",
+      "narration": "NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417",
+      "debit_amount": "54832.40",
+      "matched_invoice_document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+      "matched_invoice_number": "DOS/2026/0417",
+      "expected_invoice_amount": "54832.40",
+      "amount_variance": "0.00",
+      "status": "matched",
+      "issues": [],
+      "warnings": [],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-12",
+          "page_number": null,
+          "table_row": 4,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417",
+          "page_number": null,
+          "table_row": 4,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "54832.40",
+          "page_number": null,
+          "table_row": 4,
+          "column": "debit"
+        },
+        {
+          "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+          "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
+          "quote": "Invoice No: DOS/2026/0417",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-15",
+      "narration": "IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742",
+      "debit_amount": "42560.00",
+      "matched_invoice_document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
+      "matched_invoice_number": "CFL/MUM/7742",
+      "expected_invoice_amount": "42560.00",
+      "amount_variance": "0.00",
+      "status": "matched",
+      "issues": [],
+      "warnings": [],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-15",
+          "page_number": null,
+          "table_row": 5,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742",
+          "page_number": null,
+          "table_row": 5,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "42560.00",
+          "page_number": null,
+          "table_row": 5,
+          "column": "debit"
+        },
+        {
+          "document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
+          "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
+          "quote": null,
+          "page_number": null,
+          "table_row": null,
+          "column": null
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-20",
+      "narration": "NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912",
+      "debit_amount": "63310.00",
+      "matched_invoice_document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+      "matched_invoice_number": "NCS/KA/2026/0912",
+      "expected_invoice_amount": "64310.00",
+      "amount_variance": "-1000.00",
+      "status": "exception",
+      "issues": [
+        {
+          "code": "PAYMENT_VARIANCE",
+          "severity": "exception",
+          "message": "Bank debit 63310.00 differs from invoice total 64310.00 by -1000.00.",
+          "evidence": [
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "2026-10-20",
+              "page_number": null,
+              "table_row": 6,
+              "column": "txn_date"
+            },
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912",
+              "page_number": null,
+              "table_row": 6,
+              "column": "narration"
+            },
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "63310.00",
+              "page_number": null,
+              "table_row": 6,
+              "column": "debit"
+            },
+            {
+              "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+              "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+              "quote": "Grand Total (₹)\n64,310.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Linked invoice has unresolved matching issues."
+      ],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-20",
+          "page_number": null,
+          "table_row": 6,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912",
+          "page_number": null,
+          "table_row": 6,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "63310.00",
+          "page_number": null,
+          "table_row": 6,
+          "column": "debit"
+        },
+        {
+          "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+          "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
+          "quote": "Invoice No: NCS/KA/2026/0912",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-22",
+      "narration": "UPI DR-RAJ ENTERPRISES-PAYMENT",
+      "debit_amount": "18500.00",
+      "matched_invoice_document_id": null,
+      "matched_invoice_number": null,
+      "expected_invoice_amount": null,
+      "amount_variance": null,
+      "status": "exception",
+      "issues": [
+        {
+          "code": "UNMATCHED_PAYMENT",
+          "severity": "exception",
+          "message": "Debit transaction could not be linked to an invoice using its reference or vendor narration.",
+          "evidence": [
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "2026-10-22",
+              "page_number": null,
+              "table_row": 7,
+              "column": "txn_date"
+            },
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "UPI DR-RAJ ENTERPRISES-PAYMENT",
+              "page_number": null,
+              "table_row": 7,
+              "column": "narration"
+            },
+            {
+              "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+              "source_file": "bank/bank_statement_2026-10.csv",
+              "quote": "18500.00",
+              "page_number": null,
+              "table_row": 7,
+              "column": "debit"
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-22",
+          "page_number": null,
+          "table_row": 7,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "UPI DR-RAJ ENTERPRISES-PAYMENT",
+          "page_number": null,
+          "table_row": 7,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "18500.00",
+          "page_number": null,
+          "table_row": 7,
+          "column": "debit"
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-23",
+      "narration": "NEFT DR-KAVERI STEEL TRADERS-KST262",
+      "debit_amount": "52392.00",
+      "matched_invoice_document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+      "matched_invoice_number": "KST/26-27/262",
+      "expected_invoice_amount": "52392.00",
+      "amount_variance": "0.00",
+      "status": "matched",
+      "issues": [],
+      "warnings": [],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-23",
+          "page_number": null,
+          "table_row": 8,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "NEFT DR-KAVERI STEEL TRADERS-KST262",
+          "page_number": null,
+          "table_row": 8,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "52392.00",
+          "page_number": null,
+          "table_row": 8,
+          "column": "debit"
+        },
+        {
+          "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+          "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
+          "quote": "Invoice No: KST/26-27/262",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        }
+      ]
+    },
+    {
+      "transaction_document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "transaction_source_file": "bank/bank_statement_2026-10.csv",
+      "transaction_date": "2026-10-25",
+      "narration": "BANK CHARGES INCL GST",
+      "debit_amount": "236.00",
+      "matched_invoice_document_id": null,
+      "matched_invoice_number": null,
+      "expected_invoice_amount": null,
+      "amount_variance": null,
+      "status": "ignored",
+      "issues": [],
+      "warnings": [
+        "Bank charges are outside invoice payment matching."
+      ],
+      "evidence": [
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "2026-10-25",
+          "page_number": null,
+          "table_row": 9,
+          "column": "txn_date"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "BANK CHARGES INCL GST",
+          "page_number": null,
+          "table_row": 9,
+          "column": "narration"
+        },
+        {
+          "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+          "source_file": "bank/bank_statement_2026-10.csv",
+          "quote": "236.00",
+          "page_number": null,
+          "table_row": 9,
+          "column": "debit"
+        }
+      ]
+    }
+  ]
+}

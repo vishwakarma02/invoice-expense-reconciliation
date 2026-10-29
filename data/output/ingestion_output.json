@@ -1,8 +1,8 @@
 {
-  "batch_id": "33a49c52-f9b4-4d2b-ae38-c099b3c5543b",
+  "batch_id": "d27245db-1ce1-40df-b6a8-61e4f54ccc0c",
   "documents": [
     {
-      "document_id": "64a28e8f-cd11-4693-9e80-2d6f273621a6",
+      "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
       "source_file": "bank/bank_statement_2026-10.csv",
       "document_type": "csv",
       "category": "bank",
@@ -99,7 +99,7 @@
       "errors": []
     },
     {
-      "document_id": "fa4a1a11-f3dc-4ac2-9057-7a112dfe43d0",
+      "document_id": "0625fd43-1b29-461b-80f6-7e4e59418936",
       "source_file": "expenses/expense_claims.csv",
       "document_type": "csv",
       "category": "expense",
@@ -153,7 +153,7 @@
       "errors": []
     },
     {
-      "document_id": "849e2fbe-92f4-4725-8083-5528c6da8f65",
+      "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
       "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -173,7 +173,7 @@
       "errors": []
     },
     {
-      "document_id": "d82bb38b-3384-4dc3-aa18-abc75a68c443",
+      "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
       "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -193,7 +193,7 @@
       "errors": []
     },
     {
-      "document_id": "8f69cc89-3aa4-4229-bbaa-61d0c7b7855f",
+      "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
       "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -213,7 +213,7 @@
       "errors": []
     },
     {
-      "document_id": "ca12fcc6-ec0a-4cdc-a64b-e719f9c12de9",
+      "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
       "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -233,7 +233,7 @@
       "errors": []
     },
     {
-      "document_id": "44b12b91-721c-47f0-91fb-b38bd59b9f83",
+      "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
       "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -253,7 +253,7 @@
       "errors": []
     },
     {
-      "document_id": "70008cf0-9e8c-4d37-8bbe-44e5587b1fa2",
+      "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
       "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -273,7 +273,7 @@
       "errors": []
     },
     {
-      "document_id": "6f1f89a6-5d70-4dd1-b079-e60e947e43ba",
+      "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
       "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -293,7 +293,7 @@
       "errors": []
     },
     {
-      "document_id": "e0119fc2-5d39-4214-af44-ae04f0083952",
+      "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
       "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -313,7 +313,7 @@
       "errors": []
     },
     {
-      "document_id": "7e16719e-5214-4ddd-abf0-64cd76b46926",
+      "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
       "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -333,7 +333,7 @@
       "errors": []
     },
     {
-      "document_id": "9e03e2c4-453a-491e-b403-bec483392871",
+      "document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
       "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
       "document_type": "image",
       "category": "invoice",
@@ -353,7 +353,7 @@
       "errors": []
     },
     {
-      "document_id": "97baa976-c4fb-4669-a6f2-7254b3ec003c",
+      "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
       "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -373,7 +373,7 @@
       "errors": []
     },
     {
-      "document_id": "86671495-014d-4af0-9021-d4736af7e014",
+      "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
       "source_file": "master/goods_receipts.csv",
       "document_type": "csv",
       "category": "receipt",
@@ -504,7 +504,7 @@
       "errors": []
     },
     {
-      "document_id": "261e6aa1-5a30-4b94-bcdb-de89158f92bc",
+      "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
       "source_file": "master/purchase_orders.csv",
       "document_type": "csv",
       "category": "purchase_order",
@@ -700,7 +700,7 @@
       "errors": []
     },
     {
-      "document_id": "f3f11eec-5135-4392-9452-733aebd07cb6",
+      "document_id": "26ca1da8-8002-4f90-828b-74d284a7294d",
       "source_file": "master/vendors.csv",
       "document_type": "csv",
       "category": "other",
@@ -775,7 +775,7 @@
       "errors": []
     },
     {
-      "document_id": "a1d94598-5234-4e31-8690-6c0629fe9c0b",
+      "document_id": "fda5aaa9-a9fd-4bfb-9f3d-c51b536078bc",
       "source_file": "receipts/RCPT-01_HotelPanchavati_meal.png",
       "document_type": "image",
       "category": "receipt",
@@ -795,7 +795,7 @@
       "errors": []
     },
     {
-      "document_id": "13552fda-4622-461f-97f8-de21e83c2f8d",
+      "document_id": "48db7c77-5fba-4d4d-acf2-991cf3ac38b6",
       "source_file": "receipts/RCPT-02_OmSaiFuels_fuel.png",
       "document_type": "image",
       "category": "receipt",
