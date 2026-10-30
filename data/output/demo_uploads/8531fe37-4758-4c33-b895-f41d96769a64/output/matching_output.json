@@ -1,0 +1,270 @@
+{
+  "matching_id": "3ca1427f-6839-4375-90fb-da5ea0f2e91b",
+  "extraction_id": "217f925e-aaf4-4bd0-a471-b58c651f1216",
+  "config": {
+    "currency": "INR",
+    "unit_price_tolerance_percent": "1.0",
+    "amount_tolerance": "1.00",
+    "minimum_field_confidence": 0.6
+  },
+  "invoices": [
+    {
+      "invoice_document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+      "invoice_source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+      "invoice_number": "SGP/26-27/0418",
+      "normalized_invoice_number": "SGP2627418",
+      "purchase_order_number": "PO-2026-1001",
+      "vendor_id": "V001",
+      "purchase_order_document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+      "receipt_document_ids": [
+        "24b56f68-d495-48bb-835f-5d6dc362444b"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "Corrugated box 600x400x400 mm, 5-ply",
+          "item_code": "4819",
+          "invoiced_quantity": "500",
+          "ordered_quantity": "500",
+          "received_quantity": "500",
+          "invoiced_unit_price": "42.50",
+          "ordered_unit_price": "42.50",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "1",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "4819",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Corrugated box 600x400x400 mm, 5-ply",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "500",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "42.50",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "21,250.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "PKG-CB-5P",
+              "page_number": null,
+              "table_row": 1,
+              "column": "item_code"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "Corrugated box 600x400x400 mm, 5-ply",
+              "page_number": null,
+              "table_row": 1,
+              "column": "description"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 1,
+              "column": "qty"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "42.50",
+              "page_number": null,
+              "table_row": 1,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 1,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "500",
+              "page_number": null,
+              "table_row": 1,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "PKG-CB-5P",
+              "page_number": null,
+              "table_row": 1,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Bubble wrap roll 1 m x 100 m",
+          "item_code": "3923",
+          "invoiced_quantity": "20",
+          "ordered_quantity": "20",
+          "received_quantity": "20",
+          "invoiced_unit_price": "1150.00",
+          "ordered_unit_price": "1150.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "2",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "3923",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "Bubble wrap roll 1 m x 100 m",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "1,150.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+              "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+              "quote": "23,000.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "PKG-BW-100",
+              "page_number": null,
+              "table_row": 2,
+              "column": "item_code"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "Bubble wrap roll 1 m x 100 m",
+              "page_number": null,
+              "table_row": 2,
+              "column": "description"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 2,
+              "column": "qty"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "1150.00",
+              "page_number": null,
+              "table_row": 2,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 2,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "20",
+              "page_number": null,
+              "table_row": 2,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "PKG-BW-100",
+              "page_number": null,
+              "table_row": 2,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    }
+  ],
+  "bank_payments": []
+}

@@ -1,0 +1,15 @@
+{
+  "analyzed_invoice_count": 2,
+  "findings": [
+    {
+      "invoice_id": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "anomaly_type": "DUPLICATE_INVOICE",
+      "severity": "HIGH",
+      "description": "Invoice matches invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf by vendor, date, currency, total, and matching item codes and quantities.",
+      "observed_amount": "54832.40",
+      "currency": "INR",
+      "expected_amount": null,
+      "duplicate_of": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf"
+    }
+  ]
+}

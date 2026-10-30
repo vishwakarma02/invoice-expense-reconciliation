@@ -215,6 +215,25 @@ def test_clean_invoice_three_way_match_preserves_provenance():
     }
 
 
+def test_currency_aliases_are_normalized_before_mismatch_check():
+    for currency in ("₹", "Rs", "Rs.", "INR", "Indian Rupees"):
+        invoice = invoice_record()
+        invoice.currency = field(currency, document_id="invoice-1")
+
+        result = MatchingAgent().match_batch(base_batch(invoice=invoice)).invoices[0]
+
+        assert "CURRENCY_MISMATCH" not in issue_codes(result), currency
+
+
+def test_different_currency_still_reports_mismatch():
+    invoice = invoice_record()
+    invoice.currency = field("USD", document_id="invoice-1")
+
+    result = MatchingAgent().match_batch(base_batch(invoice=invoice)).invoices[0]
+
+    assert "CURRENCY_MISMATCH" in issue_codes(result)
+
+
 def test_unit_price_within_tolerance_is_not_flagged():
     invoice = invoice_record(
         unit_price="100.50",
@@ -245,6 +264,10 @@ def test_price_and_quantity_variances_are_explicit_exceptions():
     assert "PRICE_VARIANCE" in issue_codes(result)
     assert "QUANTITY_EXCEEDS_ORDERED" in issue_codes(result)
     assert "QUANTITY_EXCEEDS_RECEIVED" in issue_codes(result)
+    price_issue = next(issue for issue in result.issues if issue.code == "PRICE_VARIANCE")
+    assert price_issue.expected_amount == Decimal("100")
+    assert price_issue.found_amount == Decimal("110")
+    assert price_issue.currency == "INR"
 
 
 def test_invoice_number_duplicate_with_formatting_is_detected():
@@ -309,6 +332,14 @@ def test_tax_component_amounts_are_checked_separately():
     result = MatchingAgent().match_batch(base_batch(invoice=invoice)).invoices[0]
 
     assert "TAX_COMPONENT_AMOUNT_MISMATCH" in issue_codes(result)
+    issue = next(
+        issue
+        for issue in result.issues
+        if issue.code == "TAX_COMPONENT_AMOUNT_MISMATCH"
+    )
+    assert issue.expected_amount == Decimal("90")
+    assert issue.found_amount == Decimal("10")
+    assert issue.currency == "INR"
 
 
 def test_invoice_total_arithmetic_uses_configured_rounding_tolerance():
@@ -319,6 +350,11 @@ def test_invoice_total_arithmetic_uses_configured_rounding_tolerance():
 
     assert result.status == "exception"
     assert "INVOICE_TOTAL_MISMATCH" in issue_codes(result)
+    issue = next(
+        issue for issue in result.issues if issue.code == "INVOICE_TOTAL_MISMATCH"
+    )
+    assert issue.expected_amount == Decimal("1180")
+    assert issue.found_amount == Decimal("1182")
 
     within_tolerance = invoice_record(grand_total="1180.50")
     result = MatchingAgent(
@@ -358,6 +394,10 @@ def test_bank_debit_matches_invoice_reference_and_reports_payment_variance():
     assert result.matched_invoice_document_id == "invoice-1"
     assert result.amount_variance == Decimal("-180")
     assert {issue.code for issue in result.issues} == {"PAYMENT_VARIANCE"}
+    issue = result.issues[0]
+    assert issue.expected_amount == Decimal("1180")
+    assert issue.found_amount == Decimal("1000")
+    assert issue.currency == "INR"
 
 
 def test_unmatched_debit_and_non_debits_are_distinguished():

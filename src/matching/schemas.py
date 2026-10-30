@@ -23,6 +23,9 @@ class MatchIssue(StrictModel):
     code: str
     severity: Literal["exception", "review"]
     message: str
+    expected_amount: Decimal | None = None
+    found_amount: Decimal | None = None
+    currency: str | None = None
     evidence: list[SourceEvidence] = Field(default_factory=list)
 
 

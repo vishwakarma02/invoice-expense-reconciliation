@@ -50,6 +50,28 @@ def _text_key(value: str | None) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.casefold()))
 
 
+def _normalize_currency(value: str | None) -> str:
+    if not value:
+        return ""
+    normalized = re.sub(r"[\W_]+", "", value.casefold())
+    if normalized in {
+        "inr",
+        "rs",
+        "rupee",
+        "rupees",
+        "indianrupee",
+        "indianrupees",
+    } or value.strip() == "₹":
+        return "INR"
+    if normalized in {"usd", "usdollar", "usdollars", "dollar", "dollars"} or value.strip() == "$":
+        return "USD"
+    if normalized in {"eur", "euro", "euros"} or value.strip() == "€":
+        return "EUR"
+    if normalized in {"gbp", "pound", "pounds"} or value.strip() == "£":
+        return "GBP"
+    return normalized.upper()
+
+
 def _field_evidence(*fields: ExtractedField[Any] | None) -> list[SourceEvidence]:
     evidence: list[SourceEvidence] = []
     seen: set[tuple[Any, ...]] = set()
@@ -95,6 +117,10 @@ def _add_issue(
     severity: IssueSeverity,
     message: str,
     evidence: list[SourceEvidence] | None = None,
+    *,
+    expected_amount: Decimal | None = None,
+    found_amount: Decimal | None = None,
+    currency: str | None = None,
 ) -> None:
     if any(issue.code == code and issue.message == message for issue in issues):
         return
@@ -103,6 +129,9 @@ def _add_issue(
             code=code,
             severity=severity,
             message=message,
+            expected_amount=expected_amount,
+            found_amount=found_amount,
+            currency=currency,
             evidence=evidence or [],
         )
     )
@@ -379,7 +408,9 @@ class MatchingAgent:
                     ),
                 )
         if po_record and invoice.currency.value:
-            if invoice.currency.value.strip().upper() != self.config.currency.upper():
+            if _normalize_currency(invoice.currency.value) != _normalize_currency(
+                self.config.currency
+            ):
                 _add_issue(
                     issues,
                     "CURRENCY_MISMATCH",
@@ -420,6 +451,7 @@ class MatchingAgent:
                 invoice_line,
                 po_record,
                 receipt_matches,
+                invoice.currency.value or self.config.currency,
             )
             line_results.append(line_result)
             issues.extend(line_result.issues)
@@ -562,6 +594,7 @@ class MatchingAgent:
         invoice_line: LineItem,
         purchase_order: PurchaseOrderRecord | None,
         receipts: list[tuple[Any, ReceiptRecord]],
+        currency: str,
     ) -> tuple[LineMatchResult, LineItem | None]:
         issues: list[MatchIssue] = []
         evidence = _field_evidence(
@@ -676,6 +709,9 @@ class MatchingAgent:
                         f"{variance.quantize(Decimal('0.01'))}%, exceeding the "
                         f"{self.config.unit_price_tolerance_percent}% tolerance.",
                         evidence,
+                        expected_amount=po_line.unit_price.value,
+                        found_amount=invoice_line.unit_price.value,
+                        currency=currency,
                     )
             if (
                 invoice_line.quantity.value is not None
@@ -696,6 +732,9 @@ class MatchingAgent:
                         f"Quantity × unit price is {calculated_line_total}, but the "
                         f"invoice line total is {invoice_line.line_total.value}.",
                         evidence,
+                        expected_amount=calculated_line_total,
+                        found_amount=invoice_line.line_total.value,
+                        currency=currency,
                     )
 
         variance_pct = None
@@ -801,6 +840,9 @@ class MatchingAgent:
                     for _, po_line in matched_lines
                     for evidence in _field_evidence(po_line.tax_rate)
                 ],
+                expected_amount=expected_tax,
+                found_amount=actual_tax,
+                currency=invoice.currency.value or self.config.currency,
             )
 
         seller_state = _vendor_state(vendor, invoice.vendor_gstin.value)
@@ -912,6 +954,9 @@ class MatchingAgent:
                         for _, po_line in matched_lines
                         for evidence in _field_evidence(po_line.tax_rate)
                     ],
+                    expected_amount=expected_amount,
+                    found_amount=actual_amount,
+                    currency=invoice.currency.value or self.config.currency,
                 )
 
     @staticmethod
@@ -976,6 +1021,9 @@ class MatchingAgent:
                     invoice.grand_total,
                 )
                 + self._tax_evidence(invoice.taxes),
+                expected_amount=calculated_total,
+                found_amount=grand_total,
+                currency=invoice.currency.value or self.config.currency,
             )
 
     def _match_bank_payments(
@@ -1146,6 +1194,9 @@ class MatchingAgent:
                     f"Bank debit {debit} differs from invoice total {expected_amount} "
                     f"by {variance}.",
                     evidence + _field_evidence(invoice.grand_total),
+                    expected_amount=expected_amount,
+                    found_amount=debit,
+                    currency=invoice.currency.value or self.config.currency,
                 )
             if invoice_doc.document_id in allocated:
                 _add_issue(

@@ -1,8 +1,8 @@
 {
-  "batch_id": "d27245db-1ce1-40df-b6a8-61e4f54ccc0c",
+  "batch_id": "4b39f329-3e0d-4a1e-8616-1d561aeeef69",
   "documents": [
     {
-      "document_id": "f2203d61-0910-4538-9b1e-4110d03506f9",
+      "document_id": "13b9a73c-34a7-4b5b-92a7-67074a288b91",
       "source_file": "bank/bank_statement_2026-10.csv",
       "document_type": "csv",
       "category": "bank",
@@ -11,7 +11,7 @@
       "extracted_text": "txn_date,narration,debit,credit,balance\r\n2026-10-01,OPENING BALANCE,,,1850000.00\r\n2026-10-03,NEFT CR-ACME AUTO PARTS LTD-INV SC-2209,,412500.00,2262500.00\r\n2026-10-08,NEFT DR-SHREE GANESH PACKAGING PVT-SGP/26-27/0418,52215.00,,2210285.00\r\n2026-10-12,NEFT DR-DECCAN OFFICE SUPPLIES-DOS/2026/0417,54832.40,,2155452.60\r\n2026-10-15,IMPS DR-COASTAL FREIGHT LOGISTI-CFL7742,42560.00,,2112892.60\r\n2026-10-20,NEFT DR-NIMBUS CLOUD SERVICES L-NCS0912,63310.00,,2049582.60\r\n2026-10-22,UPI DR-RAJ ENTERPRISES-PAYMENT,18500.00,,2031082.60\r\n2026-10-23,NEFT DR-KAVERI STEEL TRADERS-KST262,52392.00,,1978690.60\r\n2026-10-25,BANK CHARGES INCL GST,236.00,,1978454.60\r\n",
       "tables": [
         {
-          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\bank\\bank_statement_2026-10.csv",
+          "source": "C:\\Users\\azureuser\\agentic-ai\\capstone-project\\invoice-expense-reconciliation\\data\\input\\bank\\bank_statement_2026-10.csv",
           "page_number": null,
           "headers": [
             "txn_date",
@@ -99,7 +99,7 @@
       "errors": []
     },
     {
-      "document_id": "0625fd43-1b29-461b-80f6-7e4e59418936",
+      "document_id": "5ed9c0cc-24f6-451a-aad1-bc099aa6e6d4",
       "source_file": "expenses/expense_claims.csv",
       "document_type": "csv",
       "category": "expense",
@@ -108,7 +108,7 @@
       "extracted_text": "claim_id,employee_id,claim_date,category,merchant,amount_claimed,receipt_file\r\nEXP-301,EMP-1042,2026-10-16,Meals,Hotel Panchavati,1180.00,RCPT-01_HotelPanchavati_meal.png\r\nEXP-302,EMP-1042,2026-10-16,Fuel,Om Sai Fuel Station,4250.00,RCPT-02_OmSaiFuels_fuel.png\r\n",
       "tables": [
         {
-          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\expenses\\expense_claims.csv",
+          "source": "C:\\Users\\azureuser\\agentic-ai\\capstone-project\\invoice-expense-reconciliation\\data\\input\\expenses\\expense_claims.csv",
           "page_number": null,
           "headers": [
             "claim_id",
@@ -153,7 +153,7 @@
       "errors": []
     },
     {
-      "document_id": "d81cd3a4-7f95-4fb3-acd4-768e723c0f1d",
+      "document_id": "f68d520c-ce96-4088-b68b-f939e7842332",
       "source_file": "invoices/INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -173,7 +173,7 @@
       "errors": []
     },
     {
-      "document_id": "099cf5b6-8c87-443d-85fc-e96458768677",
+      "document_id": "e71aa29c-8014-4162-95e4-3aa3dcd6f138",
       "source_file": "invoices/INV-02_NimbusCloud_NCS-KA-2026-0912.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -193,7 +193,7 @@
       "errors": []
     },
     {
-      "document_id": "84aedbf1-d4c5-4d78-a506-11643fab4dd4",
+      "document_id": "ccc912d8-773e-4248-abe4-2c9307525341",
       "source_file": "invoices/INV-03_KaveriSteel_KST-26-27-233.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -213,7 +213,7 @@
       "errors": []
     },
     {
-      "document_id": "7193c0bd-c9f8-499b-8dea-fc9a2161f484",
+      "document_id": "c70ec322-3889-4717-bfcb-992565c4fe72",
       "source_file": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -233,7 +233,7 @@
       "errors": []
     },
     {
-      "document_id": "af38ceb0-b912-417e-a99e-f05b515aaba0",
+      "document_id": "13815172-4665-41e6-b9e8-b55ecb66e916",
       "source_file": "invoices/INV-05_ShreeGanesh_SGP-26-27-0452.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -253,7 +253,7 @@
       "errors": []
     },
     {
-      "document_id": "3a40d00d-89dc-40c9-9c3c-7996f7c049e4",
+      "document_id": "fec40209-b74b-4bb3-86aa-299a04acc35c",
       "source_file": "invoices/INV-06_DeccanOffice_DOS-2026-417.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -273,7 +273,7 @@
       "errors": []
     },
     {
-      "document_id": "b328b98f-f3d4-43f1-82f7-d4ede284d5f2",
+      "document_id": "d192de03-a253-4d41-888a-1b3d6485f7b9",
       "source_file": "invoices/INV-07_CoastalFreight_CFL-MUM-7781.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -293,7 +293,7 @@
       "errors": []
     },
     {
-      "document_id": "3eab6de2-3606-4241-b58b-61f6d8e37d44",
+      "document_id": "2b8afa32-41da-44d6-a907-fe008d9ff440",
       "source_file": "invoices/INV-08_KaveriSteel_KST-26-27-251.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -313,7 +313,7 @@
       "errors": []
     },
     {
-      "document_id": "816d55ea-94c0-462b-9d21-3c0573df0cfb",
+      "document_id": "873e0654-8c15-40a0-b808-6ab1dddce6eb",
       "source_file": "invoices/INV-09_KaveriSteel_KST-26-27-262.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -333,7 +333,7 @@
       "errors": []
     },
     {
-      "document_id": "349ed21c-8b67-4dc0-a6b7-057d5bdc3133",
+      "document_id": "7e9c9010-bc2c-43d8-bfb6-8c3176f1baa2",
       "source_file": "invoices/INV-10_CoastalFreight_CFL-MUM-7742_scanned.png",
       "document_type": "image",
       "category": "invoice",
@@ -353,7 +353,7 @@
       "errors": []
     },
     {
-      "document_id": "13b24791-2c8d-4926-a15a-9b8365efb4bd",
+      "document_id": "1a44f68c-5235-4b69-a749-73329d25e072",
       "source_file": "invoices/INV-11_DeccanOffice_DOS-2026-0466.pdf",
       "document_type": "pdf",
       "category": "invoice",
@@ -373,7 +373,7 @@
       "errors": []
     },
     {
-      "document_id": "3b3d7d75-5adf-47e2-86f4-4a534a7fd66a",
+      "document_id": "0abb9edb-11db-4729-8b28-ada073d5fb16",
       "source_file": "master/goods_receipts.csv",
       "document_type": "csv",
       "category": "receipt",
@@ -382,7 +382,7 @@
       "extracted_text": "receipt_no,receipt_type,po_number,receipt_date,item_code,qty_received\r\nGRN-26-5101,GOODS_RECEIPT,PO-2026-1001,2026-09-16,PKG-CB-5P,500\r\nGRN-26-5101,GOODS_RECEIPT,PO-2026-1001,2026-09-16,PKG-BW-100,20\r\nGRN-26-5102,GOODS_RECEIPT,PO-2026-1002,2026-09-23,STL-RB-20,1200\r\nSES-26-0031,SERVICE_ENTRY,PO-2026-1003,2026-09-30,SVC-HOST-M,1\r\nSES-26-0031,SERVICE_ENTRY,PO-2026-1003,2026-09-30,SVC-BKP-M,1\r\nGRN-26-5104,GOODS_RECEIPT,PO-2026-1004,2026-09-18,OFF-A4-75,100\r\nGRN-26-5104,GOODS_RECEIPT,PO-2026-1004,2026-09-18,OFF-TNR-85,6\r\nGRN-26-5105,GOODS_RECEIPT,PO-2026-1005,2026-10-04,PKG-SF-23,450\r\nGRN-26-5106,GOODS_RECEIPT,PO-2026-1006,2026-10-07,STL-FL-506,800\r\nSES-26-0034,SERVICE_ENTRY,PO-2026-1007,2026-10-09,FRT-PNQ-MAA,1\r\nGRN-26-5108,GOODS_RECEIPT,PO-2026-1008,2026-10-06,OFF-WBM-10,20\r\nGRN-26-5109,GOODS_RECEIPT,PO-2026-1009,2026-10-10,STL-AN-405,600\r\n",
       "tables": [
         {
-          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\goods_receipts.csv",
+          "source": "C:\\Users\\azureuser\\agentic-ai\\capstone-project\\invoice-expense-reconciliation\\data\\input\\master\\goods_receipts.csv",
           "page_number": null,
           "headers": [
             "receipt_no",
@@ -504,7 +504,7 @@
       "errors": []
     },
     {
-      "document_id": "1ca222e6-1707-413e-b6c5-d21fa3f959a4",
+      "document_id": "562c49e3-3a39-446d-9cfa-01701b92e5d7",
       "source_file": "master/purchase_orders.csv",
       "document_type": "csv",
       "category": "purchase_order",
@@ -513,7 +513,7 @@
       "extracted_text": "po_number,vendor_id,po_date,line_no,item_code,description,hsn_sac,qty,unit,unit_price,gst_rate\r\nPO-2026-1001,V001,2026-09-05,1,PKG-CB-5P,\"Corrugated box 600x400x400 mm, 5-ply\",4819,500,Nos,42.50,18\r\nPO-2026-1001,V001,2026-09-05,2,PKG-BW-100,Bubble wrap roll 1 m x 100 m,3923,20,Roll,1150.00,18\r\nPO-2026-1002,V002,2026-09-08,1,STL-RB-20,MS round bar 20 mm,7214,1200,Kg,72.00,18\r\nPO-2026-1003,V003,2026-09-01,1,SVC-HOST-M,Managed cloud hosting - Sep 2026,998315,1,Month,48000.00,18\r\nPO-2026-1003,V003,2026-09-01,2,SVC-BKP-M,Managed backup service - Sep 2026,998315,1,Month,6500.00,18\r\nPO-2026-1004,V004,2026-09-10,1,OFF-A4-75,A4 copier paper 75 gsm (ream of 500),4802,100,Ream,245.00,12\r\nPO-2026-1004,V004,2026-09-10,2,OFF-TNR-85,Laser toner cartridge 85A compatible,8443,6,Nos,3850.00,18\r\nPO-2026-1005,V001,2026-09-22,1,PKG-SF-23,\"Stretch film 23 micron, 500 mm\",3920,500,Roll,185.00,18\r\nPO-2026-1006,V002,2026-09-25,1,STL-FL-506,MS flat 50 x 6 mm,7211,800,Kg,68.00,18\r\nPO-2026-1007,V005,2026-09-28,1,FRT-PNQ-MAA,\"FTL freight Pune to Chennai, 32 ft container\",996511,1,Trip,38000.00,12\r\nPO-2026-1008,V004,2026-10-01,1,OFF-WBM-10,\"Whiteboard markers, box of 10\",9608,20,Box,420.00,18\r\nPO-2026-1009,V002,2026-10-03,1,STL-AN-405,MS angle 40 x 40 x 5 mm,7216,600,Kg,74.00,18\r\n",
       "tables": [
         {
-          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\purchase_orders.csv",
+          "source": "C:\\Users\\azureuser\\agentic-ai\\capstone-project\\invoice-expense-reconciliation\\data\\input\\master\\purchase_orders.csv",
           "page_number": null,
           "headers": [
             "po_number",
@@ -700,7 +700,7 @@
       "errors": []
     },
     {
-      "document_id": "26ca1da8-8002-4f90-828b-74d284a7294d",
+      "document_id": "4340aaec-d4e2-474c-91ac-252b6a64d1ed",
       "source_file": "master/vendors.csv",
       "document_type": "csv",
       "category": "other",
@@ -709,7 +709,7 @@
       "extracted_text": "vendor_id,vendor_name,gstin,state_code,city,payment_terms_days\r\nV001,Shree Ganesh Packaging Pvt. Ltd.,27AAFCS7712P1Z9,27,Pune,30\r\nV002,Kaveri Steel Traders,27ABKPK3390L1Z2,27,Nashik,30\r\nV003,Nimbus Cloud Services LLP,29AAQFN5521D1ZK,29,Bengaluru,30\r\nV004,Deccan Office Supplies,27AGHPD1187R1Z6,27,Pune,30\r\nV005,Coastal Freight & Logistics Pvt. Ltd.,27AADCC9054H1Z1,27,Navi Mumbai,30\r\n",
       "tables": [
         {
-          "source": "C:\\Agentic-AI-Training\\Project\\invoice-expense-reconciliation\\data\\input\\master\\vendors.csv",
+          "source": "C:\\Users\\azureuser\\agentic-ai\\capstone-project\\invoice-expense-reconciliation\\data\\input\\master\\vendors.csv",
           "page_number": null,
           "headers": [
             "vendor_id",
@@ -775,7 +775,7 @@
       "errors": []
     },
     {
-      "document_id": "fda5aaa9-a9fd-4bfb-9f3d-c51b536078bc",
+      "document_id": "fa34c16b-33dd-4b7d-aa65-d3d644260edc",
       "source_file": "receipts/RCPT-01_HotelPanchavati_meal.png",
       "document_type": "image",
       "category": "receipt",
@@ -795,7 +795,7 @@
       "errors": []
     },
     {
-      "document_id": "48db7c77-5fba-4d4d-acf2-991cf3ac38b6",
+      "document_id": "317a7019-a37e-4395-a78d-795243b169a4",
       "source_file": "receipts/RCPT-02_OmSaiFuels_fuel.png",
       "document_type": "image",
       "category": "receipt",

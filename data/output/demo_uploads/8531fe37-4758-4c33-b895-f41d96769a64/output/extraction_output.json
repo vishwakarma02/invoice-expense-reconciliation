@@ -1,0 +1,5640 @@
+{
+  "extraction_id": "217f925e-aaf4-4bd0-a471-b58c651f1216",
+  "ingestion_batch_id": "2e76914b-f3f0-436a-b2a9-a9b820eb69d3",
+  "documents": [
+    {
+      "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+      "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+      "source_category": "invoice",
+      "status": "success",
+      "records": [
+        {
+          "record_type": "invoice",
+          "vendor_name": {
+            "value": "Shree Ganesh Packaging Pvt. Ltd.",
+            "raw_value": "Shree Ganesh Packaging Pvt. Ltd.",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "Shree Ganesh Packaging Pvt. Ltd.",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": null,
+                "page_number": null,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_gstin": {
+            "value": "27AAFCS7712P1Z9",
+            "raw_value": "GSTIN: 27AAFCS7712P1Z9",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "GSTIN: 27AAFCS7712P1Z9",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "buyer_gstin": {
+            "value": "27AAKCS4821M1Z3",
+            "raw_value": "GSTIN: 27AAKCS4821M1Z3",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "GSTIN: 27AAKCS4821M1Z3",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "invoice_number": {
+            "value": "SGP/26-27/0418",
+            "raw_value": "Invoice No: SGP/26-27/0418",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "Invoice No: SGP/26-27/0418",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "invoice_date": {
+            "value": "2026-09-18",
+            "raw_value": "Invoice Date: 18-09-2026",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "Invoice Date: 18-09-2026",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1001",
+            "raw_value": "PO Ref: PO-2026-1001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "PO Ref: PO-2026-1001",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": "₹",
+            "raw_value": "Rate (₹)",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "Rate (₹)",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "1",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Corrugated box 600x400x400 mm, 5-ply",
+                "raw_value": "Corrugated box 600x400x400 mm, 5-ply",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "Corrugated box 600x400x400 mm, 5-ply",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "4819",
+                "raw_value": "HSN/SAC\n4819",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "4819",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "4819",
+                "raw_value": "HSN/SAC\n4819",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "4819",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "500",
+                "raw_value": "Qty\n500",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "500",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Nos",
+                "raw_value": "Unit\nNos",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "Nos",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "42.50",
+                "raw_value": "Rate (₹)\n42.50",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "42.50",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": "21250.00",
+                "raw_value": "Amount (₹)\n21,250.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "21,250.00",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": "2",
+                "raw_value": "2",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "2",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Bubble wrap roll 1 m x 100 m",
+                "raw_value": "Bubble wrap roll 1 m x 100 m",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "Bubble wrap roll 1 m x 100 m",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "3923",
+                "raw_value": "HSN/SAC\n3923",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "3923",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "3923",
+                "raw_value": "HSN/SAC\n3923",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "3923",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "20",
+                "raw_value": "Qty\n20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "20",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Roll",
+                "raw_value": "Unit\nRoll",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "Roll",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "1150.00",
+                "raw_value": "Rate (₹)\n1,150.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "1,150.00",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": "23000.00",
+                "raw_value": "Amount (₹)\n23,000.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "23,000.00",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              }
+            }
+          ],
+          "subtotal": {
+            "value": "44250.00",
+            "raw_value": "Taxable Value\n44,250.00",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "44,250.00",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "taxable_value": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": null,
+                "page_number": null,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "taxes": [
+            {
+              "tax_type": {
+                "value": "CGST",
+                "raw_value": "CGST @ 9%",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "CGST @ 9%",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "rate": {
+                "value": "9",
+                "raw_value": "CGST @ 9%",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "CGST @ 9%",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "amount": {
+                "value": "3982.50",
+                "raw_value": "3,982.50",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "3,982.50",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              }
+            },
+            {
+              "tax_type": {
+                "value": "SGST",
+                "raw_value": "SGST @ 9%",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "SGST @ 9%",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "rate": {
+                "value": "9",
+                "raw_value": "SGST @ 9%",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "SGST @ 9%",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              },
+              "amount": {
+                "value": "3982.50",
+                "raw_value": "3,982.50",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                    "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                    "quote": "3,982.50",
+                    "page_number": 1,
+                    "table_row": null,
+                    "column": null
+                  }
+                ],
+                "warnings": []
+              }
+            }
+          ],
+          "grand_total": {
+            "value": "52215.00",
+            "raw_value": "Grand Total (₹)\n52,215.00",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "530956c7-8e6d-4f54-abf7-e65d06159600",
+                "source_file": "invoice/invoice-INV-01_ShreeGanesh_SGP-26-27-0418.pdf",
+                "quote": "52,215.00",
+                "page_number": 1,
+                "table_row": null,
+                "column": null
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+      "source_file": "other/vendors.csv",
+      "source_category": "other",
+      "status": "success",
+      "records": [
+        {
+          "record_type": "vendor",
+          "vendor_id": {
+            "value": "V001",
+            "raw_value": "V001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "V001",
+                "page_number": null,
+                "table_row": 1,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": "Shree Ganesh Packaging Pvt. Ltd.",
+            "raw_value": "Shree Ganesh Packaging Pvt. Ltd.",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Shree Ganesh Packaging Pvt. Ltd.",
+                "page_number": null,
+                "table_row": 1,
+                "column": "vendor_name"
+              }
+            ],
+            "warnings": []
+          },
+          "gstin": {
+            "value": "27AAFCS7712P1Z9",
+            "raw_value": "27AAFCS7712P1Z9",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27AAFCS7712P1Z9",
+                "page_number": null,
+                "table_row": 1,
+                "column": "gstin"
+              }
+            ],
+            "warnings": []
+          },
+          "state_code": {
+            "value": "27",
+            "raw_value": "27",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27",
+                "page_number": null,
+                "table_row": 1,
+                "column": "state_code"
+              }
+            ],
+            "warnings": []
+          },
+          "city": {
+            "value": "Pune",
+            "raw_value": "Pune",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Pune",
+                "page_number": null,
+                "table_row": 1,
+                "column": "city"
+              }
+            ],
+            "warnings": []
+          },
+          "payment_terms_days": {
+            "value": 30,
+            "raw_value": "30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "30",
+                "page_number": null,
+                "table_row": 1,
+                "column": "payment_terms_days"
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        },
+        {
+          "record_type": "vendor",
+          "vendor_id": {
+            "value": "V002",
+            "raw_value": "V002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "V002",
+                "page_number": null,
+                "table_row": 2,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": "Kaveri Steel Traders",
+            "raw_value": "Kaveri Steel Traders",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Kaveri Steel Traders",
+                "page_number": null,
+                "table_row": 2,
+                "column": "vendor_name"
+              }
+            ],
+            "warnings": []
+          },
+          "gstin": {
+            "value": "27ABKPK3390L1Z2",
+            "raw_value": "27ABKPK3390L1Z2",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27ABKPK3390L1Z2",
+                "page_number": null,
+                "table_row": 2,
+                "column": "gstin"
+              }
+            ],
+            "warnings": []
+          },
+          "state_code": {
+            "value": "27",
+            "raw_value": "27",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27",
+                "page_number": null,
+                "table_row": 2,
+                "column": "state_code"
+              }
+            ],
+            "warnings": []
+          },
+          "city": {
+            "value": "Nashik",
+            "raw_value": "Nashik",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Nashik",
+                "page_number": null,
+                "table_row": 2,
+                "column": "city"
+              }
+            ],
+            "warnings": []
+          },
+          "payment_terms_days": {
+            "value": 30,
+            "raw_value": "30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "30",
+                "page_number": null,
+                "table_row": 2,
+                "column": "payment_terms_days"
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        },
+        {
+          "record_type": "vendor",
+          "vendor_id": {
+            "value": "V003",
+            "raw_value": "V003",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "V003",
+                "page_number": null,
+                "table_row": 3,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": "Nimbus Cloud Services LLP",
+            "raw_value": "Nimbus Cloud Services LLP",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Nimbus Cloud Services LLP",
+                "page_number": null,
+                "table_row": 3,
+                "column": "vendor_name"
+              }
+            ],
+            "warnings": []
+          },
+          "gstin": {
+            "value": "29AAQFN5521D1ZK",
+            "raw_value": "29AAQFN5521D1ZK",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "29AAQFN5521D1ZK",
+                "page_number": null,
+                "table_row": 3,
+                "column": "gstin"
+              }
+            ],
+            "warnings": []
+          },
+          "state_code": {
+            "value": "29",
+            "raw_value": "29",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "29",
+                "page_number": null,
+                "table_row": 3,
+                "column": "state_code"
+              }
+            ],
+            "warnings": []
+          },
+          "city": {
+            "value": "Bengaluru",
+            "raw_value": "Bengaluru",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Bengaluru",
+                "page_number": null,
+                "table_row": 3,
+                "column": "city"
+              }
+            ],
+            "warnings": []
+          },
+          "payment_terms_days": {
+            "value": 30,
+            "raw_value": "30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "30",
+                "page_number": null,
+                "table_row": 3,
+                "column": "payment_terms_days"
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        },
+        {
+          "record_type": "vendor",
+          "vendor_id": {
+            "value": "V004",
+            "raw_value": "V004",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "V004",
+                "page_number": null,
+                "table_row": 4,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": "Deccan Office Supplies",
+            "raw_value": "Deccan Office Supplies",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Deccan Office Supplies",
+                "page_number": null,
+                "table_row": 4,
+                "column": "vendor_name"
+              }
+            ],
+            "warnings": []
+          },
+          "gstin": {
+            "value": "27AGHPD1187R1Z6",
+            "raw_value": "27AGHPD1187R1Z6",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27AGHPD1187R1Z6",
+                "page_number": null,
+                "table_row": 4,
+                "column": "gstin"
+              }
+            ],
+            "warnings": []
+          },
+          "state_code": {
+            "value": "27",
+            "raw_value": "27",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27",
+                "page_number": null,
+                "table_row": 4,
+                "column": "state_code"
+              }
+            ],
+            "warnings": []
+          },
+          "city": {
+            "value": "Pune",
+            "raw_value": "Pune",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Pune",
+                "page_number": null,
+                "table_row": 4,
+                "column": "city"
+              }
+            ],
+            "warnings": []
+          },
+          "payment_terms_days": {
+            "value": 30,
+            "raw_value": "30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "30",
+                "page_number": null,
+                "table_row": 4,
+                "column": "payment_terms_days"
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        },
+        {
+          "record_type": "vendor",
+          "vendor_id": {
+            "value": "V005",
+            "raw_value": "V005",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "V005",
+                "page_number": null,
+                "table_row": 5,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": "Coastal Freight & Logistics Pvt. Ltd.",
+            "raw_value": "Coastal Freight & Logistics Pvt. Ltd.",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Coastal Freight & Logistics Pvt. Ltd.",
+                "page_number": null,
+                "table_row": 5,
+                "column": "vendor_name"
+              }
+            ],
+            "warnings": []
+          },
+          "gstin": {
+            "value": "27AADCC9054H1Z1",
+            "raw_value": "27AADCC9054H1Z1",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27AADCC9054H1Z1",
+                "page_number": null,
+                "table_row": 5,
+                "column": "gstin"
+              }
+            ],
+            "warnings": []
+          },
+          "state_code": {
+            "value": "27",
+            "raw_value": "27",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "27",
+                "page_number": null,
+                "table_row": 5,
+                "column": "state_code"
+              }
+            ],
+            "warnings": []
+          },
+          "city": {
+            "value": "Navi Mumbai",
+            "raw_value": "Navi Mumbai",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "Navi Mumbai",
+                "page_number": null,
+                "table_row": 5,
+                "column": "city"
+              }
+            ],
+            "warnings": []
+          },
+          "payment_terms_days": {
+            "value": 30,
+            "raw_value": "30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "49491f14-b198-432e-bcad-73f439a5c525",
+                "source_file": "other/vendors.csv",
+                "quote": "30",
+                "page_number": null,
+                "table_row": 5,
+                "column": "payment_terms_days"
+              }
+            ],
+            "warnings": []
+          },
+          "warnings": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+      "source_file": "purchase_order/purchase_orders.csv",
+      "source_category": "purchase_order",
+      "status": "success",
+      "records": [
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1001",
+            "raw_value": "PO-2026-1001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1001",
+                "page_number": null,
+                "table_row": 1,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V001",
+            "raw_value": "V001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V001",
+                "page_number": null,
+                "table_row": 1,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-05",
+            "raw_value": "2026-09-05",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-05",
+                "page_number": null,
+                "table_row": 1,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Corrugated box 600x400x400 mm, 5-ply",
+                "raw_value": "Corrugated box 600x400x400 mm, 5-ply",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Corrugated box 600x400x400 mm, 5-ply",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-CB-5P",
+                "raw_value": "PKG-CB-5P",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "PKG-CB-5P",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "4819",
+                "raw_value": "4819",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "4819",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "500",
+                "raw_value": "500",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "500",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Nos",
+                "raw_value": "Nos",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Nos",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "42.50",
+                "raw_value": "42.50",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "42.50",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": "2",
+                "raw_value": "2",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "2",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Bubble wrap roll 1 m x 100 m",
+                "raw_value": "Bubble wrap roll 1 m x 100 m",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Bubble wrap roll 1 m x 100 m",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-BW-100",
+                "raw_value": "PKG-BW-100",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "PKG-BW-100",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "3923",
+                "raw_value": "3923",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "3923",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "20",
+                "raw_value": "20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "20",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Roll",
+                "raw_value": "Roll",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Roll",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "1150.00",
+                "raw_value": "1150.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1150.00",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1002",
+            "raw_value": "PO-2026-1002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1002",
+                "page_number": null,
+                "table_row": 3,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V002",
+            "raw_value": "V002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V002",
+                "page_number": null,
+                "table_row": 3,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-08",
+            "raw_value": "2026-09-08",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-08",
+                "page_number": null,
+                "table_row": 3,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "MS round bar 20 mm",
+                "raw_value": "MS round bar 20 mm",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "MS round bar 20 mm",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-RB-20",
+                "raw_value": "STL-RB-20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "STL-RB-20",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "7214",
+                "raw_value": "7214",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "7214",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "1200",
+                "raw_value": "1200",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1200",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Kg",
+                "raw_value": "Kg",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Kg",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "72.00",
+                "raw_value": "72.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "72.00",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1003",
+            "raw_value": "PO-2026-1003",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1003",
+                "page_number": null,
+                "table_row": 4,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V003",
+            "raw_value": "V003",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V003",
+                "page_number": null,
+                "table_row": 4,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-01",
+            "raw_value": "2026-09-01",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-01",
+                "page_number": null,
+                "table_row": 4,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Managed cloud hosting - Sep 2026",
+                "raw_value": "Managed cloud hosting - Sep 2026",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Managed cloud hosting - Sep 2026",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "SVC-HOST-M",
+                "raw_value": "SVC-HOST-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "SVC-HOST-M",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "998315",
+                "raw_value": "998315",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "998315",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Month",
+                "raw_value": "Month",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Month",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "48000.00",
+                "raw_value": "48000.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "48000.00",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": "2",
+                "raw_value": "2",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "2",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Managed backup service - Sep 2026",
+                "raw_value": "Managed backup service - Sep 2026",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Managed backup service - Sep 2026",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "SVC-BKP-M",
+                "raw_value": "SVC-BKP-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "SVC-BKP-M",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "998315",
+                "raw_value": "998315",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "998315",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Month",
+                "raw_value": "Month",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Month",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "6500.00",
+                "raw_value": "6500.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "6500.00",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1004",
+            "raw_value": "PO-2026-1004",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1004",
+                "page_number": null,
+                "table_row": 6,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V004",
+            "raw_value": "V004",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V004",
+                "page_number": null,
+                "table_row": 6,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-10",
+            "raw_value": "2026-09-10",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-10",
+                "page_number": null,
+                "table_row": 6,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "A4 copier paper 75 gsm (ream of 500)",
+                "raw_value": "A4 copier paper 75 gsm (ream of 500)",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "A4 copier paper 75 gsm (ream of 500)",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-A4-75",
+                "raw_value": "OFF-A4-75",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "OFF-A4-75",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "4802",
+                "raw_value": "4802",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "4802",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "100",
+                "raw_value": "100",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "100",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Ream",
+                "raw_value": "Ream",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Ream",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "245.00",
+                "raw_value": "245.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "245.00",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "12",
+                "raw_value": "12",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "12",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": "2",
+                "raw_value": "2",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "2",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Laser toner cartridge 85A compatible",
+                "raw_value": "Laser toner cartridge 85A compatible",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Laser toner cartridge 85A compatible",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-TNR-85",
+                "raw_value": "OFF-TNR-85",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "OFF-TNR-85",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "8443",
+                "raw_value": "8443",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "8443",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "6",
+                "raw_value": "6",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "6",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Nos",
+                "raw_value": "Nos",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Nos",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "3850.00",
+                "raw_value": "3850.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "3850.00",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1005",
+            "raw_value": "PO-2026-1005",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1005",
+                "page_number": null,
+                "table_row": 8,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V001",
+            "raw_value": "V001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V001",
+                "page_number": null,
+                "table_row": 8,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-22",
+            "raw_value": "2026-09-22",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-22",
+                "page_number": null,
+                "table_row": 8,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Stretch film 23 micron, 500 mm",
+                "raw_value": "Stretch film 23 micron, 500 mm",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Stretch film 23 micron, 500 mm",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-SF-23",
+                "raw_value": "PKG-SF-23",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "PKG-SF-23",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "3920",
+                "raw_value": "3920",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "3920",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "500",
+                "raw_value": "500",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "500",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Roll",
+                "raw_value": "Roll",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Roll",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "185.00",
+                "raw_value": "185.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "185.00",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1006",
+            "raw_value": "PO-2026-1006",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1006",
+                "page_number": null,
+                "table_row": 9,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V002",
+            "raw_value": "V002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V002",
+                "page_number": null,
+                "table_row": 9,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-25",
+            "raw_value": "2026-09-25",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-25",
+                "page_number": null,
+                "table_row": 9,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "MS flat 50 x 6 mm",
+                "raw_value": "MS flat 50 x 6 mm",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "MS flat 50 x 6 mm",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-FL-506",
+                "raw_value": "STL-FL-506",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "STL-FL-506",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "7211",
+                "raw_value": "7211",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "7211",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "800",
+                "raw_value": "800",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "800",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Kg",
+                "raw_value": "Kg",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Kg",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "68.00",
+                "raw_value": "68.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "68.00",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1007",
+            "raw_value": "PO-2026-1007",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1007",
+                "page_number": null,
+                "table_row": 10,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V005",
+            "raw_value": "V005",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V005",
+                "page_number": null,
+                "table_row": 10,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-09-28",
+            "raw_value": "2026-09-28",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-09-28",
+                "page_number": null,
+                "table_row": 10,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "FTL freight Pune to Chennai, 32 ft container",
+                "raw_value": "FTL freight Pune to Chennai, 32 ft container",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "FTL freight Pune to Chennai, 32 ft container",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "FRT-PNQ-MAA",
+                "raw_value": "FRT-PNQ-MAA",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "FRT-PNQ-MAA",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "996511",
+                "raw_value": "996511",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "996511",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Trip",
+                "raw_value": "Trip",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Trip",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "38000.00",
+                "raw_value": "38000.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "38000.00",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "12",
+                "raw_value": "12",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "12",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1008",
+            "raw_value": "PO-2026-1008",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1008",
+                "page_number": null,
+                "table_row": 11,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V004",
+            "raw_value": "V004",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V004",
+                "page_number": null,
+                "table_row": 11,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-10-01",
+            "raw_value": "2026-10-01",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-10-01",
+                "page_number": null,
+                "table_row": 11,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "Whiteboard markers, box of 10",
+                "raw_value": "Whiteboard markers, box of 10",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Whiteboard markers, box of 10",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-WBM-10",
+                "raw_value": "OFF-WBM-10",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "OFF-WBM-10",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "9608",
+                "raw_value": "9608",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "9608",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "20",
+                "raw_value": "20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "20",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Box",
+                "raw_value": "Box",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Box",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "420.00",
+                "raw_value": "420.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "420.00",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "purchase_order",
+          "po_number": {
+            "value": "PO-2026-1009",
+            "raw_value": "PO-2026-1009",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "PO-2026-1009",
+                "page_number": null,
+                "table_row": 12,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_id": {
+            "value": "V002",
+            "raw_value": "V002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "V002",
+                "page_number": null,
+                "table_row": 12,
+                "column": "vendor_id"
+              }
+            ],
+            "warnings": []
+          },
+          "po_date": {
+            "value": "2026-10-03",
+            "raw_value": "2026-10-03",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                "source_file": "purchase_order/purchase_orders.csv",
+                "quote": "2026-10-03",
+                "page_number": null,
+                "table_row": 12,
+                "column": "po_date"
+              }
+            ],
+            "warnings": []
+          },
+          "currency": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "line_no"
+                  }
+                ],
+                "warnings": []
+              },
+              "description": {
+                "value": "MS angle 40 x 40 x 5 mm",
+                "raw_value": "MS angle 40 x 40 x 5 mm",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "MS angle 40 x 40 x 5 mm",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "description"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-AN-405",
+                "raw_value": "STL-AN-405",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "STL-AN-405",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": "7216",
+                "raw_value": "7216",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "7216",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": []
+              },
+              "quantity": {
+                "value": "600",
+                "raw_value": "600",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "600",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "qty"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": "Kg",
+                "raw_value": "Kg",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "Kg",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit_price": {
+                "value": "74.00",
+                "raw_value": "74.00",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "74.00",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": []
+              },
+              "tax_rate": {
+                "value": "18",
+                "raw_value": "18",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "21e72c29-5bfc-4e54-a437-98aff4612050",
+                    "source_file": "purchase_order/purchase_orders.csv",
+                    "quote": "18",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": []
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+      "source_file": "receipt/goods_receipts.csv",
+      "source_category": "receipt",
+      "status": "success",
+      "records": [
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5101",
+            "raw_value": "GRN-26-5101",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5101",
+                "page_number": null,
+                "table_row": 1,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 1,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1001",
+            "raw_value": "PO-2026-1001",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1001",
+                "page_number": null,
+                "table_row": 1,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-09-16",
+            "raw_value": "2026-09-16",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-09-16",
+                "page_number": null,
+                "table_row": 1,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "PKG-CB-5P",
+                "raw_value": "PKG-CB-5P",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-CB-5P",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-CB-5P",
+                "raw_value": "PKG-CB-5P",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-CB-5P",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "500",
+                "raw_value": "500",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "500",
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 1,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "PKG-BW-100",
+                "raw_value": "PKG-BW-100",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-BW-100",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-BW-100",
+                "raw_value": "PKG-BW-100",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-BW-100",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "20",
+                "raw_value": "20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "20",
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 2,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5102",
+            "raw_value": "GRN-26-5102",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5102",
+                "page_number": null,
+                "table_row": 3,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 3,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1002",
+            "raw_value": "PO-2026-1002",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1002",
+                "page_number": null,
+                "table_row": 3,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-09-23",
+            "raw_value": "2026-09-23",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-09-23",
+                "page_number": null,
+                "table_row": 3,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "STL-RB-20",
+                "raw_value": "STL-RB-20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-RB-20",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-RB-20",
+                "raw_value": "STL-RB-20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-RB-20",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "1200",
+                "raw_value": "1200",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "1200",
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 3,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "SES-26-0031",
+            "raw_value": "SES-26-0031",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "SES-26-0031",
+                "page_number": null,
+                "table_row": 4,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "SERVICE_ENTRY",
+            "raw_value": "SERVICE_ENTRY",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "SERVICE_ENTRY",
+                "page_number": null,
+                "table_row": 4,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1003",
+            "raw_value": "PO-2026-1003",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1003",
+                "page_number": null,
+                "table_row": 4,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-09-30",
+            "raw_value": "2026-09-30",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-09-30",
+                "page_number": null,
+                "table_row": 4,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "SVC-HOST-M",
+                "raw_value": "SVC-HOST-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "SVC-HOST-M",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "SVC-HOST-M",
+                "raw_value": "SVC-HOST-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "SVC-HOST-M",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 4,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "SVC-BKP-M",
+                "raw_value": "SVC-BKP-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "SVC-BKP-M",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "SVC-BKP-M",
+                "raw_value": "SVC-BKP-M",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "SVC-BKP-M",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 5,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5104",
+            "raw_value": "GRN-26-5104",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5104",
+                "page_number": null,
+                "table_row": 6,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 6,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1004",
+            "raw_value": "PO-2026-1004",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1004",
+                "page_number": null,
+                "table_row": 6,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-09-18",
+            "raw_value": "2026-09-18",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-09-18",
+                "page_number": null,
+                "table_row": 6,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "OFF-A4-75",
+                "raw_value": "OFF-A4-75",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-A4-75",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-A4-75",
+                "raw_value": "OFF-A4-75",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-A4-75",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "100",
+                "raw_value": "100",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "100",
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 6,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            },
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "OFF-TNR-85",
+                "raw_value": "OFF-TNR-85",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-TNR-85",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-TNR-85",
+                "raw_value": "OFF-TNR-85",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-TNR-85",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "6",
+                "raw_value": "6",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "6",
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 7,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5105",
+            "raw_value": "GRN-26-5105",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5105",
+                "page_number": null,
+                "table_row": 8,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 8,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1005",
+            "raw_value": "PO-2026-1005",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1005",
+                "page_number": null,
+                "table_row": 8,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-10-04",
+            "raw_value": "2026-10-04",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-10-04",
+                "page_number": null,
+                "table_row": 8,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "PKG-SF-23",
+                "raw_value": "PKG-SF-23",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-SF-23",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "PKG-SF-23",
+                "raw_value": "PKG-SF-23",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "PKG-SF-23",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "450",
+                "raw_value": "450",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "450",
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 8,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5106",
+            "raw_value": "GRN-26-5106",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5106",
+                "page_number": null,
+                "table_row": 9,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 9,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1006",
+            "raw_value": "PO-2026-1006",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1006",
+                "page_number": null,
+                "table_row": 9,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-10-07",
+            "raw_value": "2026-10-07",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-10-07",
+                "page_number": null,
+                "table_row": 9,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "STL-FL-506",
+                "raw_value": "STL-FL-506",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-FL-506",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-FL-506",
+                "raw_value": "STL-FL-506",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-FL-506",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "800",
+                "raw_value": "800",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "800",
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 9,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "SES-26-0034",
+            "raw_value": "SES-26-0034",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "SES-26-0034",
+                "page_number": null,
+                "table_row": 10,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "SERVICE_ENTRY",
+            "raw_value": "SERVICE_ENTRY",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "SERVICE_ENTRY",
+                "page_number": null,
+                "table_row": 10,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1007",
+            "raw_value": "PO-2026-1007",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1007",
+                "page_number": null,
+                "table_row": 10,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-10-09",
+            "raw_value": "2026-10-09",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-10-09",
+                "page_number": null,
+                "table_row": 10,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "FRT-PNQ-MAA",
+                "raw_value": "FRT-PNQ-MAA",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "FRT-PNQ-MAA",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "FRT-PNQ-MAA",
+                "raw_value": "FRT-PNQ-MAA",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "FRT-PNQ-MAA",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "1",
+                "raw_value": "1",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "1",
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 10,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5108",
+            "raw_value": "GRN-26-5108",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5108",
+                "page_number": null,
+                "table_row": 11,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 11,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1008",
+            "raw_value": "PO-2026-1008",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1008",
+                "page_number": null,
+                "table_row": 11,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-10-06",
+            "raw_value": "2026-10-06",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-10-06",
+                "page_number": null,
+                "table_row": 11,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "OFF-WBM-10",
+                "raw_value": "OFF-WBM-10",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-WBM-10",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "OFF-WBM-10",
+                "raw_value": "OFF-WBM-10",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "OFF-WBM-10",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "20",
+                "raw_value": "20",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "20",
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 11,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        },
+        {
+          "record_type": "receipt",
+          "receipt_number": {
+            "value": "GRN-26-5109",
+            "raw_value": "GRN-26-5109",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GRN-26-5109",
+                "page_number": null,
+                "table_row": 12,
+                "column": "receipt_no"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_type": {
+            "value": "GOODS_RECEIPT",
+            "raw_value": "GOODS_RECEIPT",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "GOODS_RECEIPT",
+                "page_number": null,
+                "table_row": 12,
+                "column": "receipt_type"
+              }
+            ],
+            "warnings": []
+          },
+          "po_number": {
+            "value": "PO-2026-1009",
+            "raw_value": "PO-2026-1009",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "PO-2026-1009",
+                "page_number": null,
+                "table_row": 12,
+                "column": "po_number"
+              }
+            ],
+            "warnings": []
+          },
+          "receipt_date": {
+            "value": "2026-10-10",
+            "raw_value": "2026-10-10",
+            "confidence": 1.0,
+            "evidence": [
+              {
+                "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                "source_file": "receipt/goods_receipts.csv",
+                "quote": "2026-10-10",
+                "page_number": null,
+                "table_row": 12,
+                "column": "receipt_date"
+              }
+            ],
+            "warnings": []
+          },
+          "vendor_name": {
+            "value": null,
+            "raw_value": null,
+            "confidence": null,
+            "evidence": [],
+            "warnings": []
+          },
+          "line_items": [
+            {
+              "line_number": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              },
+              "description": {
+                "value": "STL-AN-405",
+                "raw_value": "STL-AN-405",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-AN-405",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "item_code": {
+                "value": "STL-AN-405",
+                "raw_value": "STL-AN-405",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "STL-AN-405",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "item_code"
+                  }
+                ],
+                "warnings": []
+              },
+              "hsn_sac": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "hsn_sac"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "quantity": {
+                "value": "600",
+                "raw_value": "600",
+                "confidence": 1.0,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": "600",
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "qty_received"
+                  }
+                ],
+                "warnings": []
+              },
+              "unit": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "unit"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "unit_price": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "unit_price"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "tax_rate": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [
+                  {
+                    "document_id": "24b56f68-d495-48bb-835f-5d6dc362444b",
+                    "source_file": "receipt/goods_receipts.csv",
+                    "quote": null,
+                    "page_number": null,
+                    "table_row": 12,
+                    "column": "gst_rate"
+                  }
+                ],
+                "warnings": [
+                  "Source cell is empty; value left unknown."
+                ]
+              },
+              "line_total": {
+                "value": null,
+                "raw_value": null,
+                "confidence": null,
+                "evidence": [],
+                "warnings": []
+              }
+            }
+          ],
+          "warnings": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

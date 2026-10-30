@@ -1,0 +1,908 @@
+{
+  "matching_id": "b38272be-35ea-456b-9633-40b6d130a1b4",
+  "extraction_id": "fb7c3782-658f-4227-b32d-80bdc1fc5446",
+  "config": {
+    "currency": "INR",
+    "unit_price_tolerance_percent": "1.0",
+    "amount_tolerance": "1.00",
+    "minimum_field_confidence": 0.6
+  },
+  "invoices": [
+    {
+      "invoice_document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+      "invoice_source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+      "invoice_number": "DOS/2026/0417",
+      "normalized_invoice_number": "DOS2026417",
+      "purchase_order_number": "PO-2026-1004",
+      "vendor_id": "V004",
+      "purchase_order_document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+      "receipt_document_ids": [
+        "4db31abd-6d7d-4525-8e11-ea785bd1a640"
+      ],
+      "status": "matched",
+      "duplicate_of_document_id": null,
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "A4 copier paper 75 gsm (ream of 500)",
+          "item_code": "4802",
+          "invoiced_quantity": "100",
+          "ordered_quantity": "100",
+          "received_quantity": "100",
+          "invoiced_unit_price": "246.20",
+          "ordered_unit_price": "245.00",
+          "unit_price_variance_percent": "0.4897959183673469387755102041",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "1",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "4802",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "100",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "246.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "24,620.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": null,
+              "table_row": 6,
+              "column": "description"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "245.00",
+              "page_number": null,
+              "table_row": 6,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Laser toner cartridge 85A compatible",
+          "item_code": "8443",
+          "invoiced_quantity": "6",
+          "ordered_quantity": "6",
+          "received_quantity": "6",
+          "invoiced_unit_price": "3850.00",
+          "ordered_unit_price": "3850.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "2",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "8443",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "6",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "3,850.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+              "source_file": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+              "quote": "23,100.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": null,
+              "table_row": 7,
+              "column": "description"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "3850.00",
+              "page_number": null,
+              "table_row": 7,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "warnings": [],
+      "source_warnings": []
+    },
+    {
+      "invoice_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "invoice_source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "normalized_invoice_number": "DOS2026417",
+      "purchase_order_number": "PO-2026-1004",
+      "vendor_id": "V004",
+      "purchase_order_document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+      "receipt_document_ids": [
+        "4db31abd-6d7d-4525-8e11-ea785bd1a640"
+      ],
+      "status": "exception",
+      "duplicate_of_document_id": "ee5a5102-82d9-4824-bc0d-eb79317f8724",
+      "lines": [
+        {
+          "invoice_line_number": "1",
+          "purchase_order_line_number": "1",
+          "item_description": "A4 copier paper 75 gsm (ream of 500)",
+          "item_code": "4802",
+          "invoiced_quantity": "100",
+          "ordered_quantity": "100",
+          "received_quantity": "100",
+          "invoiced_unit_price": "246.20",
+          "ordered_unit_price": "245.00",
+          "unit_price_variance_percent": "0.4897959183673469387755102041",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "4802",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "100",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "246.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "24,620.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "A4 copier paper 75 gsm (ream of 500)",
+              "page_number": null,
+              "table_row": 6,
+              "column": "description"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "245.00",
+              "page_number": null,
+              "table_row": 6,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "100",
+              "page_number": null,
+              "table_row": 6,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "OFF-A4-75",
+              "page_number": null,
+              "table_row": 6,
+              "column": "item_code"
+            }
+          ]
+        },
+        {
+          "invoice_line_number": "2",
+          "purchase_order_line_number": "2",
+          "item_description": "Laser toner cartridge 85A compatible",
+          "item_code": "8443",
+          "invoiced_quantity": "6",
+          "ordered_quantity": "6",
+          "received_quantity": "6",
+          "invoiced_unit_price": "3850.00",
+          "ordered_unit_price": "3850.00",
+          "unit_price_variance_percent": "0",
+          "issues": [],
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "8443",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "6",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "3,850.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "23,100.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "Laser toner cartridge 85A compatible",
+              "page_number": null,
+              "table_row": 7,
+              "column": "description"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "3850.00",
+              "page_number": null,
+              "table_row": 7,
+              "column": "unit_price"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "6",
+              "page_number": null,
+              "table_row": 7,
+              "column": "qty_received"
+            },
+            {
+              "document_id": "4db31abd-6d7d-4525-8e11-ea785bd1a640",
+              "source_file": "receipt/goods_receipts.csv",
+              "quote": "OFF-TNR-85",
+              "page_number": null,
+              "table_row": 7,
+              "column": "item_code"
+            }
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "TAX_RATE_UNAVAILABLE",
+          "severity": "review",
+          "message": "One or more invoice tax rates are unavailable for jurisdiction checks.",
+          "expected_amount": null,
+          "found_amount": null,
+          "currency": null,
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1,477.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2,079.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "CGST at 6% totals 0; PO rates and invoice taxable bases produce 1477.20.",
+          "expected_amount": "1477.20",
+          "found_amount": "0",
+          "currency": "₹",
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1,477.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2,079.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "SGST at 6% totals 0; PO rates and invoice taxable bases produce 1477.20.",
+          "expected_amount": "1477.20",
+          "found_amount": "0",
+          "currency": "₹",
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1,477.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2,079.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "CGST at 9% totals 0; PO rates and invoice taxable bases produce 2079.00.",
+          "expected_amount": "2079.00",
+          "found_amount": "0",
+          "currency": "₹",
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1,477.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2,079.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+          "severity": "exception",
+          "message": "SGST at 9% totals 0; PO rates and invoice taxable bases produce 2079.00.",
+          "expected_amount": "2079.00",
+          "found_amount": "0",
+          "currency": "₹",
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "1,477.20",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 6%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "CGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "2,079.00",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "SGST @ 9%",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "12",
+              "page_number": null,
+              "table_row": 6,
+              "column": "gst_rate"
+            },
+            {
+              "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+              "source_file": "purchase_order/purchase_orders.csv",
+              "quote": "18",
+              "page_number": null,
+              "table_row": 7,
+              "column": "gst_rate"
+            }
+          ]
+        },
+        {
+          "code": "DUPLICATE_INVOICE",
+          "severity": "exception",
+          "message": "This invoice has the same vendor and normalized invoice number as document ee5a5102-82d9-4824-bc0d-eb79317f8724.",
+          "expected_amount": null,
+          "found_amount": null,
+          "currency": null,
+          "evidence": [
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "Invoice No: DOS-2026-417",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            },
+            {
+              "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+              "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+              "quote": "GSTIN: 27AGHPD1187R1Z6",
+              "page_number": 1,
+              "table_row": null,
+              "column": null
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_warnings": []
+    }
+  ],
+  "bank_payments": []
+}

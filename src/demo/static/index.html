@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoice Reconciliation Demo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #172033;
+        background: #f3f5f8;
+      }
+      body { margin: 0; }
+      header {
+        background: #14213d;
+        color: white;
+        padding: 1.4rem max(1rem, calc((100% - 1120px) / 2));
+      }
+      header h1 { margin: 0 0 .35rem; font-size: 1.5rem; }
+      header p { margin: 0; color: #cbd5e1; }
+      main { max-width: 1120px; margin: 1.5rem auto; padding: 0 1rem 3rem; }
+      .toolbar, .card, .draft, .stage-panel {
+        background: white;
+        border: 1px solid #dce2eb;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px #14213d0b;
+      }
+      .toolbar { padding: 1rem; display: flex; align-items: center; gap: 1rem; }
+      .toolbar p { flex: 1; margin: 0; }
+      .upload { margin-bottom: 1rem; padding: 1rem; }
+      .upload label { display: block; font-weight: 600; margin-bottom: .5rem; }
+      .upload input { display: block; max-width: 100%; margin: .5rem 0; }
+      .stages { margin: 1.5rem 0; }
+      .stage-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .75rem; }
+      .stage-panel { padding: 1rem; overflow: auto; }
+      .stage-panel pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 34rem; }
+      button {
+        border: 0;
+        border-radius: 6px;
+        background: #2257a5;
+        color: white;
+        font: inherit;
+        font-weight: 600;
+        padding: .6rem .85rem;
+        cursor: pointer;
+      }
+      button.secondary { background: #e7edf5; color: #1d3557; }
+      button.danger { background: #a83232; }
+      button:disabled { opacity: .55; cursor: wait; }
+      #message { margin: 1rem 0; color: #34445e; min-height: 1.4rem; }
+      #cases { display: grid; gap: 1rem; }
+      .card { padding: 1rem 1.15rem; }
+      .card h2 { font-size: 1.05rem; margin: 0 0 .5rem; }
+      .meta { color: #526179; font-size: .9rem; }
+      .badge { display: inline-block; border-radius: 1rem; padding: .2rem .55rem; background: #fff0cf; color: #704b00; font-size: .78rem; font-weight: 700; }
+      .badge.auto_cleared, .badge.approved { background: #dcf4e3; color: #185b31; }
+      .badge.rejected { background: #ffe2e2; color: #7e2020; }
+      .issue { border-left: 3px solid #e1a62a; padding: .5rem .75rem; margin: .65rem 0; background: #fafbfd; }
+      .issue p { margin: .2rem 0; }
+      details { margin-top: .65rem; }
+      summary { cursor: pointer; color: #2257a5; }
+      .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+      .draft { padding: 1rem; margin-top: 1rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+      label { display: flex; gap: .5rem; align-items: flex-start; margin: .8rem 0; }
+      input { margin-top: .2rem; }
+      dialog { width: min(32rem, calc(100% - 3rem)); border: 1px solid #dce2eb; border-radius: 10px; box-shadow: 0 12px 40px #14213d33; }
+      dialog::backdrop { background: #14213d80; }
+      dialog label { display: block; font-weight: 600; }
+      dialog input, dialog textarea { box-sizing: border-box; display: block; width: 100%; margin-top: .35rem; padding: .55rem; font: inherit; }
+      dialog textarea { min-height: 5rem; resize: vertical; }
+      .dialog-actions { display: flex; justify-content: flex-end; gap: .5rem; margin-top: 1rem; }
+      a { color: #2257a5; }
+      @media (max-width: 620px) { .toolbar { align-items: flex-start; flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Invoice Expense Reconciliation</h1>
+      <p>Extraction → deterministic matching → anomaly checks → grounded explanations → human review → draft-only correspondence</p>
+    </header>
+    <main>
+      <section class="card upload">
+        <label for="input-files">Upload invoices, purchase orders, receipts, and bank or expense CSVs</label>
+        <input id="input-files" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.webp,.csv">
+        <p class="meta">PDF, image, and CSV files; up to 50 files, 25 MB each, and 100 MB total. Descriptive names (for example, invoice, PO, receipt, bank, expense) help classify documents.</p>
+      </section>
+      <section class="toolbar">
+        <p id="health">Checking service…</p>
+        <button id="run">Run reconciliation pipeline</button>
+      </section>
+      <p id="message" role="status"></p>
+      <section id="stage-output" class="stages" hidden>
+        <h2>Pipeline stage outputs</h2>
+        <div id="stage-tabs" class="stage-tabs" role="tablist"></div>
+        <article class="stage-panel">
+          <h3 id="stage-title"></h3>
+          <pre id="stage-json"></pre>
+        </article>
+      </section>
+      <section id="cases" aria-live="polite"></section>
+      <section id="draft" class="draft" hidden></section>
+      <p><a href="/docs">Open API docs</a> · <a href="/correspondence/docs">Correspondence API docs</a></p>
+    </main>
+    <dialog id="decision-dialog">
+      <form id="decision-form">
+        <h2 id="decision-title">Record a review decision</h2>
+        <label for="reviewer-name">Reviewer name
+          <input id="reviewer-name" name="reviewer" maxlength="120" required>
+        </label>
+        <label for="decision-note">Optional note
+          <textarea id="decision-note" name="note" maxlength="2000"></textarea>
+        </label>
+        <div class="dialog-actions">
+          <button id="decision-cancel" class="secondary" type="button">Cancel</button>
+          <button id="decision-submit" type="submit">Record decision</button>
+        </div>
+      </form>
+    </dialog>
+    <script>
+      const byId = (id) => document.getElementById(id);
+      const message = (text) => { byId("message").textContent = text; };
+      const addText = (parent, tag, text, className) => {
+        const element = document.createElement(tag);
+        element.textContent = text;
+        if (className) element.className = className;
+        parent.appendChild(element);
+        return element;
+      };
+
+      async function request(url, options = {}) {
+        const headers = { ...(options.headers || {}) };
+        if (!(options.body instanceof FormData)) headers["Content-Type"] = "application/json";
+        const response = await fetch(url, {
+          ...options,
+          headers,
+        });
+        const body = await response.json();
+        if (!response.ok) throw new Error(body.detail || `Request failed (${response.status})`);
+        return body;
+      }
+
+      const stages = [
+        ["ingestion", "Ingestion"],
+        ["extraction", "Extraction"],
+        ["matching", "Matching"],
+        ["anomaly", "Anomaly"],
+        ["explanation", "Explanation"],
+      ];
+      let activeRunId = null;
+      let activeMatchingId = null;
+      let pendingDecision = null;
+
+      async function showStage(name, label) {
+        const output = await request(
+          `/api/outputs/${name}${activeRunId ? `?run_id=${encodeURIComponent(activeRunId)}` : ""}`,
+        );
+        byId("stage-title").textContent = `${label} output`;
+        byId("stage-json").textContent = JSON.stringify(output, null, 2);
+      }
+
+      async function loadStageOutputs(runId) {
+        activeRunId = runId;
+        const tabs = byId("stage-tabs");
+        tabs.replaceChildren();
+        for (const [name, label] of stages) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "secondary";
+          button.textContent = label;
+          button.addEventListener("click", async () => {
+            try { await showStage(name, label); }
+            catch (error) { message(error.message); }
+          });
+          tabs.appendChild(button);
+        }
+        byId("stage-output").hidden = false;
+        await showStage(stages[0][0], stages[0][1]);
+      }
+
+      async function loadHealth() {
+        const health = await request("/api/health");
+        byId("health").textContent =
+          `Service ${health.status} · LLM/RAG ${health.explanation_llm_rag_enabled ? "enabled" : "deterministic fallback"} · Email sending disabled · Payment approval disabled`;
+      }
+
+      function addCase(caseData) {
+        const card = document.createElement("article");
+        card.className = "card";
+        const title = caseData.invoice_number || caseData.source_file;
+        addText(card, "h2", `${caseData.case_type.replace("_", " ")} · ${title}`);
+        const meta = addText(
+          card,
+          "p",
+          `${caseData.source_file} · ${caseData.severity} severity · ${caseData.confidence == null ? "Confidence unavailable" : `Confidence: ${(caseData.confidence * 100).toFixed(0)}%`} · ${caseData.amount_at_risk == null ? "Amount at risk not calculated" : `Amount at risk: ${caseData.amount_at_risk}`} · ${caseData.issue_codes.join(", ") || "No exceptions"}`,
+          "meta",
+        );
+        const badge = addText(card, "span", caseData.status.replace("_", " "), `badge ${caseData.status}`);
+        if (caseData.reviewer) addText(card, "p", `Reviewed by ${caseData.reviewer}${caseData.decision_note ? `: ${caseData.decision_note}` : ""}`, "meta");
+        addText(card, "p", caseData.summary);
+        if (caseData.routing_reasons.length) {
+          addText(card, "p", `Review reasons: ${caseData.routing_reasons.join(", ")}`, "meta");
+        }
+
+        for (const explanation of caseData.explanations) {
+          const box = document.createElement("div");
+          box.className = "issue";
+          addText(box, "strong", `${explanation.issue_code}${explanation.generation_mode === "llm_rag" ? " · LLM + RAG" : " · deterministic"}`);
+          addText(box, "p", explanation.explanation);
+          addText(box, "p", `Action: ${explanation.recommended_action}`);
+          if (explanation.expected_amount != null || explanation.found_amount != null) {
+            addText(box, "p", `Expected amount: ${explanation.currency || ""} ${explanation.expected_amount ?? "not calculated"}; found amount: ${explanation.currency || ""} ${explanation.found_amount ?? "not calculated"}.`);
+          }
+          const evidence = document.createElement("details");
+          addText(evidence, "summary", `Source evidence (${explanation.evidence.length})`);
+          for (const item of explanation.evidence) {
+            addText(evidence, "p", `${item.source_file}${item.page_number ? `, page ${item.page_number}` : ""}${item.table_row ? `, row ${item.table_row}` : ""}${item.quote ? ` — “${item.quote}”` : ""}`, "meta");
+          }
+          box.appendChild(evidence);
+          if (explanation.policy_sources.length) {
+            const policies = document.createElement("details");
+            addText(policies, "summary", "Retrieved policy sources");
+            for (const source of explanation.policy_sources) {
+              addText(policies, "p", `${source.title} (${source.policy_id}): ${source.excerpt}`, "meta");
+            }
+            box.appendChild(policies);
+          }
+          card.appendChild(box);
+        }
+
+        for (const anomaly of caseData.anomalies) {
+          const box = document.createElement("div");
+          box.className = "issue";
+          addText(box, "strong", `${anomaly.anomaly_type} · ${anomaly.severity}`);
+          addText(box, "p", anomaly.description);
+          card.appendChild(box);
+        }
+
+        if (caseData.status === "pending_review" || caseData.status === "request_info") {
+          const actions = document.createElement("div");
+          actions.className = "actions";
+          if (caseData.status === "pending_review") {
+            for (const [decision, label, style] of [
+              ["approve", "Record approval", ""],
+              ["request_info", "Request information", "secondary"],
+              ["reject", "Reject", "danger"],
+            ]) {
+              const button = document.createElement("button");
+              button.type = "button";
+              button.textContent = label;
+              if (style) button.className = style;
+              button.addEventListener("click", () => openDecisionDialog(caseData, decision));
+              actions.appendChild(button);
+            }
+          }
+          if (caseData.case_type === "invoice" || caseData.invoice_number) {
+            const draftButton = document.createElement("button");
+            draftButton.textContent = "Prepare vendor email draft";
+            draftButton.className = "secondary";
+            draftButton.addEventListener("click", () => createDraft(caseData.case_id));
+            actions.appendChild(draftButton);
+          }
+          card.appendChild(actions);
+        }
+        byId("cases").appendChild(card);
+      }
+
+      async function loadCases(runId = null) {
+        if (runId) activeMatchingId = runId;
+        const selectedRunId = runId || activeMatchingId;
+        const query = selectedRunId ? `?run_id=${encodeURIComponent(selectedRunId)}` : "";
+        const cases = await request(`/api/cases${query}`);
+        byId("cases").replaceChildren();
+        if (!cases.length) {
+          addText(byId("cases"), "p", "No reconciliation run yet. Start the pipeline to create review cases.");
+          return;
+        }
+        for (const caseData of cases) addCase(caseData);
+      }
+
+      function openDecisionDialog(caseData, decision) {
+        pendingDecision = { caseId: caseData.case_id, decision };
+        byId("decision-title").textContent =
+          `${decision === "request_info" ? "Request information" : decision === "approve" ? "Record approval" : "Reject case"} · ${caseData.invoice_number || caseData.source_file}`;
+        byId("reviewer-name").value = "";
+        byId("decision-note").value = "";
+        byId("decision-submit").textContent =
+          decision === "request_info" ? "Request information" :
+          decision === "approve" ? "Record approval" : "Record rejection";
+        byId("decision-dialog").showModal();
+        byId("reviewer-name").focus();
+      }
+
+      byId("decision-cancel").addEventListener("click", () => {
+        byId("decision-dialog").close();
+        pendingDecision = null;
+      });
+
+      byId("decision-form").addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!pendingDecision) return;
+        const { caseId, decision } = pendingDecision;
+        const button = byId("decision-submit");
+        button.disabled = true;
+        button.textContent = "Saving…";
+        byId("decision-dialog").close();
+        message("Saving your review decision…");
+        try {
+          await request(`/api/cases/${encodeURIComponent(caseId)}/decision`, {
+            method: "POST",
+            body: JSON.stringify({
+              decision,
+              reviewer: byId("reviewer-name").value.trim(),
+              note: byId("decision-note").value.trim(),
+            }),
+          });
+          pendingDecision = null;
+          message("Decision saved. The review case has been updated.");
+          window.location.reload();
+        } catch (error) {
+          message(`Could not save decision: ${error.message}`);
+        } finally {
+          button.disabled = false;
+          button.textContent = "Record decision";
+        }
+      });
+
+      async function createDraft(caseId) {
+        if (!confirm("Confirm that you reviewed the cited source evidence. This only creates a draft; it will not be sent.")) return;
+        try {
+          const response = await request(`/api/cases/${encodeURIComponent(caseId)}/draft`, {
+            method: "POST",
+            body: JSON.stringify({ reviewed_source_evidence: true }),
+          });
+          const output = byId("draft");
+          output.replaceChildren();
+          output.hidden = false;
+          addText(output, "h2", "Vendor correspondence draft");
+          addText(output, "h3", response.draft ? response.draft.subject : "Draft blocked");
+          if (response.draft) addText(output, "pre", response.draft.body);
+          output.scrollIntoView({ behavior: "smooth", block: "start" });
+        } catch (error) { message(error.message); }
+      }
+
+      byId("run").addEventListener("click", async () => {
+        const button = byId("run");
+        const selectedFiles = byId("input-files").files;
+        if (!selectedFiles.length) {
+          message("Select at least one input file before starting a run.");
+          return;
+        }
+        button.disabled = true;
+        message(`Uploading ${selectedFiles.length} file(s), then running ingestion, extraction, matching, anomaly, explanation, and review routing. This may take a few minutes.`);
+        try {
+          const form = new FormData();
+          for (const file of selectedFiles) form.append("files", file, file.name);
+          const result = await request("/api/run", { method: "POST", body: form });
+          localStorage.setItem("activeRunId", result.run_id);
+          localStorage.setItem("activeMatchingId", result.matching_id);
+          message(`Pipeline complete: ${result.analyzed_invoices} invoices, ${result.anomaly_findings} anomaly findings, ${result.explanations} explanations (${result.explanations_using_llm_rag} LLM/RAG), ${result.pending_review_cases} cases awaiting human review.`);
+          await Promise.all([loadCases(result.matching_id), loadStageOutputs(result.run_id)]);
+        } catch (error) { message(error.message); }
+        finally { button.disabled = false; }
+      });
+
+      const savedRunId = localStorage.getItem("activeRunId");
+      const savedMatchingId = localStorage.getItem("activeMatchingId");
+      activeMatchingId = savedMatchingId;
+      Promise.all([
+        loadHealth(),
+        loadCases(savedMatchingId),
+        savedRunId && savedMatchingId
+          ? loadStageOutputs(savedRunId)
+          : Promise.resolve(),
+      ]).catch((error) => message(error.message));
+    </script>
+  </body>
+</html>

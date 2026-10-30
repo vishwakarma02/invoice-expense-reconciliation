@@ -36,7 +36,8 @@ their raw source text, confidence, evidence location, and validation warnings.
 Field confidence uses a separate 0-to-1 scale from OCR confidence. Missing or
 ambiguous values remain unknown.
 
-Run all three agents sequentially with one command from the project directory:
+Run the ingestion, extraction, matching, and explanation agents sequentially
+with one command from the project directory:
 
 ```powershell
 python run_pipeline.py
@@ -46,18 +47,68 @@ The pipeline runs ingestion first, writes
 `data/output/ingestion_output.json`, then reads that JSON as the extraction
 input and writes `data/output/extraction_output.json`. Each stage keeps its own
 serialized output, so later agents can consume the extraction JSON in the same
-way. It then reads the extraction JSON to perform deterministic purchase
-order/invoice/receipt checks and bank payment matching, writing
-`data/output/matching_output.json`. Matching reports outcomes and exceptions;
-it does not approve or pay invoices. To run a stage independently, use
-`python run_ingestion.py`, `python run_extraction.py`, or
-`python run_matching.py`.
+way. It then performs deterministic PO/invoice/receipt and bank payment
+matching, runs independent anomaly checks, grounds exception explanations in
+local policies, explains anomaly findings as well as matching exceptions, and
+routes review cases into a persistent SQLite HITL queue.
+Matching reports outcomes and exceptions; it does not approve or pay invoices.
+To run a stage independently, use `python run_ingestion.py`,
+`python run_extraction.py`, `python run_matching.py`, or
+`python run_explanation.py`.
 
 The configured `OPENAI_API_KEY` and `OPENAI_MODEL` are required for
 unstructured invoice and receipt extraction. CSV-backed bank transactions,
 expense claims, purchase orders, goods receipts, and vendor masters are parsed
 without an LLM. A document that needs an unavailable LLM is reported as a
 failed extraction rather than silently skipped.
+
+The HITL router sends matching exceptions, anomalies, low-confidence records,
+and amounts at or above the auto-clear limit to human review. Defaults require
+at least `0.9` confidence and cap auto-clear exposure below `50000` (in the
+record's currency units). Override these conservative demo defaults with
+`HITL_MIN_AUTO_CLEAR_CONFIDENCE` (0-1) and `HITL_MAX_AUTO_CLEAR_AMOUNT` in
+`.env`. If confidence is unavailable, an extracted invoice is sent for review.
+An auto-cleared case is only a routing outcome, never payment authorization.
+
+## End-to-End Demo
+
+Start the local FastAPI application from the project directory:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn src.demo.app:app --reload
+```
+
+Open `http://127.0.0.1:8000/` for the demo UI or
+`http://127.0.0.1:8000/docs` for the API. Select one or more PDF, image, or
+CSV files in the UI and choose **Run reconciliation pipeline**. The app saves
+uploads in a run-specific folder under `data/output/demo_uploads` (not
+`data/input`), processes those files, and displays the ingestion, extraction,
+matching, anomaly, and explanation JSON outputs in stage tabs. Descriptive
+filenames such as `invoice-123.pdf`, `po-123.csv`, or `bank-statement.csv` help
+the ingestion agent classify uploaded documents. The review queue is persisted in
+`data/output/hitl_decisions.sqlite3`. Decisions record human disposition only;
+they never authorize or release payment. Correspondence is always a draft and
+is never sent.
+
+The Explanation Agent retrieves relevant Markdown policy files from
+`data/policies` using deterministic keyword ranking. Azure OpenAI generation
+is optional and disabled by default. To enable LLM-generated wording, add these
+values to the project `.env`:
+
+```dotenv
+EXPLANATION_LLM_ENABLED=true
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
+AZURE_OPENAI_API_KEY=your_azure_openai_key
+AZURE_OPENAI_DEPLOYMENT=your_deployment_name
+```
+
+When enabled, the explanation model receives the matching issue summary,
+structured expected/found amounts, and retrieved policy passages. Amounts and
+source evidence remain attached from deterministic matching and policy
+retrieval. If Azure configuration or generation is unavailable, the failure
+is logged and the agent uses its deterministic explanation instead. The
+Correspondence Agent independently uses `LLM_ENABLED` and the same Azure
+settings; it returns a validated draft for human review and never sends email.
 
 Run pipeline orchestration tests with:
 

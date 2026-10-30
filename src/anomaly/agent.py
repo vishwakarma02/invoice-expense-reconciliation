@@ -57,6 +57,7 @@ class AnomalyFinding(BaseModel):
     description: str
     observed_amount: Decimal
     currency: str
+    expected_amount: Decimal | None = None
     duplicate_of: str | None = None
 
 
@@ -455,6 +456,7 @@ class AnomalyAgent:
                         ),
                         observed_amount=invoice.amount,
                         currency=invoice.currency,
+                        expected_amount=threshold,
                     )
                 )
 
@@ -506,6 +508,7 @@ class AnomalyAgent:
                             ),
                             observed_amount=invoice.amount,
                             currency=invoice.currency,
+                            expected_amount=historical_median,
                         )
                     )
 
@@ -526,6 +529,50 @@ class AnomalyAgent:
             findings_by_type,
         )
         return report
+
+
+def run_anomaly(
+    input_file: Path,
+    output_file: Path,
+    *,
+    vendor_history_file: Path | None = None,
+    max_invoice_amount: Decimal = Decimal("100000"),
+) -> AnomalyReport:
+    if not input_file.is_file():
+        raise FileNotFoundError(f"Extraction results not found: {input_file}")
+    extraction_results = json.loads(input_file.read_text(encoding="utf-8"))
+    if not isinstance(extraction_results, (list, dict)):
+        raise ValueError("Extraction results must be an array or batch object.")
+
+    history: Mapping[str, Sequence[Decimal | int | float | str]] = {}
+    if vendor_history_file is not None:
+        if not vendor_history_file.is_file():
+            raise FileNotFoundError(
+                f"Vendor history file does not exist: {vendor_history_file}"
+            )
+        history_data = json.loads(vendor_history_file.read_text(encoding="utf-8"))
+        if not isinstance(history_data, dict):
+            raise ValueError("Vendor history must be a JSON object.")
+        history = history_data
+
+    report = AnomalyAgent(
+        AnomalyPolicy(
+            max_invoice_amount_by_currency={"INR": max_invoice_amount}
+        )
+    ).analyze(extraction_results, history)
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    temporary_file = output_file.with_suffix(output_file.suffix + ".tmp")
+    try:
+        temporary_file.write_text(
+            report.model_dump_json(indent=2),
+            encoding="utf-8",
+        )
+        temporary_file.replace(output_file)
+    except OSError:
+        temporary_file.unlink(missing_ok=True)
+        logger.exception("Could not write anomaly report to %s", output_file)
+        raise
+    return report
 
 
 def main() -> None:
@@ -567,44 +614,13 @@ def main() -> None:
         format="%(asctime)s %(levelname)s %(name)s %(message)s",
     )
 
-    input_path = Path(args.input)
-    if not input_path.exists():
-        logger.error("Extraction results file does not exist: %s", input_path)
-        raise FileNotFoundError(f"Extraction results not found: {input_path}")
-
-    extraction_results = json.loads(input_path.read_text(encoding="utf-8"))
-    if not isinstance(extraction_results, (list, dict)):
-        logger.error("Extraction results must be an array or batch object.")
-        raise ValueError("Extraction results must be an array or batch object.")
-
-    history: Mapping[str, Sequence[Decimal | int | float | str]] = {}
-    if args.vendor_history:
-        history_path = Path(args.vendor_history)
-        if not history_path.exists():
-            logger.error("Vendor history file does not exist: %s", history_path)
-            raise FileNotFoundError(f"Vendor history not found: {history_path}")
-        history_data = json.loads(history_path.read_text(encoding="utf-8"))
-        if not isinstance(history_data, dict):
-            logger.error("Vendor history must be a JSON object.")
-            raise ValueError("Vendor history must be a JSON object.")
-        history = history_data
-
-    report = AnomalyAgent(
-        AnomalyPolicy(
-            max_invoice_amount_by_currency={"INR": args.max_invoice_amount}
-        )
-    ).analyze(extraction_results, history)
-    output_path = Path(args.output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    try:
-        output_path.write_text(
-            report.model_dump_json(indent=2),
-            encoding="utf-8",
-        )
-    except OSError:
-        logger.exception("Could not write anomaly report to %s", output_path)
-        raise
-    logger.info("Wrote anomaly report to %s", output_path)
+    report = run_anomaly(
+        Path(args.input),
+        Path(args.output),
+        vendor_history_file=Path(args.vendor_history) if args.vendor_history else None,
+        max_invoice_amount=args.max_invoice_amount,
+    )
+    logger.info("Wrote anomaly report to %s", args.output)
     print(report.model_dump_json(indent=2))
 
 

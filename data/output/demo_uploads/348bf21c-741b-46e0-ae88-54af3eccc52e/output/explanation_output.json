@@ -1,0 +1,458 @@
+{
+  "matching_id": "b38272be-35ea-456b-9633-40b6d130a1b4",
+  "explanation_count": 6,
+  "explanations": [
+    {
+      "source_type": "invoice",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+      "anomaly_type": null,
+      "severity": null,
+      "duplicate_of": null,
+      "explanation": "CGST at 6% totals 0; PO rates and invoice taxable bases produce 1477.20. Expected amount: ₹ 1477.20; found amount: ₹ 0.",
+      "recommended_action": "Check the named tax component against the PO rate and taxable base, then request a corrected tax line if needed.",
+      "expected_amount": "1477.20",
+      "found_amount": "0",
+      "currency": "₹",
+      "evidence": [
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "1,477.20",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "2,079.00",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "12",
+          "page_number": null,
+          "table_row": 6,
+          "column": "gst_rate"
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "18",
+          "page_number": null,
+          "table_row": 7,
+          "column": "gst_rate"
+        }
+      ],
+      "policy_sources": [
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        },
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        }
+      ],
+      "generation_mode": "deterministic"
+    },
+    {
+      "source_type": "invoice",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+      "anomaly_type": null,
+      "severity": null,
+      "duplicate_of": null,
+      "explanation": "SGST at 6% totals 0; PO rates and invoice taxable bases produce 1477.20. Expected amount: ₹ 1477.20; found amount: ₹ 0.",
+      "recommended_action": "Check the named tax component against the PO rate and taxable base, then request a corrected tax line if needed.",
+      "expected_amount": "1477.20",
+      "found_amount": "0",
+      "currency": "₹",
+      "evidence": [
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "1,477.20",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "2,079.00",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "12",
+          "page_number": null,
+          "table_row": 6,
+          "column": "gst_rate"
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "18",
+          "page_number": null,
+          "table_row": 7,
+          "column": "gst_rate"
+        }
+      ],
+      "policy_sources": [
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        },
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        }
+      ],
+      "generation_mode": "deterministic"
+    },
+    {
+      "source_type": "invoice",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+      "anomaly_type": null,
+      "severity": null,
+      "duplicate_of": null,
+      "explanation": "CGST at 9% totals 0; PO rates and invoice taxable bases produce 2079.00. Expected amount: ₹ 2079.00; found amount: ₹ 0.",
+      "recommended_action": "Check the named tax component against the PO rate and taxable base, then request a corrected tax line if needed.",
+      "expected_amount": "2079.00",
+      "found_amount": "0",
+      "currency": "₹",
+      "evidence": [
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "1,477.20",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "2,079.00",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "12",
+          "page_number": null,
+          "table_row": 6,
+          "column": "gst_rate"
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "18",
+          "page_number": null,
+          "table_row": 7,
+          "column": "gst_rate"
+        }
+      ],
+      "policy_sources": [
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        },
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        }
+      ],
+      "generation_mode": "deterministic"
+    },
+    {
+      "source_type": "invoice",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "TAX_COMPONENT_AMOUNT_MISMATCH",
+      "anomaly_type": null,
+      "severity": null,
+      "duplicate_of": null,
+      "explanation": "SGST at 9% totals 0; PO rates and invoice taxable bases produce 2079.00. Expected amount: ₹ 2079.00; found amount: ₹ 0.",
+      "recommended_action": "Check the named tax component against the PO rate and taxable base, then request a corrected tax line if needed.",
+      "expected_amount": "2079.00",
+      "found_amount": "0",
+      "currency": "₹",
+      "evidence": [
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "1,477.20",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 6%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "CGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "2,079.00",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "SGST @ 9%",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "12",
+          "page_number": null,
+          "table_row": 6,
+          "column": "gst_rate"
+        },
+        {
+          "document_id": "608ebf2e-2e89-464e-a5ae-0a3d4831fd6a",
+          "source_file": "purchase_order/purchase_orders.csv",
+          "quote": "18",
+          "page_number": null,
+          "table_row": 7,
+          "column": "gst_rate"
+        }
+      ],
+      "policy_sources": [
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        },
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        }
+      ],
+      "generation_mode": "deterministic"
+    },
+    {
+      "source_type": "invoice",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "DUPLICATE_INVOICE",
+      "anomaly_type": null,
+      "severity": null,
+      "duplicate_of": null,
+      "explanation": "This invoice has the same vendor and normalized invoice number as document ee5a5102-82d9-4824-bc0d-eb79317f8724.",
+      "recommended_action": "Compare this invoice with the referenced original and hold duplicate processing until the vendor confirms which invoice is valid.",
+      "expected_amount": null,
+      "found_amount": null,
+      "currency": null,
+      "evidence": [
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "Invoice No: DOS-2026-417",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        },
+        {
+          "document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+          "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+          "quote": "GSTIN: 27AGHPD1187R1Z6",
+          "page_number": 1,
+          "table_row": null,
+          "column": null
+        }
+      ],
+      "policy_sources": [
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        },
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        }
+      ],
+      "generation_mode": "deterministic"
+    },
+    {
+      "source_type": "anomaly",
+      "source_document_id": "0d6445d7-59ab-4378-8653-cf58f1089df7",
+      "source_file": "invoice/invoice-INV-06_DeccanOffice_DOS-2026-417.pdf",
+      "invoice_number": "DOS-2026-417",
+      "issue_code": "DUPLICATE_INVOICE",
+      "anomaly_type": "DUPLICATE_INVOICE",
+      "severity": "HIGH",
+      "duplicate_of": "invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf",
+      "explanation": "Invoice matches invoice/invoice-INV-04_DeccanOffice_DOS-2026-0417.pdf by vendor, date, currency, total, and matching item codes and quantities.",
+      "recommended_action": "Compare this invoice with the referenced original and hold duplicate processing until the vendor confirms which invoice is valid.",
+      "expected_amount": null,
+      "found_amount": "54832.40",
+      "currency": "INR",
+      "evidence": [],
+      "policy_sources": [
+        {
+          "policy_id": "payment-and-duplicate-review",
+          "title": "Payment and Duplicate Review",
+          "excerpt": "# Payment and Duplicate Review\n\nAn invoice marked as a possible duplicate or a bank debit that differs from an\ninvoice total must be reviewed before further payment processing. Compare the\nreferenced invoice, bank statement, remittance advice, and prior payment ledger.\nDetermine whether the difference is a partial payment, approved deduction,\nduplicate debit, or an unresolved discrepancy; record the supporting evidence\nand route unresolved items to a finance reviewer.\n\nAutomated matching and anomaly findings are review signals only. They do not\nauthorize, initiate, or release a payment. Never send a vendor communication\nautomatically; prepare correspondence as a draft for human review."
+        },
+        {
+          "policy_id": "invoice-exceptions",
+          "title": "Invoice Exception Handling",
+          "excerpt": "# Invoice Exception Handling\n\nWhen invoice data does not agree with an approved purchase order, receipt, or\ninvoice arithmetic, do not treat the automated match as approval to pay. Compare\nthe cited invoice and purchase-order evidence, confirm the applicable contract\nor approved change, and request a corrected invoice or documented approval when\nthe source documents disagree. Keep the issue open until a finance reviewer\nrecords a decision.\n\nFor unit-price differences, compare the invoice unit price with the approved\npurchase-order unit price. For line-total and grand-total differences, recalculate\nthe arithmetic from the cited quantities, prices, taxable value, and tax lines.\nDo not substitute an estimated amount for a missing source value.\n\nFor tax type, rate, or amount differences, confirm the supplier and buyer tax\njurisdictions and compare invoice tax components with the purchase-ord"
+        }
+      ],
+      "generation_mode": "deterministic"
+    }
+  ],
+  "llm_rag_explanation_count": 0
+}

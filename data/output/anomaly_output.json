@@ -8,6 +8,7 @@
       "description": "Invoice amount 110448.00 INR exceeds the policy limit of 100000 INR.",
       "observed_amount": "110448.00",
       "currency": "INR",
+      "expected_amount": "100000",
       "duplicate_of": null
     },
     {
@@ -17,6 +18,7 @@
       "description": "Invoice amount 109150.00 INR exceeds the policy limit of 100000 INR.",
       "observed_amount": "109150.00",
       "currency": "INR",
+      "expected_amount": "100000",
       "duplicate_of": null
     },
     {
@@ -26,6 +28,7 @@
       "description": "Invoice matches invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf by vendor, date, currency, total, and matching item codes and quantities.",
       "observed_amount": "54832.40",
       "currency": "INR",
+      "expected_amount": null,
       "duplicate_of": "invoices/INV-04_DeccanOffice_DOS-2026-0417.pdf"
     }
   ]

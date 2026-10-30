@@ -1,0 +1,13 @@
+po_number,vendor_id,po_date,line_no,item_code,description,hsn_sac,qty,unit,unit_price,gst_rate
+PO-2026-1001,V001,2026-09-05,1,PKG-CB-5P,"Corrugated box 600x400x400 mm, 5-ply",4819,500,Nos,42.50,18
+PO-2026-1001,V001,2026-09-05,2,PKG-BW-100,Bubble wrap roll 1 m x 100 m,3923,20,Roll,1150.00,18
+PO-2026-1002,V002,2026-09-08,1,STL-RB-20,MS round bar 20 mm,7214,1200,Kg,72.00,18
+PO-2026-1003,V003,2026-09-01,1,SVC-HOST-M,Managed cloud hosting - Sep 2026,998315,1,Month,48000.00,18
+PO-2026-1003,V003,2026-09-01,2,SVC-BKP-M,Managed backup service - Sep 2026,998315,1,Month,6500.00,18
+PO-2026-1004,V004,2026-09-10,1,OFF-A4-75,A4 copier paper 75 gsm (ream of 500),4802,100,Ream,245.00,12
+PO-2026-1004,V004,2026-09-10,2,OFF-TNR-85,Laser toner cartridge 85A compatible,8443,6,Nos,3850.00,18
+PO-2026-1005,V001,2026-09-22,1,PKG-SF-23,"Stretch film 23 micron, 500 mm",3920,500,Roll,185.00,18
+PO-2026-1006,V002,2026-09-25,1,STL-FL-506,MS flat 50 x 6 mm,7211,800,Kg,68.00,18
+PO-2026-1007,V005,2026-09-28,1,FRT-PNQ-MAA,"FTL freight Pune to Chennai, 32 ft container",996511,1,Trip,38000.00,12
+PO-2026-1008,V004,2026-10-01,1,OFF-WBM-10,"Whiteboard markers, box of 10",9608,20,Box,420.00,18
+PO-2026-1009,V002,2026-10-03,1,STL-AN-405,MS angle 40 x 40 x 5 mm,7216,600,Kg,74.00,18
