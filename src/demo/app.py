@@ -42,7 +42,7 @@ from src.extraction.schemas import (
 )
 from src.explanation.agent import ExplanationReport
 from src.hitl.agent import DEFAULT_DATABASE, HITLRouter, HumanDecision, ReviewCase
-from src.matching.agent import normalize_identifier
+from src.matching.agent import normalize_currency, normalize_identifier
 from src.matching.schemas import MatchingBatch
 from run_pipeline import run_pipeline
 from src.ingestion.agent import (
@@ -429,6 +429,11 @@ def _build_correspondence_request(
 
     invoice_number = invoice.invoice_number.value
     po_number = purchase_order.po_number.value
+    currency = (
+        normalize_currency(invoice.currency.value)
+        or normalize_currency(purchase_order.currency.value)
+        or "INR"
+    )
     evidence = [
         Evidence(
             source_type=EvidenceSourceType.PURCHASE_ORDER,
@@ -470,22 +475,14 @@ def _build_correspondence_request(
         purchase_order=DisputePurchaseOrder(
             po_number=po_number,
             po_date=purchase_order.po_date.value,
-            currency=(
-                invoice.currency.value
-                or purchase_order.currency.value
-                or "INR"
-            ),
+            currency=currency,
             line_items=po_lines,
         ),
         invoice=DisputeInvoice(
             invoice_number=invoice_number,
             invoice_date=invoice.invoice_date.value,
             po_number=po_number,
-            currency=(
-                invoice.currency.value
-                or purchase_order.currency.value
-                or "INR"
-            ),
+            currency=currency,
             invoice_value=invoice.grand_total.value,
             line_items=invoice_lines,
         ),

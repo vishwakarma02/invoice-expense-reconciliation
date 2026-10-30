@@ -151,7 +151,7 @@ def test_case_to_draft_api_uses_verified_match_data_and_never_sends(
         invoice_number=extracted_field("INV-1", invoice_id, invoice_file),
         invoice_date=extracted_field(date(2026, 10, 1), invoice_id, invoice_file),
         po_number=extracted_field("PO-1", invoice_id, invoice_file),
-        currency=extracted_field("INR", invoice_id, invoice_file),
+        currency=extracted_field("₹", invoice_id, invoice_file),
         line_items=[
             LineItem(
                 line_number=extracted_field("1", invoice_id, invoice_file),
@@ -261,6 +261,15 @@ def test_case_to_draft_api_uses_verified_match_data_and_never_sends(
     monkeypatch.setattr(demo_app, "MATCHING_OUTPUT", matching_path)
     monkeypatch.setattr(demo_app, "HITL_DATABASE", database_path)
 
+    original_execute = demo_app.execute_vendor_dispute_agent
+    captured_payloads = []
+
+    def capture_payload(payload):
+        captured_payloads.append(payload)
+        return original_execute(payload)
+
+    monkeypatch.setattr(demo_app, "execute_vendor_dispute_agent", capture_payload)
+
     client = TestClient(demo_app.app)
     response = client.post(
         f"/api/cases/{cases[0].case_id}/draft",
@@ -268,6 +277,9 @@ def test_case_to_draft_api_uses_verified_match_data_and_never_sends(
     )
 
     assert response.status_code == 200
+    assert len(captured_payloads) == 1
+    assert captured_payloads[0].purchase_order.currency == "INR"
+    assert captured_payloads[0].invoice.currency == "INR"
     body = response.json()
     assert body["status"] == "DRAFT_REVIEW_REQUIRED"
     assert body["draft"]["subject"].startswith("DRAFT - ")

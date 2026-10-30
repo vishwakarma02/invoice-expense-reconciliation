@@ -50,7 +50,7 @@ def _text_key(value: str | None) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.casefold()))
 
 
-def _normalize_currency(value: str | None) -> str:
+def normalize_currency(value: str | None) -> str:
     if not value:
         return ""
     normalized = re.sub(r"[\W_]+", "", value.casefold())
@@ -408,7 +408,7 @@ class MatchingAgent:
                     ),
                 )
         if po_record and invoice.currency.value:
-            if _normalize_currency(invoice.currency.value) != _normalize_currency(
+            if normalize_currency(invoice.currency.value) != normalize_currency(
                 self.config.currency
             ):
                 _add_issue(
